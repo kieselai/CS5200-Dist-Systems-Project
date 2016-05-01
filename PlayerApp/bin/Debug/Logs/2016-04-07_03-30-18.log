@@ -1,0 +1,103 @@
+04/07/2016 03:30:23 [ 8] DEBUG  PlayerConnection              : Using Local Settings.
+04/07/2016 03:30:23 [ 8] DEBUG  PlayerConnection              : Starting Application. 
+04/07/2016 03:30:23 [ 8] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/07/2016 03:30:23 [ 8] DEBUG  PostMan                       : Port is: 10000
+04/07/2016 03:30:23 [ 8] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/07/2016 03:30:23 [ 8] INFO   BackgroundThread              : Starting 
+04/07/2016 03:30:23 [11] INFO   BackgroundThread              : Starting 
+04/07/2016 03:30:23 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/07/2016 03:30:23 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/07/2016 03:30:23 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/07/2016 03:30:23 [11] INFO   BackgroundThread              : Starting 
+04/07/2016 03:30:23 [14] DEBUG  LoginConversation             : Creating login request. 
+04/07/2016 03:30:23 [14] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 0.1
+04/07/2016 03:30:23 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest)
+04/07/2016 03:30:23 [14] DEBUG  PostMan                       : MessageId: 0.1ConversationId: 0.1
+04/07/2016 03:30:23 [14] DEBUG  PostMan                       : Message Delivered
+04/07/2016 03:30:23 [13] DEBUG  PostMan                       : Message Received!
+04/07/2016 03:30:23 [13] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 03:30:23 [13] DEBUG  PostMan                       : {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":1,"Seq":320},"Note":"Logged in","Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":12003},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10000},"Label":"The Instructor","ProcessId":16,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":12002}}
+04/07/2016 03:30:23 [13] DEBUG  PostMan                       : Message ID: 1.320, ConversationId: 0.1
+04/07/2016 03:30:23 [13] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.LoginReply)
+04/07/2016 03:30:23 [13] DEBUG  Dispatcher                    : MessageId: 1.320ConversationId: 0.1
+04/07/2016 03:30:28 [14] DEBUG  LoginConversation             : Received a login reply message.
+04/07/2016 03:30:28 [14] INFO   BackgroundThread              : Stopping 
+04/07/2016 03:30:28 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 03:30:28 [11] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 03:30:28 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 16.2
+04/07/2016 03:30:28 [11] DEBUG  Dispatcher                    :       New Queue ID: 16.2
+04/07/2016 03:30:28 [11] INFO   BackgroundThread              : Starting 
+04/07/2016 03:30:28 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 03:30:28 [15] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 16.2
+04/07/2016 03:30:28 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 03:30:28 [15] DEBUG  PostMan                       : MessageId: 16.2ConversationId: 16.2
+04/07/2016 03:30:28 [15] DEBUG  PostMan                       : Message Delivered
+04/07/2016 03:30:28 [13] DEBUG  PostMan                       : Message Received!
+04/07/2016 03:30:28 [13] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 03:30:28 [13] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":16,"Seq":2},"MsgId":{"Pid":1,"Seq":321},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":12,"Type":5},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":13,"Type":5},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":14,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":9,"Type":3},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":15,"Type":3}],"GameId":11,"GameManagerId":10,"Label":"GM65435's 1st Game","MaxPlayers":4,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/07/2016 03:30:28 [13] DEBUG  PostMan                       : Message ID: 1.321, ConversationId: 16.2
+04/07/2016 03:30:28 [13] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 03:30:28 [13] DEBUG  Dispatcher                    : MessageId: 1.321ConversationId: 16.2
+04/07/2016 03:30:33 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 03:30:33 [15] INFO   BackgroundThread              : Stopping 
+04/07/2016 03:30:33 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 03:30:33 [11] DEBUG  PlayerProcess                 : Life points is null, game needs to be started.
+04/07/2016 03:30:33 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 16.3
+04/07/2016 03:30:33 [11] DEBUG  Dispatcher                    :       New Queue ID: 16.3
+04/07/2016 03:30:33 [11] INFO   BackgroundThread              : Starting 
+04/07/2016 03:30:33 [12] DEBUG  JoinGameConversation          : Queuing join game request. 
+04/07/2016 03:30:33 [12] DEBUG  JoinGameConversation          : Requesting GameId: 11
+04/07/2016 03:30:33 [12] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 16.3
+04/07/2016 03:30:33 [12] DEBUG  PostMan                       : Sending UDP (Messages.Routing)
+04/07/2016 03:30:33 [12] DEBUG  PostMan                       : MessageId: 16.3ConversationId: 16.3
+04/07/2016 03:30:33 [12] DEBUG  PostMan                       : Message Delivered
+04/07/2016 03:30:33 [13] DEBUG  PostMan                       : Message Received!
+04/07/2016 03:30:33 [13] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 03:30:33 [11] DEBUG  PlayerProcess                 : No games available, setting status to 'Registered'
+04/07/2016 03:30:33 [13] DEBUG  PostMan                       : {"__type":"Routing:#Messages","ConvId":{"Pid":16,"Seq":3},"MsgId":{"Pid":10,"Seq":60},"InnerMessage":{"__type":"JoinGameReply:#Messages.ReplyMessages","ConvId":{"Pid":16,"Seq":3},"MsgId":{"Pid":10,"Seq":60},"Note":null,"Success":true,"GameId":11,"InitialLifePoints":100},"ToProcessIds":[16]}
+04/07/2016 03:30:33 [13] DEBUG  PostMan                       : Message ID: 10.60, ConversationId: 16.3
+04/07/2016 03:30:33 [13] DEBUG  Dispatcher                    : Received (Messages.Routing)
+04/07/2016 03:30:33 [13] DEBUG  Dispatcher                    : MessageId: 10.60ConversationId: 16.3
+04/07/2016 03:30:33 [11] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 03:30:33 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 16.4
+04/07/2016 03:30:33 [11] DEBUG  Dispatcher                    :       New Queue ID: 16.4
+04/07/2016 03:30:33 [11] INFO   BackgroundThread              : Starting 
+04/07/2016 03:30:34 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 03:30:34 [14] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 16.4
+04/07/2016 03:30:34 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 03:30:34 [14] DEBUG  PostMan                       : MessageId: 16.4ConversationId: 16.4
+04/07/2016 03:30:34 [14] DEBUG  PostMan                       : Message Delivered
+04/07/2016 03:30:34 [13] DEBUG  PostMan                       : Message Received!
+04/07/2016 03:30:34 [13] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 03:30:34 [13] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":16,"Seq":4},"MsgId":{"Pid":1,"Seq":324},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":12,"Type":5},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":13,"Type":5},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":14,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":9,"Type":3},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":15,"Type":3},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":16,"Type":3}],"GameId":11,"GameManagerId":10,"Label":"GM65435's 1st Game","MaxPlayers":4,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/07/2016 03:30:34 [13] DEBUG  PostMan                       : Message ID: 1.324, ConversationId: 16.4
+04/07/2016 03:30:34 [13] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 03:30:34 [13] DEBUG  Dispatcher                    : MessageId: 1.324ConversationId: 16.4
+04/07/2016 03:30:34 [13] DEBUG  PostMan                       : Message Received!
+04/07/2016 03:30:34 [13] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 03:30:34 [13] DEBUG  PostMan                       : {"__type":"AllowanceDeliveryRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":325},"MsgId":{"Pid":1,"Seq":325},"NumberOfPennies":400,"PortNumber":12999}
+04/07/2016 03:30:34 [13] DEBUG  PostMan                       : Message ID: 1.325, ConversationId: 1.325
+04/07/2016 03:30:34 [13] DEBUG  Dispatcher                    : Received (Messages.RequestMessages.AllowanceDeliveryRequest)
+04/07/2016 03:30:34 [13] DEBUG  Dispatcher                    : MessageId: 1.325ConversationId: 1.325
+04/07/2016 03:30:34 [13] DEBUG  Dispatcher                    : Conversation  with id= 1.325 does not exist, trying to create new conversation.
+04/07/2016 03:30:34 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AllowanceDeliveryConversation, 1.325
+04/07/2016 03:30:34 [13] DEBUG  Dispatcher                    :       New Queue ID: 1.325
+04/07/2016 03:30:34 [13] INFO   BackgroundThread              : Starting 
+04/07/2016 03:30:34 [16] DEBUG  AllowanceDeliveryConversation : Received Allowance Delivery Request. 
+04/07/2016 03:30:34 [16] DEBUG  AllowanceDeliveryConversation : Creating Reply to Allowance Delivery request. 
+04/07/2016 03:30:34 [16] DEBUG  ResponseConversation          : Conversation Id  for Response conversation: 1.325
+04/07/2016 03:30:34 [16] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply)
+04/07/2016 03:30:34 [16] DEBUG  PostMan                       : MessageId: 1.325ConversationId: 16.5
+04/07/2016 03:30:34 [16] DEBUG  PostMan                       : Message Delivered
+04/07/2016 03:30:34 [16] DEBUG  TCPStreamReader               : Starting TCP Listener
+04/07/2016 03:30:34 [16] DEBUG  TCPStreamReader               : Endpoing is: 127.0.0.1:12999
+04/07/2016 03:32:08 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 03:32:08 [13] DEBUG  PostMan                       : Message Received!
+04/07/2016 03:32:08 [12] DEBUG  JoinGameConversation          : Received a game join message.
+04/07/2016 03:32:08 [14] INFO   BackgroundThread              : Stopping 
+04/07/2016 03:32:08 [11] DEBUG  PlayerProcess                 : Life points is null, game needs to be started.
+04/07/2016 03:32:10 [12] INFO   BackgroundThread              : Stopping 
+04/07/2016 03:32:10 [13] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 03:32:12 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 03:32:12 [13] DEBUG  PostMan                       : {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":328},"MsgId":{"Pid":1,"Seq":328}}
+04/07/2016 03:32:16 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 16.6

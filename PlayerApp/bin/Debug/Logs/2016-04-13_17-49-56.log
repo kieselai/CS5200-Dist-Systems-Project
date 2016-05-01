@@ -1,0 +1,93 @@
+04/13/2016 05:50:03 [ 7] DEBUG  PlayerConnection              : Using Remote Settings.
+04/13/2016 05:50:03 [ 7] DEBUG  PlayerConnection              : Starting Application. 
+04/13/2016 05:50:03 [ 7] DEBUG  PlayerConnection              : Initializing Subsystem
+04/13/2016 05:50:03 [ 7] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/13/2016 05:50:03 [ 7] DEBUG  PlayerConnection              : Initializing Player
+04/13/2016 05:50:03 [ 7] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/13/2016 05:50:03 [ 7] INFO   BackgroundThread              : Starting 
+04/13/2016 05:50:03 [10] INFO   BackgroundThread              : Starting 
+04/13/2016 05:50:03 [10] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 05:50:03 [10] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 05:50:03 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/13/2016 05:50:03 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/13/2016 05:50:03 [10] INFO   BackgroundThread              : Starting 
+04/13/2016 05:50:05 [12] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 05:50:05 [12] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 05:50:05 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 05:50:05 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 05:50:05 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 52.3.213.61:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A01111521","Alias":"AKiesel","FirstName":"Anthony","LastName":"Kiesel"},"ProcessLabel":"AKiesel","ProcessType":3,"PublicKey":null}
+04/13/2016 05:50:05 [12] DEBUG  PostMan                       : Message Delivered
+04/13/2016 05:50:05 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/13/2016 05:50:07 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.26, ConversationID: 1.26)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":26},"MsgId":{"Pid":1,"Seq":26}}
+04/13/2016 05:50:07 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/13/2016 05:50:07 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.26ConversationId: 1.26
+04/13/2016 05:50:07 [13] DEBUG  Dispatcher                    : Conversation  with id= 1.26 does not exist, trying to create new conversation.
+04/13/2016 05:50:07 [13] DEBUG  ConversationFactory           : Creating Conversation of type AliveConversation
+04/13/2016 05:50:07 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.26
+04/13/2016 05:50:07 [13] DEBUG  Dispatcher                    :       New Queue ID: 1.26
+04/13/2016 05:50:07 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.26
+04/13/2016 05:50:07 [13] INFO   BackgroundThread              : Starting 
+04/13/2016 05:50:07 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.26: Message available!
+04/13/2016 05:50:07 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.26: Message available!
+04/13/2016 05:50:07 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.26: Message available!
+04/13/2016 05:50:07 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.26: Received Message is valid
+04/13/2016 05:50:07 [14] DEBUG  Conversation                  : Received a Message of type: AliveRequest
+04/13/2016 05:50:07 [14] DEBUG  AliveConversation             : Creating Alive Response
+04/13/2016 05:50:07 [14] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 1.26: Conversation Id  for Response conversation: 1.26
+04/13/2016 05:50:07 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.26: Setting Message IDs
+04/13/2016 05:50:07 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.26: Conversation is initiating send.
+04/13/2016 05:50:07 [14] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.2, ConversationID: 1.26)
+Endpoint: 52.3.213.61:12000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":26},"MsgId":{"Pid":0,"Seq":2},"Note":"I'm Alive","Success":true}
+04/13/2016 05:50:07 [14] DEBUG  PostMan                       : Message Delivered
+04/13/2016 05:50:07 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.26: Send succeeded.
+04/13/2016 05:50:12 [12] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 05:50:12 [12] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 05:50:12 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 05:50:12 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 05:50:12 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 52.3.213.61:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A01111521","Alias":"AKiesel","FirstName":"Anthony","LastName":"Kiesel"},"ProcessLabel":"AKiesel","ProcessType":3,"PublicKey":null}
+04/13/2016 05:50:12 [12] DEBUG  PostMan                       : Message Delivered
+04/13/2016 05:50:12 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/13/2016 05:50:17 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.26, ConversationID: 1.26)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":26},"MsgId":{"Pid":1,"Seq":26}}
+04/13/2016 05:50:17 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/13/2016 05:50:17 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.26ConversationId: 1.26
+04/13/2016 05:50:17 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.26
+04/13/2016 05:50:18 [12] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 05:50:18 [12] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 05:50:18 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 05:50:18 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 05:50:18 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 52.3.213.61:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A01111521","Alias":"AKiesel","FirstName":"Anthony","LastName":"Kiesel"},"ProcessLabel":"AKiesel","ProcessType":3,"PublicKey":null}
+04/13/2016 05:50:18 [12] DEBUG  PostMan                       : Message Delivered
+04/13/2016 05:50:18 [12] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/13/2016 05:50:22 [12] ERROR  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation Failed
+04/13/2016 05:50:22 [12] ERROR  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation Ending
+04/13/2016 05:50:22 [12] INFO   Conversation                  : Conversation Failed
+04/13/2016 05:50:22 [12] INFO   BackgroundThread              : Stopping 
+04/13/2016 05:50:22 [12] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 05:50:23 [10] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 05:50:23 [10] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 05:50:23 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.3
+04/13/2016 05:50:23 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.3
+04/13/2016 05:50:23 [10] INFO   BackgroundThread              : Starting 
+04/13/2016 05:50:25 [13] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 05:50:25 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.3: Conversation Id  for Initiated conversation: 0.3
+04/13/2016 05:50:25 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Setting Message IDs
+04/13/2016 05:50:25 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Conversation is initiating send.
+04/13/2016 05:50:25 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.3, ConversationID: 0.3)
+Endpoint: 52.3.213.61:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":3},"MsgId":{"Pid":0,"Seq":3},"Identity":{"ANumber":"A01111521","Alias":"AKiesel","FirstName":"Anthony","LastName":"Kiesel"},"ProcessLabel":"AKiesel","ProcessType":3,"PublicKey":null}
+04/13/2016 05:50:25 [13] DEBUG  PostMan                       : Message Delivered
+04/13/2016 05:50:25 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Send succeeded.
+04/13/2016 05:50:27 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.26, ConversationID: 1.26)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":26},"MsgId":{"Pid":1,"Seq":26}}
+04/13/2016 05:50:27 [12] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/13/2016 05:50:27 [12] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.26ConversationId: 1.26
+04/13/2016 05:50:27 [12] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.26

@@ -1,0 +1,15 @@
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\MyUtilities.dll
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\MyUtilities.pdb
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\Community.ValueConverters.dll
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\log4net.dll
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\Prism.dll
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\SharedObjects.dll
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\SharedObjects.pdb
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\Community.ValueConverters.pdb
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\log4net.xml
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\Prism.xml
+D:\Drive\School\CS5200\LocalGame\MyUtilities\obj\Debug\MyUtilities.csprojResolveAssemblyReference.cache
+D:\Drive\School\CS5200\LocalGame\MyUtilities\obj\Debug\MyUtilities.dll
+D:\Drive\School\CS5200\LocalGame\MyUtilities\obj\Debug\MyUtilities.pdb
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\Utils.dll
+D:\Drive\School\CS5200\LocalGame\MyUtilities\bin\Debug\Utils.pdb

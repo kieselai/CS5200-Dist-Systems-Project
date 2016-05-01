@@ -1,0 +1,827 @@
+04/10/2016 08:56:26 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/10/2016 08:56:26 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/10/2016 08:56:26 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:26 [ 8] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:26 [ 8] DEBUG  PlayerProcess                 : In Process Login function.
+04/10/2016 08:56:26 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.2
+04/10/2016 08:56:26 [ 8] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/10/2016 08:56:26 [ 8] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:26 [ 8] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:26 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:26 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:26 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:26 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:26 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:26 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/10/2016 08:56:26 [ 8] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:26 [10] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:26 [ 8] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:26 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:26 [ 8] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:27 [ 9] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/10/2016 08:56:27 [ 9] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:27 [ 9] INFO   Dispatcher                    : MessageId: 0.1ConversationId: 0.1
+04/10/2016 08:56:27 [ 9] DEBUG  Dispatcher                    : Conversation  with id= 0.1 does not exist, trying to create new conversation.
+04/10/2016 08:56:27 [ 9] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.1
+04/10/2016 08:56:27 [ 9] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/10/2016 08:56:27 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Message available!
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Message has IDs
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Message is valid
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Envelope is valid
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Received Message is valid
+04/10/2016 08:56:27 [ 9] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:27 [10] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:27 [10] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.1: Conversation Id  for Response conversation: 0.1
+04/10/2016 08:56:27 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Setting Message IDs
+04/10/2016 08:56:27 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Message has IDs
+04/10/2016 08:56:27 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Message is valid
+04/10/2016 08:56:27 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Envelope is valid
+04/10/2016 08:56:27 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Conversation is initiating send.
+04/10/2016 08:56:27 [10] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.3, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":3},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:27 [10] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:27 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: Send succeeded.
+04/10/2016 08:56:27 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.3, ConversationID: 0.1)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":3},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:27 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:27 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:27 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:27 [12] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:27 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.4, ConversationID: 0.4)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":4},"MsgId":{"Pid":0,"Seq":4}}
+04/10/2016 08:56:27 [13] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:27 [ 9] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.4, ConversationID: 0.4)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":4},"MsgId":{"Pid":0,"Seq":4}}
+04/10/2016 08:56:27 [ 9] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:27 [ 9] INFO   Dispatcher                    : MessageId: 0.4ConversationId: 0.4
+04/10/2016 08:56:27 [ 9] DEBUG  Dispatcher                    : Conversation  with id= 0.4 does not exist, trying to create new conversation.
+04/10/2016 08:56:27 [ 9] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.4
+04/10/2016 08:56:27 [ 9] DEBUG  Dispatcher                    :       New Queue ID: 0.4
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Message available!
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Message has IDs
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Message is valid
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Envelope is valid
+04/10/2016 08:56:27 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Received Message is valid
+04/10/2016 08:56:27 [ 9] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:27 [15] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:27 [15] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.4: Conversation Id  for Response conversation: 0.4
+04/10/2016 08:56:27 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Setting Message IDs
+04/10/2016 08:56:27 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Message has IDs
+04/10/2016 08:56:27 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Message is valid
+04/10/2016 08:56:27 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Envelope is valid
+04/10/2016 08:56:27 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Conversation is initiating send.
+04/10/2016 08:56:27 [15] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.5, ConversationID: 0.4)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":4},"MsgId":{"Pid":0,"Seq":5},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:27 [15] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:27 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: Send succeeded.
+04/10/2016 08:56:27 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.5, ConversationID: 0.4)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":4},"MsgId":{"Pid":0,"Seq":5},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:27 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:27 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:27 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:27 [13] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:27 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.6, ConversationID: 0.6)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":6},"MsgId":{"Pid":0,"Seq":6}}
+04/10/2016 08:56:27 [16] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:27 [14] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.6, ConversationID: 0.6)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":6},"MsgId":{"Pid":0,"Seq":6}}
+04/10/2016 08:56:27 [14] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:27 [14] INFO   Dispatcher                    : MessageId: 0.6ConversationId: 0.6
+04/10/2016 08:56:27 [14] DEBUG  Dispatcher                    : Conversation  with id= 0.6 does not exist, trying to create new conversation.
+04/10/2016 08:56:27 [14] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.6
+04/10/2016 08:56:27 [14] DEBUG  Dispatcher                    :       New Queue ID: 0.6
+04/10/2016 08:56:27 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Message available!
+04/10/2016 08:56:27 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Message has IDs
+04/10/2016 08:56:27 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Message is valid
+04/10/2016 08:56:27 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Envelope is valid
+04/10/2016 08:56:27 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Received Message is valid
+04/10/2016 08:56:27 [14] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:27 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:27 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:27 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:27 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:28 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:28 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:28 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:28 [17] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:28 [17] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.6: Conversation Id  for Response conversation: 0.6
+04/10/2016 08:56:28 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Setting Message IDs
+04/10/2016 08:56:28 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Message has IDs
+04/10/2016 08:56:28 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Message is valid
+04/10/2016 08:56:28 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Envelope is valid
+04/10/2016 08:56:28 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Conversation is initiating send.
+04/10/2016 08:56:28 [17] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.7, ConversationID: 0.6)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":6},"MsgId":{"Pid":0,"Seq":7},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:28 [17] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:28 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: Send succeeded.
+04/10/2016 08:56:28 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.7, ConversationID: 0.6)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":6},"MsgId":{"Pid":0,"Seq":7},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:28 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:28 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:28 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:29 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:29 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:29 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:29 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:29 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:29 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:29 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:29 [18] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:29 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:30 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:30 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:30 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:30 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:30 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:30 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:30 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:30 [19] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.8, ConversationID: 0.8)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":8},"MsgId":{"Pid":0,"Seq":8}}
+04/10/2016 08:56:30 [19] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:30 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:30 [16] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.8, ConversationID: 0.8)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":8},"MsgId":{"Pid":0,"Seq":8}}
+04/10/2016 08:56:30 [16] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:30 [16] INFO   Dispatcher                    : MessageId: 0.8ConversationId: 0.8
+04/10/2016 08:56:30 [16] DEBUG  Dispatcher                    : Conversation  with id= 0.8 does not exist, trying to create new conversation.
+04/10/2016 08:56:30 [16] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.8
+04/10/2016 08:56:30 [16] DEBUG  Dispatcher                    :       New Queue ID: 0.8
+04/10/2016 08:56:30 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Message available!
+04/10/2016 08:56:30 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Message has IDs
+04/10/2016 08:56:30 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Message is valid
+04/10/2016 08:56:30 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Envelope is valid
+04/10/2016 08:56:30 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Received Message is valid
+04/10/2016 08:56:30 [16] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:31 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:31 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:31 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:31 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:31 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:31 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:31 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:31 [20] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:31 [20] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.8: Conversation Id  for Response conversation: 0.8
+04/10/2016 08:56:31 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Setting Message IDs
+04/10/2016 08:56:31 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Message has IDs
+04/10/2016 08:56:31 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Message is valid
+04/10/2016 08:56:31 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Envelope is valid
+04/10/2016 08:56:31 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Conversation is initiating send.
+04/10/2016 08:56:31 [20] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.9, ConversationID: 0.8)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":8},"MsgId":{"Pid":0,"Seq":9},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:31 [20] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:31 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: Send succeeded.
+04/10/2016 08:56:31 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.9, ConversationID: 0.8)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":8},"MsgId":{"Pid":0,"Seq":9},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:31 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:31 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:31 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:31 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:32 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:32 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:32 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:32 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:32 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:32 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:32 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:32 [21] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:32 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:32 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:33 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:33 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:33 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:33 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:33 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:33 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:33 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:33 [22] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.10, ConversationID: 0.10)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":10},"MsgId":{"Pid":0,"Seq":10}}
+04/10/2016 08:56:33 [22] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:33 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:33 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:34 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:34 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:34 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:34 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:34 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:34 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:34 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:34 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:34 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:35 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:35 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:35 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:35 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:35 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:35 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:35 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:35 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:35 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:36 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:36 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:36 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:36 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:36 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.1: No message available
+04/10/2016 08:56:36 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:36 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.4: No message available
+04/10/2016 08:56:36 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:36 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:37 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:37 [10] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.1: Conversation Failed
+04/10/2016 08:56:37 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:37 [10] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.1: Conversation Ending
+04/10/2016 08:56:37 [10] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:37 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:37 [10] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:37 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:37 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:37 [15] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.4: Conversation Failed
+04/10/2016 08:56:37 [15] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.4: Conversation Ending
+04/10/2016 08:56:37 [15] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:37 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:37 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:37 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.6: No message available
+04/10/2016 08:56:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:38 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:38 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:38 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:38 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:38 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:38 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:38 [17] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.6: Conversation Failed
+04/10/2016 08:56:38 [17] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.6: Conversation Ending
+04/10/2016 08:56:38 [17] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:38 [17] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:39 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:39 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:39 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:39 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:39 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:39 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:40 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:40 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:40 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:40 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:40 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:40 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.8: No message available
+04/10/2016 08:56:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:41 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:41 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:41 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:41 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:41 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:41 [20] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.8: Conversation Failed
+04/10/2016 08:56:41 [20] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.8: Conversation Ending
+04/10/2016 08:56:41 [20] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:41 [20] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:42 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:42 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:42 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.10, ConversationID: 0.10)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":10},"MsgId":{"Pid":0,"Seq":10}}
+04/10/2016 08:56:42 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:42 [10] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:42 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:42 [19] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.10, ConversationID: 0.10)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":10},"MsgId":{"Pid":0,"Seq":10}}
+04/10/2016 08:56:42 [19] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:42 [19] INFO   Dispatcher                    : MessageId: 0.10ConversationId: 0.10
+04/10/2016 08:56:42 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:42 [19] DEBUG  Dispatcher                    : Conversation  with id= 0.10 does not exist, trying to create new conversation.
+04/10/2016 08:56:42 [19] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.10
+04/10/2016 08:56:42 [19] DEBUG  Dispatcher                    :       New Queue ID: 0.10
+04/10/2016 08:56:42 [19] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Message available!
+04/10/2016 08:56:42 [19] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Message has IDs
+04/10/2016 08:56:42 [19] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Message is valid
+04/10/2016 08:56:42 [19] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Envelope is valid
+04/10/2016 08:56:42 [19] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Received Message is valid
+04/10/2016 08:56:42 [19] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:42 [17] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:42 [17] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.10: Conversation Id  for Response conversation: 0.10
+04/10/2016 08:56:42 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Setting Message IDs
+04/10/2016 08:56:42 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Message has IDs
+04/10/2016 08:56:42 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Message is valid
+04/10/2016 08:56:42 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Envelope is valid
+04/10/2016 08:56:42 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Conversation is initiating send.
+04/10/2016 08:56:42 [17] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.11, ConversationID: 0.10)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":10},"MsgId":{"Pid":0,"Seq":11},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:42 [17] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:42 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: Send succeeded.
+04/10/2016 08:56:42 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.11, ConversationID: 0.10)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":10},"MsgId":{"Pid":0,"Seq":11},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:42 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:42 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:42 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:42 [20] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:42 [23] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.12, ConversationID: 0.12)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":12},"MsgId":{"Pid":0,"Seq":12}}
+04/10/2016 08:56:42 [23] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:42 [22] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.12, ConversationID: 0.12)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":12},"MsgId":{"Pid":0,"Seq":12}}
+04/10/2016 08:56:42 [22] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:42 [22] INFO   Dispatcher                    : MessageId: 0.12ConversationId: 0.12
+04/10/2016 08:56:42 [22] DEBUG  Dispatcher                    : Conversation  with id= 0.12 does not exist, trying to create new conversation.
+04/10/2016 08:56:42 [22] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.12
+04/10/2016 08:56:42 [22] DEBUG  Dispatcher                    :       New Queue ID: 0.12
+04/10/2016 08:56:42 [22] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Message available!
+04/10/2016 08:56:42 [22] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Message has IDs
+04/10/2016 08:56:42 [22] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Message is valid
+04/10/2016 08:56:42 [22] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Envelope is valid
+04/10/2016 08:56:42 [22] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Received Message is valid
+04/10/2016 08:56:42 [22] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:42 [15] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:42 [15] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.12: Conversation Id  for Response conversation: 0.12
+04/10/2016 08:56:42 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Setting Message IDs
+04/10/2016 08:56:42 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Message has IDs
+04/10/2016 08:56:42 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Message is valid
+04/10/2016 08:56:42 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Envelope is valid
+04/10/2016 08:56:42 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Conversation is initiating send.
+04/10/2016 08:56:42 [15] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.13, ConversationID: 0.12)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":12},"MsgId":{"Pid":0,"Seq":13},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:42 [15] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:42 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: Send succeeded.
+04/10/2016 08:56:42 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.13, ConversationID: 0.12)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":12},"MsgId":{"Pid":0,"Seq":13},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:42 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:42 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:42 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:42 [23] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:42 [24] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.14, ConversationID: 0.14)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":14},"MsgId":{"Pid":0,"Seq":14}}
+04/10/2016 08:56:42 [24] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:42 [ 9] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.14, ConversationID: 0.14)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":14},"MsgId":{"Pid":0,"Seq":14}}
+04/10/2016 08:56:42 [ 9] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:42 [ 9] INFO   Dispatcher                    : MessageId: 0.14ConversationId: 0.14
+04/10/2016 08:56:42 [ 9] DEBUG  Dispatcher                    : Conversation  with id= 0.14 does not exist, trying to create new conversation.
+04/10/2016 08:56:42 [ 9] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.14
+04/10/2016 08:56:42 [ 9] DEBUG  Dispatcher                    :       New Queue ID: 0.14
+04/10/2016 08:56:42 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Message available!
+04/10/2016 08:56:42 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Message has IDs
+04/10/2016 08:56:42 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Message is valid
+04/10/2016 08:56:42 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Envelope is valid
+04/10/2016 08:56:42 [ 9] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Received Message is valid
+04/10/2016 08:56:42 [ 9] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:43 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:43 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:43 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:43 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:43 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:43 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:43 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:43 [25] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:43 [25] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.14: Conversation Id  for Response conversation: 0.14
+04/10/2016 08:56:43 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Setting Message IDs
+04/10/2016 08:56:43 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Message has IDs
+04/10/2016 08:56:43 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Message is valid
+04/10/2016 08:56:43 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Envelope is valid
+04/10/2016 08:56:43 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Conversation is initiating send.
+04/10/2016 08:56:43 [25] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.15, ConversationID: 0.14)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":14},"MsgId":{"Pid":0,"Seq":15},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:43 [25] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:43 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: Send succeeded.
+04/10/2016 08:56:43 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.15, ConversationID: 0.14)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":14},"MsgId":{"Pid":0,"Seq":15},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:43 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:43 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:43 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:44 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:44 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:44 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:44 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:44 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:44 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:44 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:44 [26] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:44 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: No message available
+04/10/2016 08:56:45 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:45 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:45 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:45 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:45 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:45 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:45 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:45 [27] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.16, ConversationID: 0.16)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":16},"MsgId":{"Pid":0,"Seq":16}}
+04/10/2016 08:56:45 [27] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:45 [24] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.16, ConversationID: 0.16)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":16},"MsgId":{"Pid":0,"Seq":16}}
+04/10/2016 08:56:45 [24] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:45 [24] INFO   Dispatcher                    : MessageId: 0.16ConversationId: 0.16
+04/10/2016 08:56:45 [24] DEBUG  Dispatcher                    : Conversation  with id= 0.16 does not exist, trying to create new conversation.
+04/10/2016 08:56:45 [24] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.16
+04/10/2016 08:56:45 [24] DEBUG  Dispatcher                    :       New Queue ID: 0.16
+04/10/2016 08:56:45 [24] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Message available!
+04/10/2016 08:56:45 [24] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Message has IDs
+04/10/2016 08:56:45 [24] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Message is valid
+04/10/2016 08:56:45 [24] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Envelope is valid
+04/10/2016 08:56:45 [24] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Received Message is valid
+04/10/2016 08:56:45 [24] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:45 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: No message available
+04/10/2016 08:56:46 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:46 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:46 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:46 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:46 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:46 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:46 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:46 [28] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:46 [28] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.16: Conversation Id  for Response conversation: 0.16
+04/10/2016 08:56:46 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Setting Message IDs
+04/10/2016 08:56:46 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Message has IDs
+04/10/2016 08:56:46 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Message is valid
+04/10/2016 08:56:46 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Envelope is valid
+04/10/2016 08:56:46 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Conversation is initiating send.
+04/10/2016 08:56:46 [28] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.17, ConversationID: 0.16)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":16},"MsgId":{"Pid":0,"Seq":17},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:46 [28] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:46 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: Send succeeded.
+04/10/2016 08:56:46 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.17, ConversationID: 0.16)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":16},"MsgId":{"Pid":0,"Seq":17},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:46 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:46 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:46 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:46 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: No message available
+04/10/2016 08:56:47 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:47 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:47 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:47 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:47 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:47 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:47 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:47 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:47 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:47 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:47 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:47 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:47 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:47 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:47 [29] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:47 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: No message available
+04/10/2016 08:56:47 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: No message available
+04/10/2016 08:56:48 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:48 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:48 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:48 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:48 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:48 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:48 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:48 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:48 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:48 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:48 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:48 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:48 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:48 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:48 [30] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.18, ConversationID: 0.18)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":18},"MsgId":{"Pid":0,"Seq":18}}
+04/10/2016 08:56:48 [30] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:48 [27] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.18, ConversationID: 0.18)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":18},"MsgId":{"Pid":0,"Seq":18}}
+04/10/2016 08:56:48 [27] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:48 [27] INFO   Dispatcher                    : MessageId: 0.18ConversationId: 0.18
+04/10/2016 08:56:48 [27] DEBUG  Dispatcher                    : Conversation  with id= 0.18 does not exist, trying to create new conversation.
+04/10/2016 08:56:48 [27] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.18
+04/10/2016 08:56:48 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: No message available
+04/10/2016 08:56:48 [27] DEBUG  Dispatcher                    :       New Queue ID: 0.18
+04/10/2016 08:56:48 [27] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Message available!
+04/10/2016 08:56:48 [27] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Message has IDs
+04/10/2016 08:56:48 [27] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Message is valid
+04/10/2016 08:56:48 [27] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Envelope is valid
+04/10/2016 08:56:48 [27] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Received Message is valid
+04/10/2016 08:56:48 [27] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:48 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: No message available
+04/10/2016 08:56:49 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:49 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:49 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:49 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:49 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:49 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:49 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:49 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:49 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:49 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:49 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:49 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:49 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:49 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:49 [31] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:49 [31] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.18: Conversation Id  for Response conversation: 0.18
+04/10/2016 08:56:49 [31] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Setting Message IDs
+04/10/2016 08:56:49 [31] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Message has IDs
+04/10/2016 08:56:49 [31] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Message is valid
+04/10/2016 08:56:49 [31] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Envelope is valid
+04/10/2016 08:56:49 [31] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Conversation is initiating send.
+04/10/2016 08:56:49 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: No message available
+04/10/2016 08:56:49 [31] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.19, ConversationID: 0.18)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":18},"MsgId":{"Pid":0,"Seq":19},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:49 [31] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:49 [31] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: Send succeeded.
+04/10/2016 08:56:49 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.19, ConversationID: 0.18)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":18},"MsgId":{"Pid":0,"Seq":19},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:49 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:49 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:49 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:49 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: No message available
+04/10/2016 08:56:50 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:50 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:50 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:50 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:50 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:50 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:50 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:50 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:50 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:50 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:50 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:50 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:50 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:50 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:50 [32] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:50 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: No message available
+04/10/2016 08:56:50 [31] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: No message available
+04/10/2016 08:56:50 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: No message available
+04/10/2016 08:56:51 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.10: No message available
+04/10/2016 08:56:51 [15] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.12: No message available
+04/10/2016 08:56:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/10/2016 08:56:51 [11] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 08:56:51 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/10/2016 08:56:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/10/2016 08:56:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/10/2016 08:56:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/10/2016 08:56:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/10/2016 08:56:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/10/2016 08:56:51 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:51 [11] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/10/2016 08:56:51 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 08:56:51 [33] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.20, ConversationID: 0.20)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":20},"MsgId":{"Pid":0,"Seq":20}}
+04/10/2016 08:56:51 [33] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:51 [14] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.20, ConversationID: 0.20)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":20},"MsgId":{"Pid":0,"Seq":20}}
+04/10/2016 08:56:51 [14] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/10/2016 08:56:51 [14] INFO   Dispatcher                    : MessageId: 0.20ConversationId: 0.20
+04/10/2016 08:56:51 [14] DEBUG  Dispatcher                    : Conversation  with id= 0.20 does not exist, trying to create new conversation.
+04/10/2016 08:56:51 [14] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.20
+04/10/2016 08:56:51 [14] DEBUG  Dispatcher                    :       New Queue ID: 0.20
+04/10/2016 08:56:51 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Message available!
+04/10/2016 08:56:51 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Message has IDs
+04/10/2016 08:56:51 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Message is valid
+04/10/2016 08:56:51 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Envelope is valid
+04/10/2016 08:56:51 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Received Message is valid
+04/10/2016 08:56:51 [14] INFO   BackgroundThread              : Starting 
+04/10/2016 08:56:51 [28] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.16: No message available
+04/10/2016 08:56:51 [31] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.18: No message available
+04/10/2016 08:56:51 [25] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.14: No message available
+04/10/2016 08:56:52 [17] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.10: Conversation Failed
+04/10/2016 08:56:52 [17] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.10: Conversation Ending
+04/10/2016 08:56:52 [17] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:52 [17] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:52 [17] DEBUG  AliveConversation             : Creating Alive Response
+04/10/2016 08:56:52 [17] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 0.20: Conversation Id  for Response conversation: 0.20
+04/10/2016 08:56:52 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Setting Message IDs
+04/10/2016 08:56:52 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Message has IDs
+04/10/2016 08:56:52 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Message is valid
+04/10/2016 08:56:52 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Envelope is valid
+04/10/2016 08:56:52 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Conversation is initiating send.
+04/10/2016 08:56:52 [17] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.21, ConversationID: 0.20)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":20},"MsgId":{"Pid":0,"Seq":21},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:52 [17] DEBUG  PostMan                       : Message Delivered
+04/10/2016 08:56:52 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.20: Send succeeded.
+04/10/2016 08:56:52 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.21, ConversationID: 0.20)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":20},"MsgId":{"Pid":0,"Seq":21},"Note":"I'm Alive","Success":true}
+04/10/2016 08:56:52 [ 6] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:52 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/10/2016 08:56:52 [15] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.12: Conversation Failed
+04/10/2016 08:56:52 [15] ERROR  ResponseConversation          : AliveConversation, ConversationID: 0.12: Conversation Ending
+04/10/2016 08:56:52 [15] INFO   BackgroundThread              : Stopping 
+04/10/2016 08:56:52 [15] DEBUG  BackgroundThread              : Leaving Stop

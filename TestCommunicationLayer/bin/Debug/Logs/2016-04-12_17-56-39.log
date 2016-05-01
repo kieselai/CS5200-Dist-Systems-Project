@@ -1,0 +1,55 @@
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:56:39 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:56:39 [ 6] DEBUG  DummyGame                     : Player[2], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:56:39 PM
+04/12/2016 05:56:39 [ 6] DEBUG  DummyGame                     : Expecting to receive message of type LoginRequest
+04/12/2016 05:56:39 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 05:56:39 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 05:56:39 [ 8] DEBUG  PlayerProcess                 : In Process Login function.
+04/12/2016 05:56:39 [ 8] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/12/2016 05:56:39 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/12/2016 05:56:39 [ 8] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/12/2016 05:56:39 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 05:56:40 [10] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 05:56:40 [10] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/12/2016 05:56:40 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/12/2016 05:56:40 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/12/2016 05:56:40 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:56:40 [10] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:56:40 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/12/2016 05:56:40 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:56:40 [ 6] DEBUG  DummyGame                     : Message is valid
+04/12/2016 05:56:40 [ 6] DEBUG  DummyGame                     : Player[2], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:56:40 PM
+04/12/2016 05:56:40 [ 6] DEBUG  DummyGame                     : Attempting to send message of type LoginReply
+04/12/2016 05:56:40 [11] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.LoginReply, MessageID: 0.2, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":2},"Note":null,"Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":10011},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10010},"Label":null,"ProcessId":1,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":10012}}
+04/12/2016 05:56:40 [11] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:56:41 [12] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.LoginReply, MessageID: 0.3, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":3},"Note":null,"Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":10011},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10010},"Label":null,"ProcessId":1,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":10012}}
+04/12/2016 05:56:41 [12] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:56:42 [11] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.LoginReply, MessageID: 0.4, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":4},"Note":null,"Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":10011},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10010},"Label":null,"ProcessId":1,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":10012}}
+04/12/2016 05:56:42 [11] DEBUG  PostMan                       : Message Delivered

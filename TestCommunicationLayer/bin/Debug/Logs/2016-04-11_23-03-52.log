@@ -1,0 +1,344 @@
+04/11/2016 11:03:53 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/11/2016 11:03:53 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/11/2016 11:03:53 [ 8] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: , ConversationID: )
+Endpoint: 127.0.0.1:10001
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":null,"MsgId":null,"Note":"Test1: p1 to p2","Success":false}
+04/11/2016 11:03:53 [ 8] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:03:53 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: , ConversationID: )
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":null,"MsgId":null,"Note":"Test1: p1 to p2","Success":false}
+04/11/2016 11:03:53 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/11/2016 11:03:53 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/11/2016 11:03:53 [ 6] INFO   BackgroundThread              : Starting 
+04/11/2016 11:03:53 [ 8] INFO   BackgroundThread              : Starting 
+04/11/2016 11:03:53 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/11/2016 11:03:53 [ 8] DEBUG  PlayerProcess                 : In Process Login function.
+04/11/2016 11:03:53 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/11/2016 11:03:53 [ 8] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/11/2016 11:03:53 [ 8] INFO   BackgroundThread              : Starting 
+04/11/2016 11:03:53 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:53 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:53 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:53 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:53 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:53 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:53 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:53 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [10] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:03:54 [10] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/11/2016 11:03:54 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10003
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:03:54 [10] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:03:54 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/11/2016 11:03:54 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/11/2016 11:03:54 [ 6] INFO   BackgroundThread              : Starting 
+04/11/2016 11:03:54 [11] INFO   BackgroundThread              : Starting 
+04/11/2016 11:03:54 [11] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/11/2016 11:03:54 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/11/2016 11:03:54 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.2
+04/11/2016 11:03:54 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/11/2016 11:03:54 [11] INFO   BackgroundThread              : Starting 
+04/11/2016 11:03:54 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:54 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:54 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:55 [13] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:03:55 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/11/2016 11:03:55 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10005
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:03:55 [13] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:03:55 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:03:55 [14] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.LoginReply, MessageID: 0.3, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10003
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":3},"Note":null,"Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":10000},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10003},"Label":null,"ProcessId":1,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":10001}}
+04/11/2016 11:03:55 [14] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:03:55 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 0.3, ConversationID: 0.2)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":3},"Note":null,"Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":10000},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10003},"Label":null,"ProcessId":1,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":10001}}
+04/11/2016 11:03:55 [15] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/11/2016 11:03:55 [15] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 0.3ConversationId: 0.2
+04/11/2016 11:03:55 [15] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.2
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message available!
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message available!
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/11/2016 11:03:55 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Received Message is valid
+04/11/2016 11:03:55 [13] DEBUG  LoginConversation             : Received a login reply message.
+04/11/2016 11:03:55 [13] DEBUG  LoginConversation             : Byte[] {123, 34, 95, 95, 116, 121, 112, 101, 34, 58, 34, 76, 111, 103, 105, 110, 82, 101, 112, 108, 121, 58, 35, 77, 101, 115, 115, 97, 103, 101, 115, 46, 82, 101, 112, 108, 121, 77, 101, 115, 115, 97, 103, 101, 115, 34, 44, 34, 67, 111, 110, 118, 73, 100, 34, 58, 123, 34, 80, 105, 100, 34, 58, 48, 44, 34, 83, 101, 113, 34, 58, 50, 125, 44, 34, 77, 115, 103, 73, 100, 34, 58, 123, 34, 80, 105, 100, 34, 58, 48, 44, 34, 83, 101, 113, 34, 58, 51, 125, 44, 34, 78, 111, 116, 101, 34, 58, 110, 117, 108, 108, 44, 34, 83, 117, 99, 99, 101, 115, 115, 34, 58, 116, 114, 117, 101, 44, 34, 80, 101, 110, 110, 121, 66, 97, 110, 107, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 48, 125, 44, 34, 80, 101, 110, 110, 121, 66, 97, 110, 107, 80, 117, 98, 108, 105, 99, 75, 101, 121, 34, 58, 110, 117, 108, 108, 44, 34, 80, 114, 111, 99, 101, 115, 115, 73, 110, 102, 111, 34, 58, 123, 34, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 51, 125, 44, 34, 76, 97, 98, 101, 108, 34, 58, 110, 117, 108, 108, 44, 34, 80, 114, 111, 99, 101, 115, 115, 73, 100, 34, 58, 49, 44, 34, 83, 116, 97, 116, 117, 115, 34, 58, 51, 44, 34, 84, 121, 112, 101, 34, 58, 51, 125, 44, 34, 80, 114, 111, 120, 121, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 49, 125, 125}
+04/11/2016 11:03:55 [13] DEBUG  LoginConversation             : Byte[] {123, 34, 95, 95, 116, 121, 112, 101, 34, 58, 34, 76, 111, 103, 105, 110, 82, 101, 112, 108, 121, 58, 35, 77, 101, 115, 115, 97, 103, 101, 115, 46, 82, 101, 112, 108, 121, 77, 101, 115, 115, 97, 103, 101, 115, 34, 44, 34, 67, 111, 110, 118, 73, 100, 34, 58, 123, 34, 80, 105, 100, 34, 58, 48, 44, 34, 83, 101, 113, 34, 58, 50, 125, 44, 34, 77, 115, 103, 73, 100, 34, 58, 123, 34, 80, 105, 100, 34, 58, 48, 44, 34, 83, 101, 113, 34, 58, 51, 125, 44, 34, 78, 111, 116, 101, 34, 58, 110, 117, 108, 108, 44, 34, 83, 117, 99, 99, 101, 115, 115, 34, 58, 116, 114, 117, 101, 44, 34, 80, 101, 110, 110, 121, 66, 97, 110, 107, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 48, 125, 44, 34, 80, 101, 110, 110, 121, 66, 97, 110, 107, 80, 117, 98, 108, 105, 99, 75, 101, 121, 34, 58, 110, 117, 108, 108, 44, 34, 80, 114, 111, 99, 101, 115, 115, 73, 110, 102, 111, 34, 58, 123, 34, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 51, 125, 44, 34, 76, 97, 98, 101, 108, 34, 58, 110, 117, 108, 108, 44, 34, 80, 114, 111, 99, 101, 115, 115, 73, 100, 34, 58, 49, 44, 34, 83, 116, 97, 116, 117, 115, 34, 58, 51, 44, 34, 84, 121, 112, 101, 34, 58, 51, 125, 44, 34, 80, 114, 111, 120, 121, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 49, 125, 125}
+04/11/2016 11:03:55 [13] DEBUG  LoginConversation             : Proxy endpoint is 127.0.0.1:10000
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [11] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/11/2016 11:03:55 [11] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/11/2016 11:03:55 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 1.4
+04/11/2016 11:03:55 [11] DEBUG  Dispatcher                    :       New Queue ID: 1.4
+04/11/2016 11:03:55 [11] INFO   BackgroundThread              : Starting 
+04/11/2016 11:03:55 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:55 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:55 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:56 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/11/2016 11:03:56 [15] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 1.4: Conversation Id  for Initiated conversation: 1.4
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: Setting Message IDs
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: Message has IDs
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: Message is valid
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: Envelope is valid
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: Conversation is initiating send.
+04/11/2016 11:03:56 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 1.4, ConversationID: 1.4)
+Endpoint: 127.0.0.1:10005
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":4},"MsgId":{"Pid":1,"Seq":4},"StatusFilter":4}
+04/11/2016 11:03:56 [15] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: Send succeeded.
+04/11/2016 11:03:56 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:57 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:57 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:58 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:58 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:03:59 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:03:59 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/11/2016 11:04:00 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/11/2016 11:04:00 [ 6] INFO   BackgroundThread              : Starting 
+04/11/2016 11:04:00 [14] INFO   BackgroundThread              : Starting 
+04/11/2016 11:04:00 [14] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/11/2016 11:04:00 [14] DEBUG  PlayerProcess                 : In Process Login function.
+04/11/2016 11:04:00 [14] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 1.5
+04/11/2016 11:04:00 [14] DEBUG  Dispatcher                    :       New Queue ID: 1.5
+04/11/2016 11:04:00 [14] INFO   BackgroundThread              : Starting 
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [10] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:04:00 [10] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/11/2016 11:04:00 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10003
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:04:00 [10] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [12] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:00 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:00 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:01 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:01 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:01 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:02 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:02 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:02 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:02 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/11/2016 11:04:02 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:02 [17] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.LoginRequest)
+04/11/2016 11:04:02 [17] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 0.1ConversationId: 0.1
+04/11/2016 11:04:02 [17] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginRequest, for conversation: 0.1
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message available!
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message available!
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/11/2016 11:04:02 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Received Message is valid
+04/11/2016 11:04:02 [10] DEBUG  LoginConversation             : Received a login reply message.
+04/11/2016 11:04:02 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [16] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:04:02 [16] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 1.5: Conversation Id  for Initiated conversation: 1.5
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Setting Message IDs
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Message has IDs
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Message is valid
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Envelope is valid
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Conversation is initiating send.
+04/11/2016 11:04:02 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.5, ConversationID: 1.5)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":5},"MsgId":{"Pid":1,"Seq":5},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:04:02 [16] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Send succeeded.
+04/11/2016 11:04:02 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: No message available
+04/11/2016 11:04:02 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.5, ConversationID: 1.5)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":5},"MsgId":{"Pid":1,"Seq":5},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:04:02 [17] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.6, ConversationID: 1.5)
+Endpoint: 127.0.0.1:10006
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":5},"MsgId":{"Pid":1,"Seq":6},"Note":null,"Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":10000},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10006},"Label":null,"ProcessId":1,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":10001}}
+04/11/2016 11:04:02 [17] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:04:02 [13] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.6, ConversationID: 1.5)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":5},"MsgId":{"Pid":1,"Seq":6},"Note":null,"Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":10000},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10006},"Label":null,"ProcessId":1,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":10001}}
+04/11/2016 11:04:02 [17] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/11/2016 11:04:02 [17] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.6ConversationId: 1.5
+04/11/2016 11:04:02 [17] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 1.5
+04/11/2016 11:04:05 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.4: No message available
+04/11/2016 11:04:05 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Message available!
+04/11/2016 11:04:05 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Message available!
+04/11/2016 11:04:05 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Message has IDs
+04/11/2016 11:04:05 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Message is valid
+04/11/2016 11:04:05 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Envelope is valid
+04/11/2016 11:04:05 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Received Message is valid
+04/11/2016 11:04:05 [16] DEBUG  LoginConversation             : Received a login reply message.
+04/11/2016 11:04:05 [16] DEBUG  LoginConversation             : Byte[] {123, 34, 95, 95, 116, 121, 112, 101, 34, 58, 34, 76, 111, 103, 105, 110, 82, 101, 112, 108, 121, 58, 35, 77, 101, 115, 115, 97, 103, 101, 115, 46, 82, 101, 112, 108, 121, 77, 101, 115, 115, 97, 103, 101, 115, 34, 44, 34, 67, 111, 110, 118, 73, 100, 34, 58, 123, 34, 80, 105, 100, 34, 58, 49, 44, 34, 83, 101, 113, 34, 58, 53, 125, 44, 34, 77, 115, 103, 73, 100, 34, 58, 123, 34, 80, 105, 100, 34, 58, 49, 44, 34, 83, 101, 113, 34, 58, 54, 125, 44, 34, 78, 111, 116, 101, 34, 58, 110, 117, 108, 108, 44, 34, 83, 117, 99, 99, 101, 115, 115, 34, 58, 116, 114, 117, 101, 44, 34, 80, 101, 110, 110, 121, 66, 97, 110, 107, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 48, 125, 44, 34, 80, 101, 110, 110, 121, 66, 97, 110, 107, 80, 117, 98, 108, 105, 99, 75, 101, 121, 34, 58, 110, 117, 108, 108, 44, 34, 80, 114, 111, 99, 101, 115, 115, 73, 110, 102, 111, 34, 58, 123, 34, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 54, 125, 44, 34, 76, 97, 98, 101, 108, 34, 58, 110, 117, 108, 108, 44, 34, 80, 114, 111, 99, 101, 115, 115, 73, 100, 34, 58, 49, 44, 34, 83, 116, 97, 116, 117, 115, 34, 58, 51, 44, 34, 84, 121, 112, 101, 34, 58, 51, 125, 44, 34, 80, 114, 111, 120, 121, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 49, 125, 125}
+04/11/2016 11:04:05 [16] DEBUG  LoginConversation             : Byte[] {123, 34, 95, 95, 116, 121, 112, 101, 34, 58, 34, 76, 111, 103, 105, 110, 82, 101, 112, 108, 121, 58, 35, 77, 101, 115, 115, 97, 103, 101, 115, 46, 82, 101, 112, 108, 121, 77, 101, 115, 115, 97, 103, 101, 115, 34, 44, 34, 67, 111, 110, 118, 73, 100, 34, 58, 123, 34, 80, 105, 100, 34, 58, 49, 44, 34, 83, 101, 113, 34, 58, 53, 125, 44, 34, 77, 115, 103, 73, 100, 34, 58, 123, 34, 80, 105, 100, 34, 58, 49, 44, 34, 83, 101, 113, 34, 58, 54, 125, 44, 34, 78, 111, 116, 101, 34, 58, 110, 117, 108, 108, 44, 34, 83, 117, 99, 99, 101, 115, 115, 34, 58, 116, 114, 117, 101, 44, 34, 80, 101, 110, 110, 121, 66, 97, 110, 107, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 48, 125, 44, 34, 80, 101, 110, 110, 121, 66, 97, 110, 107, 80, 117, 98, 108, 105, 99, 75, 101, 121, 34, 58, 110, 117, 108, 108, 44, 34, 80, 114, 111, 99, 101, 115, 115, 73, 110, 102, 111, 34, 58, 123, 34, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 54, 125, 44, 34, 76, 97, 98, 101, 108, 34, 58, 110, 117, 108, 108, 44, 34, 80, 114, 111, 99, 101, 115, 115, 73, 100, 34, 58, 49, 44, 34, 83, 116, 97, 116, 117, 115, 34, 58, 51, 44, 34, 84, 121, 112, 101, 34, 58, 51, 125, 44, 34, 80, 114, 111, 120, 121, 69, 110, 100, 80, 111, 105, 110, 116, 34, 58, 123, 34, 72, 111, 115, 116, 34, 58, 34, 49, 50, 55, 46, 48, 46, 48, 46, 49, 34, 44, 34, 80, 111, 114, 116, 34, 58, 49, 48, 48, 48, 49, 125, 125}
+04/11/2016 11:04:05 [16] DEBUG  LoginConversation             : Proxy endpoint is 127.0.0.1:10000

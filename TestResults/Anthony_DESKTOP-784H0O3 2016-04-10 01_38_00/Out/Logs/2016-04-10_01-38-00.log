@@ -1,0 +1,6 @@
+04/10/2016 01:38:01 [Agent: adapter run thread for test 'TestSimpleReceive' with id 'b61585c8-514e-4ece-9a56-83fcfcf7ec47'] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/10/2016 01:38:01 [Agent: adapter run thread for test 'TestSimpleReceive' with id 'b61585c8-514e-4ece-9a56-83fcfcf7ec47'] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/10/2016 01:38:01 [15] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: , ConversationID: )
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":null,"MsgId":null,"Note":"Test1: p1 to p2","Success":false}
+04/10/2016 01:38:01 [15] DEBUG  PostMan                       : Message Delivered

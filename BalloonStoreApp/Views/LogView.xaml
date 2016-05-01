@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="BalloonStoreApp.Views.LogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid HorizontalAlignment="Stretch" 
+          Margin="0" 
+          VerticalAlignment="Stretch">
+        <CheckBox IsChecked="{Binding AutoScrollBottom}" 
+                  Command="{Binding AutoScrollBottom}"
+                  Content="Auto-scroll to bottom" 
+                  Foreground="White" 
+                  HorizontalAlignment="Left" 
+                  Margin="0" 
+                  VerticalAlignment="Top"/>
+        <CheckBox IsChecked="{Binding FreezeUpdate}" 
+                  Command="{Binding FreezeUnfreeze}" 
+                  Content="Freeze Update" 
+                  Foreground="White" 
+                  HorizontalAlignment="Left" 
+                  Margin="150,0,0,0" 
+                  VerticalAlignment="Top"/>
+        <DataGrid Name="LogViewGrid"
+                  ItemsSource="{Binding LogSource.View}"  
+                  HorizontalAlignment="Stretch" 
+                  Margin="0,15,0,0" 
+                  VerticalAlignment="Stretch" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.CanContentScroll="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="TimeStamp" Binding="{Binding Path=TimeString}" Width="130"  IsReadOnly="True" SortMemberPath="Id" SortDirection="Ascending" />
+                <DataGridTextColumn Header="Thread"    Binding="{Binding Path=Thread}"     Width="50"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="Level"     Binding="{Binding Path=LogLevel}"   Width="50"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="Logger"    Binding="{Binding Path=Logger}"     Width="200" IsReadOnly="True"  />
+                <DataGridTextColumn Header="Message"   Binding="{Binding Path=Message}"    Width="auto" MinWidth="450" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

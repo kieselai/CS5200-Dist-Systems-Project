@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="orderedtest1" storage="d:\drive\school\cs5200\localgame\testcommunicationlayer\orderedtest1.orderedtest" id="ac411cc2-ef03-4d26-95ec-b111e27e6a19" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="479c4003-d893-5824-6ed1-257fac5e2a6e" name="TestSimpleReceive" storage="bin\debug\testcommunicationlayer.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="07adfaea-f75e-2372-3104-c7d6c40990ed" name="TestLogin" storage="bin\debug\testcommunicationlayer.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="0064c60c-81be-9734-d215-2bfacb59bbe4" name="TestLoginReply" storage="bin\debug\testcommunicationlayer.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="043e3709-7fa2-ff60-b07d-17eaeaf24d48" name="TestAliveReply" storage="bin\debug\testcommunicationlayer.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

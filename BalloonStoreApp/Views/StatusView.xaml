@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="BalloonStoreApp.Views.StatusView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:mscor="clr-namespace:System;assembly=mscorlib" 
+             xmlns:local="clr-namespace:BalloonStoreApp"
+             Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="300" Width="auto">
+        <DataGrid Name="MyIdentityGrid"
+                  ItemsSource="{Binding IdentitySource.View}"
+                  HorizontalAlignment="Right" 
+                  Margin="0,0,0,120" 
+                  VerticalAlignment="Bottom" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  VerticalScrollBarVisibility="Disabled"
+                  HorizontalScrollBarVisibility="Disabled"
+                  ScrollViewer.CanContentScroll="False" Height="50">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="First Name"  Binding="{Binding Path=FirstName}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Last Name"   Binding="{Binding Path=LastName}"  MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Alias"       Binding="{Binding Path=Alias}"     MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="ANumber"     Binding="{Binding Path=ANumber}"   MinWidth="100"  IsReadOnly="True"  />
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Name="MyBalloonStoreGrid"
+                  ItemsSource="{Binding MyBalloonStoreSource.View}" 
+                  HorizontalAlignment="Right" 
+                  VerticalAlignment="Bottom" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  VerticalScrollBarVisibility="Disabled"
+                  ScrollViewer.CanContentScroll="True" Height="50" Margin="0,50,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Process Id"       Binding="{Binding Path=ProcessId}"      MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Type"             Binding="{Binding Path=Type}"           MinWidth="100"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="EndPoint"         Binding="{Binding Path=EndPoint}"       MinWidth="100"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="Process Label"    Binding="{Binding Path=Label}"          MinWidth="100" IsReadOnly="True"  />
+                <DataGridTextColumn Header="Alive Timestamp"  Binding="{Binding Path=AliveTimestamp}" MinWidth="100"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="Alive Reties"     Binding="{Binding Path=AliveReties}"    MinWidth="100"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="Status"           Binding="{Binding Path=Status}"         MinWidth="100" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Name="CurrentGameGrid"
+                  ItemsSource="{Binding GameSource.View}"
+                  HorizontalAlignment="right" 
+                  Margin="0,0,0,60" 
+                  VerticalAlignment="bottom" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  VerticalScrollBarVisibility="Disabled"
+                  HorizontalScrollBarVisibility="Disabled"
+                  ScrollViewer.CanContentScroll="False" Height="50">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="GameId"  Binding="{Binding Path=GameId}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="GameManagerId"   Binding="{Binding Path=GameManagerId}"  MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Label"       Binding="{Binding Path=Label}"     MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="MaxBalloonStores"     Binding="{Binding Path=MaxBalloonStores}"   MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="MinBalloonStores"  Binding="{Binding Path=MinBalloonStores}" MinWidth="100"  IsReadOnly="True"  />
+                <!--<DataGridTextColumn Header="StartingBalloonStores"   Binding="{Binding Path=StartingBalloonStores}"  MinWidth="100"  IsReadOnly="True"  />-->
+                <DataGridTextColumn Header="Status"       Binding="{Binding Path=Status}"     MinWidth="100"  IsReadOnly="True"  />
+                <!--<DataGridTextColumn Header="Winners"     Binding="{Binding Path=Winners, Converter={StaticResource  IntArrayConverter}}"   MinWidth="100"  IsReadOnly="True"  />-->
+            </DataGrid.Columns>
+            </DataGrid>
+        <DataGrid Name="InGameBalloonStore"
+                  ItemsSource="{Binding InGameBalloonStoreSource.View}"
+                  HorizontalAlignment="Right" 
+                  Margin="0,0,0,180" 
+                  VerticalAlignment="Bottom" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  VerticalScrollBarVisibility="Disabled"
+                  HorizontalScrollBarVisibility="Disabled"
+                  ScrollViewer.CanContentScroll="False" Height="50">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="InitialLifePoints"   Binding="{Binding Path=InitialLifePoints}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="HitPoints"           Binding="{Binding Path=HitPoints}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="CurrentLifePoints"   Binding="{Binding Path=CurrentLifePoints}"  MinWidth="100"  IsReadOnly="True"  />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

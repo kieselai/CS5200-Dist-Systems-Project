@@ -1,0 +1,61 @@
+04/09/2016 11:24:17 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/09/2016 11:24:17 [ 6] INFO   BackgroundThread              : Starting 
+04/09/2016 11:24:17 [ 9] INFO   BackgroundThread              : Starting 
+04/09/2016 11:24:17 [ 9] DEBUG  PlayerProcess                 : In Process Login function.
+04/09/2016 11:24:17 [ 9] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/09/2016 11:24:17 [ 9] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/09/2016 11:24:17 [ 9] DEBUG  LoginConversation             : Creating login request. 
+04/09/2016 11:24:17 [ 9] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for initiated conversation: 0.1
+04/09/2016 11:24:17 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/09/2016 11:24:17 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/09/2016 11:24:17 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/09/2016 11:24:17 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/09/2016 11:24:17 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/09/2016 11:24:17 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":null,"Alias":null,"FirstName":null,"LastName":null},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/09/2016 11:24:17 [ 9] DEBUG  PostMan                       : Message Delivered
+04/09/2016 11:24:17 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/09/2016 11:24:17 [ 9] INFO   BackgroundThread              : Starting 
+04/09/2016 11:24:18 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2}}
+04/09/2016 11:24:18 [12] DEBUG  PostMan                       : Message Delivered
+04/09/2016 11:24:18 [10] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2}}
+04/09/2016 11:24:18 [10] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/09/2016 11:24:18 [10] INFO   Dispatcher                    : MessageId: 0.2ConversationId: 0.2
+04/09/2016 11:24:18 [10] DEBUG  Dispatcher                    : Conversation  with id= 0.2 does not exist, trying to create new conversation.
+04/09/2016 11:24:18 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 0.2
+04/09/2016 11:24:18 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/09/2016 11:24:18 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Message available!
+04/09/2016 11:24:18 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Message has IDs
+04/09/2016 11:24:18 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Message is valid
+04/09/2016 11:24:18 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Envelope is valid
+04/09/2016 11:24:18 [10] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Received Message is valid
+04/09/2016 11:24:18 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 11:24:18 [13] DEBUG  AliveConversation             : Creating Alive Response
+04/09/2016 11:24:18 [13] ERROR  ResponseConversation          : AliveConversation: Something went wrong while creating response message.
+04/09/2016 11:24:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/09/2016 11:24:19 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: No message available
+04/09/2016 11:24:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/09/2016 11:24:20 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2}}
+04/09/2016 11:24:20 [12] DEBUG  PostMan                       : Message Delivered
+04/09/2016 11:24:20 [10] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2}}
+04/09/2016 11:24:20 [10] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/09/2016 11:24:20 [10] INFO   Dispatcher                    : MessageId: 0.2ConversationId: 0.2
+04/09/2016 11:24:20 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 11:24:20 [14] DEBUG  AliveConversation             : Creating Alive Response
+04/09/2016 11:24:20 [14] ERROR  ResponseConversation          : AliveConversation: Something went wrong while creating response message.
+04/09/2016 11:24:20 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Message available!
+04/09/2016 11:24:20 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Message has IDs
+04/09/2016 11:24:20 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Message is valid
+04/09/2016 11:24:20 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Envelope is valid
+04/09/2016 11:24:20 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: Received Message is valid
+04/09/2016 11:24:20 [13] DEBUG  AliveConversation             : Creating Alive Response
+04/09/2016 11:24:20 [13] ERROR  ResponseConversation          : AliveConversation: Something went wrong while creating response message.
+04/09/2016 11:24:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/09/2016 11:24:21 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: No message available
+04/09/2016 11:24:21 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: No message available
+04/09/2016 11:24:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/09/2016 11:24:22 [14] DEBUG  Conversation                  : AliveConversation, ConversationID: 0.2: No message available

@@ -1,0 +1,40 @@
+04/08/2016 12:14:48 [ 7] DEBUG  PlayerConnection              : Using Local Settings.
+04/08/2016 12:14:48 [ 7] DEBUG  PlayerConnection              : Starting Application. 
+04/08/2016 12:14:48 [ 7] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/08/2016 12:14:48 [ 7] DEBUG  PostMan                       : Port is: 10000
+04/08/2016 12:14:48 [ 7] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/08/2016 12:14:48 [ 7] INFO   BackgroundThread              : Starting 
+04/08/2016 12:14:48 [10] INFO   BackgroundThread              : Starting 
+04/08/2016 12:14:48 [10] DEBUG  PlayerProcess                 : In Process Login function.
+04/08/2016 12:14:48 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/08/2016 12:14:48 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/08/2016 12:14:48 [10] INFO   BackgroundThread              : Starting 
+04/08/2016 12:14:48 [13] DEBUG  LoginConversation             : Creating login request. 
+04/08/2016 12:14:48 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 0.1
+04/08/2016 12:14:48 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest)
+04/08/2016 12:14:48 [13] DEBUG  PostMan                       : MessageId: 0.1ConversationId: 0.1
+04/08/2016 12:14:48 [13] DEBUG  PostMan                       : Message Delivered
+04/08/2016 12:14:54 [13] ERROR  LoginConversation             : Login reply was null or LoginReply.Success was false
+04/08/2016 12:14:54 [13] INFO   BackgroundThread              : Stopping 
+04/08/2016 12:14:54 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/08/2016 12:14:54 [10] DEBUG  PlayerProcess                 : In Process Login function.
+04/08/2016 12:14:54 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.2
+04/08/2016 12:14:54 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/08/2016 12:14:54 [10] INFO   BackgroundThread              : Starting 
+04/08/2016 12:14:54 [14] DEBUG  LoginConversation             : Creating login request. 
+04/08/2016 12:14:54 [14] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 0.2
+04/08/2016 12:14:54 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest)
+04/08/2016 12:14:54 [14] DEBUG  PostMan                       : MessageId: 0.2ConversationId: 0.2
+04/08/2016 12:14:54 [14] DEBUG  PostMan                       : Message Delivered
+04/08/2016 12:15:00 [14] ERROR  LoginConversation             : Login reply was null or LoginReply.Success was false
+04/08/2016 12:15:00 [14] INFO   BackgroundThread              : Stopping 
+04/08/2016 12:15:00 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/08/2016 12:15:00 [10] DEBUG  PlayerProcess                 : In Process Login function.
+04/08/2016 12:15:00 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.3
+04/08/2016 12:15:00 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.3
+04/08/2016 12:15:00 [10] INFO   BackgroundThread              : Starting 
+04/08/2016 12:15:00 [13] DEBUG  LoginConversation             : Creating login request. 
+04/08/2016 12:15:00 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 0.3
+04/08/2016 12:15:00 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest)
+04/08/2016 12:15:00 [13] DEBUG  PostMan                       : MessageId: 0.3ConversationId: 0.3
+04/08/2016 12:15:00 [13] DEBUG  PostMan                       : Message Delivered

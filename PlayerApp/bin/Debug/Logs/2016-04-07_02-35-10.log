@@ -1,0 +1,1234 @@
+04/07/2016 02:35:27 [ 9] DEBUG  PlayerConnection              : Using Local Settings.
+04/07/2016 02:35:27 [ 9] DEBUG  PlayerConnection              : Starting Application. 
+04/07/2016 02:35:27 [ 9] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/07/2016 02:35:27 [ 9] DEBUG  PostMan                       : Port is: 10000
+04/07/2016 02:35:27 [ 9] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/07/2016 02:35:27 [ 9] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:27 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:27 [12] DEBUG  PlayerProcess                 : In Process Login function.
+04/07/2016 02:35:27 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/07/2016 02:35:27 [12] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/07/2016 02:35:27 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:27 [16] DEBUG  LoginConversation             : Creating login request. 
+04/07/2016 02:35:27 [16] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 0.1
+04/07/2016 02:35:27 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest)
+04/07/2016 02:35:27 [16] DEBUG  PostMan                       : MessageId: 0.1ConversationId: 0.1
+04/07/2016 02:35:27 [16] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:35:27 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:27 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:27 [14] DEBUG  PostMan                       : {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":1,"Seq":79},"Note":"Logged in","Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":12003},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10000},"Label":"The Instructor","ProcessId":8,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":12002}}
+04/07/2016 02:35:27 [14] DEBUG  PostMan                       : Message ID: 1.79, ConversationId: 0.1
+04/07/2016 02:35:27 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.LoginReply)
+04/07/2016 02:35:27 [14] DEBUG  Dispatcher                    : MessageId: 1.79ConversationId: 0.1
+04/07/2016 02:35:32 [16] DEBUG  LoginConversation             : Received a login reply message.
+04/07/2016 02:35:32 [16] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:35:32 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:35:32 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:35:32 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.2
+04/07/2016 02:35:32 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.2
+04/07/2016 02:35:32 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:32 [13] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:35:32 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.2
+04/07/2016 02:35:32 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:35:32 [13] DEBUG  PostMan                       : MessageId: 8.2ConversationId: 8.2
+04/07/2016 02:35:32 [13] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:35:32 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:32 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:32 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":2},"MsgId":{"Pid":1,"Seq":80},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:35:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:32 [14] DEBUG  PostMan                       : Message ID: 1.80, ConversationId: 8.2
+04/07/2016 02:35:32 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:35:32 [14] DEBUG  Dispatcher                    : MessageId: 1.80ConversationId: 8.2
+04/07/2016 02:35:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:34 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:34 [14] DEBUG  PostMan                       : {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":82},"MsgId":{"Pid":1,"Seq":82}}
+04/07/2016 02:35:34 [14] DEBUG  PostMan                       : Message ID: 1.82, ConversationId: 1.82
+04/07/2016 02:35:34 [14] DEBUG  Dispatcher                    : Received (Messages.RequestMessages.AliveRequest)
+04/07/2016 02:35:34 [14] DEBUG  Dispatcher                    : MessageId: 1.82ConversationId: 1.82
+04/07/2016 02:35:34 [14] DEBUG  Dispatcher                    : Conversation  with id= 1.82 does not exist, trying to create new conversation.
+04/07/2016 02:35:34 [14] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.82
+04/07/2016 02:35:34 [14] DEBUG  Dispatcher                    :       New Queue ID: 1.82
+04/07/2016 02:35:34 [14] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [17] DEBUG  AliveConversation             : Creating Alive Response
+04/07/2016 02:35:34 [17] DEBUG  ResponseConversation          : Conversation Id  for Response conversation: 1.82
+04/07/2016 02:35:34 [17] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply)
+04/07/2016 02:35:34 [17] DEBUG  PostMan                       : MessageId: 1.82ConversationId: 8.3
+04/07/2016 02:35:34 [17] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [13] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:35:37 [13] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:35:37 [13] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:35:37 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:35:37 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.4
+04/07/2016 02:35:37 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.4
+04/07/2016 02:35:37 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:37 [17] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:35:37 [17] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.4
+04/07/2016 02:35:37 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:35:37 [17] DEBUG  PostMan                       : MessageId: 8.4ConversationId: 8.4
+04/07/2016 02:35:37 [17] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:35:37 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:37 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:37 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":4},"MsgId":{"Pid":1,"Seq":83},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:35:37 [14] DEBUG  PostMan                       : Message ID: 1.83, ConversationId: 8.4
+04/07/2016 02:35:37 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:35:37 [14] DEBUG  Dispatcher                    : MessageId: 1.83ConversationId: 8.4
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [17] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:35:42 [17] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:35:42 [17] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:35:42 [17] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:35:42 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.5
+04/07/2016 02:35:42 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.5
+04/07/2016 02:35:42 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:42 [13] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:35:42 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.5
+04/07/2016 02:35:42 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:35:42 [13] DEBUG  PostMan                       : MessageId: 8.5ConversationId: 8.5
+04/07/2016 02:35:42 [13] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:35:42 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:42 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:42 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":5},"MsgId":{"Pid":1,"Seq":84},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:35:42 [14] DEBUG  PostMan                       : Message ID: 1.84, ConversationId: 8.5
+04/07/2016 02:35:42 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:35:42 [14] DEBUG  Dispatcher                    : MessageId: 1.84ConversationId: 8.5
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:44 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:44 [14] DEBUG  PostMan                       : {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":82},"MsgId":{"Pid":1,"Seq":82}}
+04/07/2016 02:35:44 [14] DEBUG  PostMan                       : Message ID: 1.82, ConversationId: 1.82
+04/07/2016 02:35:44 [14] DEBUG  Dispatcher                    : Received (Messages.RequestMessages.AliveRequest)
+04/07/2016 02:35:44 [14] DEBUG  Dispatcher                    : MessageId: 1.82ConversationId: 1.82
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [13] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:35:47 [13] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:35:47 [13] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:35:47 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:35:47 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.6
+04/07/2016 02:35:47 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.6
+04/07/2016 02:35:47 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:47 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:35:47 [16] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.6
+04/07/2016 02:35:47 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:35:47 [16] DEBUG  PostMan                       : MessageId: 8.6ConversationId: 8.6
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [16] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:35:47 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:47 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:47 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":6},"MsgId":{"Pid":1,"Seq":85},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:35:47 [14] DEBUG  PostMan                       : Message ID: 1.85, ConversationId: 8.6
+04/07/2016 02:35:47 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:35:47 [14] DEBUG  Dispatcher                    : MessageId: 1.85ConversationId: 8.6
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:52 [16] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:35:52 [16] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:35:52 [16] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:35:52 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:35:52 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.7
+04/07/2016 02:35:52 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.7
+04/07/2016 02:35:52 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:52 [13] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:35:52 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.7
+04/07/2016 02:35:52 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:35:52 [13] DEBUG  PostMan                       : MessageId: 8.7ConversationId: 8.7
+04/07/2016 02:35:52 [13] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:35:52 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:52 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:52 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":7},"MsgId":{"Pid":1,"Seq":86},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:35:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [14] DEBUG  PostMan                       : Message ID: 1.86, ConversationId: 8.7
+04/07/2016 02:35:53 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:35:53 [14] DEBUG  Dispatcher                    : MessageId: 1.86ConversationId: 8.7
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:54 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:54 [14] DEBUG  PostMan                       : {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":82},"MsgId":{"Pid":1,"Seq":82}}
+04/07/2016 02:35:54 [14] DEBUG  PostMan                       : Message ID: 1.82, ConversationId: 1.82
+04/07/2016 02:35:54 [14] DEBUG  Dispatcher                    : Received (Messages.RequestMessages.AliveRequest)
+04/07/2016 02:35:54 [14] DEBUG  Dispatcher                    : MessageId: 1.82ConversationId: 1.82
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:57 [13] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:35:57 [13] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:35:57 [13] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:35:57 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:35:57 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:35:57 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.8
+04/07/2016 02:35:57 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.8
+04/07/2016 02:35:57 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:35:57 [17] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:35:57 [17] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.8
+04/07/2016 02:35:57 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:35:58 [17] DEBUG  PostMan                       : MessageId: 8.8ConversationId: 8.8
+04/07/2016 02:35:58 [17] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:35:58 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:35:58 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:35:58 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":8},"MsgId":{"Pid":1,"Seq":87},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:35:58 [14] DEBUG  PostMan                       : Message ID: 1.87, ConversationId: 8.8
+04/07/2016 02:35:58 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:35:58 [14] DEBUG  Dispatcher                    : MessageId: 1.87ConversationId: 8.8
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:35:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:03 [17] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:36:03 [17] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:03 [17] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:03 [17] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:03 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.9
+04/07/2016 02:36:03 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.9
+04/07/2016 02:36:03 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:03 [13] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:03 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.9
+04/07/2016 02:36:03 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:03 [13] DEBUG  PostMan                       : MessageId: 8.9ConversationId: 8.9
+04/07/2016 02:36:03 [13] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:03 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:03 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:03 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":9},"MsgId":{"Pid":1,"Seq":88},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:36:03 [14] DEBUG  PostMan                       : Message ID: 1.88, ConversationId: 8.9
+04/07/2016 02:36:03 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:36:03 [14] DEBUG  Dispatcher                    : MessageId: 1.88ConversationId: 8.9
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:03 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:04 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:05 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:05 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:05 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:05 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:05 [14] DEBUG  PostMan                       : {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":90},"MsgId":{"Pid":1,"Seq":90}}
+04/07/2016 02:36:05 [14] DEBUG  PostMan                       : Message ID: 1.90, ConversationId: 1.90
+04/07/2016 02:36:05 [14] DEBUG  Dispatcher                    : Received (Messages.RequestMessages.AliveRequest)
+04/07/2016 02:36:05 [14] DEBUG  Dispatcher                    : MessageId: 1.90ConversationId: 1.90
+04/07/2016 02:36:05 [14] DEBUG  Dispatcher                    : Conversation  with id= 1.90 does not exist, trying to create new conversation.
+04/07/2016 02:36:05 [14] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.90
+04/07/2016 02:36:05 [14] DEBUG  Dispatcher                    :       New Queue ID: 1.90
+04/07/2016 02:36:05 [14] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:05 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:05 [15] ERROR  ResponseConversation          : Unable to retrieve received message. 
+04/07/2016 02:36:05 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:05 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:05 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:05 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:05 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:06 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:07 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:08 [13] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:36:08 [13] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:08 [13] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:08 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:08 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.10
+04/07/2016 02:36:08 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.10
+04/07/2016 02:36:08 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:08 [11] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:08 [11] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.10
+04/07/2016 02:36:08 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:08 [11] DEBUG  PostMan                       : MessageId: 8.10ConversationId: 8.10
+04/07/2016 02:36:08 [11] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:08 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:08 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:08 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":10},"MsgId":{"Pid":1,"Seq":91},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:36:08 [14] DEBUG  PostMan                       : Message ID: 1.91, ConversationId: 8.10
+04/07/2016 02:36:08 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:36:08 [14] DEBUG  Dispatcher                    : MessageId: 1.91ConversationId: 8.10
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:08 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:09 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:10 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:11 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:12 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [11] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:36:13 [11] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:13 [11] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:13 [11] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:13 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.11
+04/07/2016 02:36:13 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.11
+04/07/2016 02:36:13 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:13 [13] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:13 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.11
+04/07/2016 02:36:13 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:13 [13] DEBUG  PostMan                       : MessageId: 8.11ConversationId: 8.11
+04/07/2016 02:36:13 [13] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:13 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:13 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":11},"MsgId":{"Pid":1,"Seq":92},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:36:13 [14] DEBUG  PostMan                       : Message ID: 1.92, ConversationId: 8.11
+04/07/2016 02:36:13 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:36:13 [14] DEBUG  Dispatcher                    : MessageId: 1.92ConversationId: 8.11
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:13 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:14 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:15 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:15 [14] DEBUG  PostMan                       : {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":90},"MsgId":{"Pid":1,"Seq":90}}
+04/07/2016 02:36:15 [14] DEBUG  PostMan                       : Message ID: 1.90, ConversationId: 1.90
+04/07/2016 02:36:15 [14] DEBUG  Dispatcher                    : Received (Messages.RequestMessages.AliveRequest)
+04/07/2016 02:36:15 [14] DEBUG  Dispatcher                    : MessageId: 1.90ConversationId: 1.90
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:15 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:16 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:17 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [13] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:36:18 [13] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:18 [13] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:18 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:18 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.12
+04/07/2016 02:36:18 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.12
+04/07/2016 02:36:18 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:18 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:18 [15] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.12
+04/07/2016 02:36:18 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:18 [15] DEBUG  PostMan                       : MessageId: 8.12ConversationId: 8.12
+04/07/2016 02:36:18 [15] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:18 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:18 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":12},"MsgId":{"Pid":1,"Seq":93},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:36:18 [14] DEBUG  PostMan                       : Message ID: 1.93, ConversationId: 8.12
+04/07/2016 02:36:18 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:36:18 [14] DEBUG  Dispatcher                    : MessageId: 1.93ConversationId: 8.12
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:18 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:19 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:20 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:21 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:22 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:23 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:36:23 [15] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:23 [15] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:23 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:23 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.13
+04/07/2016 02:36:23 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.13
+04/07/2016 02:36:23 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:23 [13] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:23 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.13
+04/07/2016 02:36:23 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:23 [13] DEBUG  PostMan                       : MessageId: 8.13ConversationId: 8.13
+04/07/2016 02:36:23 [13] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:23 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:23 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:23 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":13},"MsgId":{"Pid":1,"Seq":94},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:23 [14] DEBUG  PostMan                       : Message ID: 1.94, ConversationId: 8.13
+04/07/2016 02:36:23 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:36:23 [14] DEBUG  Dispatcher                    : MessageId: 1.94ConversationId: 8.13
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:23 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:24 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:25 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:25 [14] DEBUG  PostMan                       : {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":90},"MsgId":{"Pid":1,"Seq":90}}
+04/07/2016 02:36:25 [14] DEBUG  PostMan                       : Message ID: 1.90, ConversationId: 1.90
+04/07/2016 02:36:25 [14] DEBUG  Dispatcher                    : Received (Messages.RequestMessages.AliveRequest)
+04/07/2016 02:36:25 [14] DEBUG  Dispatcher                    : MessageId: 1.90ConversationId: 1.90
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:25 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:26 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:27 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:28 [13] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:36:28 [13] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:28 [13] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:28 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:28 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.14
+04/07/2016 02:36:28 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.14
+04/07/2016 02:36:28 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:28 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:28 [15] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.14
+04/07/2016 02:36:28 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:28 [15] DEBUG  PostMan                       : MessageId: 8.14ConversationId: 8.14
+04/07/2016 02:36:28 [15] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:28 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:28 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:28 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":14},"MsgId":{"Pid":1,"Seq":95},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:36:28 [14] DEBUG  PostMan                       : Message ID: 1.95, ConversationId: 8.14
+04/07/2016 02:36:28 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:36:28 [14] DEBUG  Dispatcher                    : MessageId: 1.95ConversationId: 8.14
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:28 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:29 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:30 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:31 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:32 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:33 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:36:33 [15] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:33 [15] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:33 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:33 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.15
+04/07/2016 02:36:33 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.15
+04/07/2016 02:36:33 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:33 [13] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:33 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.15
+04/07/2016 02:36:33 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:33 [13] DEBUG  PostMan                       : MessageId: 8.15ConversationId: 8.15
+04/07/2016 02:36:33 [13] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:33 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:33 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:33 [14] DEBUG  PostMan                       : {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":8,"Seq":15},"MsgId":{"Pid":1,"Seq":96},"Note":null,"Success":true,"GameInfo":[]}
+04/07/2016 02:36:33 [14] DEBUG  PostMan                       : Message ID: 1.96, ConversationId: 8.15
+04/07/2016 02:36:33 [14] DEBUG  Dispatcher                    : Received (Messages.ReplyMessages.GameListReply)
+04/07/2016 02:36:33 [14] DEBUG  Dispatcher                    : MessageId: 1.96ConversationId: 8.15
+04/07/2016 02:36:33 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:34 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [14] DEBUG  PostMan                       : Message Received!
+04/07/2016 02:36:35 [14] DEBUG  PostMan                       : Raw Message: 
+04/07/2016 02:36:35 [14] DEBUG  PostMan                       : {"__type":"DeadProcessNotification:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":97},"MsgId":{"Pid":1,"Seq":97},"ProcessId":8}
+04/07/2016 02:36:35 [14] DEBUG  PostMan                       : Message ID: 1.97, ConversationId: 1.97
+04/07/2016 02:36:35 [14] DEBUG  Dispatcher                    : Received (Messages.RequestMessages.DeadProcessNotification)
+04/07/2016 02:36:35 [14] DEBUG  Dispatcher                    : MessageId: 1.97ConversationId: 1.97
+04/07/2016 02:36:35 [14] DEBUG  Dispatcher                    : Conversation  with id= 1.97 does not exist, trying to create new conversation.
+04/07/2016 02:36:35 [14] ERROR  Dispatcher                    : New conversation returned from factory is Null!
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:35 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:36 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:37 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:38 [13] DEBUG  GameListConversation          : Received a game list reply message.
+04/07/2016 02:36:38 [13] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:38 [13] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:38 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:38 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:38 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.16
+04/07/2016 02:36:38 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.16
+04/07/2016 02:36:38 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:38 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:38 [15] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.16
+04/07/2016 02:36:38 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:38 [15] DEBUG  PostMan                       : MessageId: 8.16ConversationId: 8.16
+04/07/2016 02:36:38 [15] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:39 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:40 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:41 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:42 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:43 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:44 [15] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:44 [15] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:44 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:45 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.17
+04/07/2016 02:36:45 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.17
+04/07/2016 02:36:45 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:45 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:45 [16] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.17
+04/07/2016 02:36:45 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:45 [16] DEBUG  PostMan                       : MessageId: 8.17ConversationId: 8.17
+04/07/2016 02:36:45 [16] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:45 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:46 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:47 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:48 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:49 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:50 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [16] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:51 [16] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:51 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:51 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.18
+04/07/2016 02:36:51 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.18
+04/07/2016 02:36:51 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:51 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:51 [15] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.18
+04/07/2016 02:36:51 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:51 [15] DEBUG  PostMan                       : MessageId: 8.18ConversationId: 8.18
+04/07/2016 02:36:51 [15] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:51 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:52 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:53 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:54 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:55 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:56 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [15] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/07/2016 02:36:57 [15] INFO   BackgroundThread              : Stopping 
+04/07/2016 02:36:57 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/07/2016 02:36:57 [12] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 8.19
+04/07/2016 02:36:57 [12] DEBUG  Dispatcher                    :       New Queue ID: 8.19
+04/07/2016 02:36:57 [12] INFO   BackgroundThread              : Starting 
+04/07/2016 02:36:57 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/07/2016 02:36:57 [16] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 8.19
+04/07/2016 02:36:57 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest)
+04/07/2016 02:36:57 [16] DEBUG  PostMan                       : MessageId: 8.19ConversationId: 8.19
+04/07/2016 02:36:57 [16] DEBUG  PostMan                       : Message Delivered
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:57 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:58 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:36:59 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:00 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:01 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/07/2016 02:37:02 [12] DEBUG  PlayerProcess                 : In Process JoinGame function.

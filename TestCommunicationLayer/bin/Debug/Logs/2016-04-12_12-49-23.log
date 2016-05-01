@@ -1,0 +1,183 @@
+04/12/2016 12:49:23 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 12:49:23 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 12:49:23 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 12:49:23 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 12:49:23 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:23 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:23 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.ReadyToStart, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10001
+JSON: {"__type":"ReadyToStart:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"GameId":8}
+04/12/2016 12:49:23 [10] DEBUG  PostMan                       : Message Delivered
+04/12/2016 12:49:23 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:23 [ 9] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.ReadyToStart, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"ReadyToStart:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"GameId":8}
+04/12/2016 12:49:23 [10] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.ReadyToStart)
+04/12/2016 12:49:23 [10] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 0.1ConversationId: 0.1
+04/12/2016 12:49:23 [10] DEBUG  Dispatcher                    : Conversation  with id= 0.1 does not exist, trying to create new conversation.
+04/12/2016 12:49:23 [10] DEBUG  ConversationFactory           : Creating Conversation of type GameStartConversation
+04/12/2016 12:49:23 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameStartConversation, 0.1
+04/12/2016 12:49:23 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/12/2016 12:49:23 [10] DEBUG  Dispatcher                    : Successsfully queued a new message of type ReadyToStart, for conversation: 0.1
+04/12/2016 12:49:23 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:49:23 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message available!
+04/12/2016 12:49:23 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message available!
+04/12/2016 12:49:23 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message available!
+04/12/2016 12:49:23 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Envelope is valid
+04/12/2016 12:49:23 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Received Message is valid
+04/12/2016 12:49:23 [10] DEBUG  GameStartConversation         : Responding to Game Start Request
+04/12/2016 12:49:23 [10] DEBUG  ResponseConversation          : GameStartConversation, ConversationID: 0.1: Conversation Id  for Response conversation: 0.1
+04/12/2016 12:49:23 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Setting Message IDs
+04/12/2016 12:49:23 [10] ERROR  Conversation                  : GameStartConversation, ConversationID: 0.1: Envelope is NOT valid
+04/12/2016 12:49:23 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:23 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:24 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:25 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:26 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:27 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:28 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:29 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:30 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:31 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:32 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:33 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [10] ERROR  Conversation                  : GameStartConversation, ConversationID: 0.1: Conversation Failed
+04/12/2016 12:49:34 [10] ERROR  Conversation                  : GameStartConversation, ConversationID: 0.1: Conversation Ending
+04/12/2016 12:49:34 [10] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:49:34 [10] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:49:34 [10] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:34 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:35 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:36 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:37 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:38 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:38 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:38 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:38 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:38 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:38 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:49:38 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------

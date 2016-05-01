@@ -1,0 +1,7 @@
+04/09/2016 10:55:22 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/09/2016 10:55:22 [ 6] INFO   BackgroundThread              : Starting 
+04/09/2016 10:55:22 [ 8] INFO   BackgroundThread              : Starting 
+04/09/2016 10:55:22 [ 8] DEBUG  PlayerProcess                 : In Process Login function.
+04/09/2016 10:55:22 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.2
+04/09/2016 10:55:22 [ 8] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/09/2016 10:55:22 [ 8] DEBUG  LoginConversation             : Creating login request. 

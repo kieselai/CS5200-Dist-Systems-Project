@@ -1,0 +1,274 @@
+04/12/2016 05:38:14 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:14 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:14 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:14 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:14 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:14 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:14 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:14 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 8] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10004
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Note":"Test1: postman1 to postman2","Success":false}
+04/12/2016 05:38:15 [ 8] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:15 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Note":"Test1: postman1 to postman2","Success":false}
+04/12/2016 05:38:15 [ 6] DEBUG  DummyGame                     : Message is valid
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 6] DEBUG  DummyGame                     : Player[1], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:38:15 PM
+04/12/2016 05:38:15 [ 6] DEBUG  DummyGame                     : Attempting to send message of type AliveRequest
+04/12/2016 05:38:15 [ 6] DEBUG  DummyGame                     : Player[1], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:38:15 PM
+04/12/2016 05:38:15 [ 6] DEBUG  DummyGame                     : Expecting to receive message of type Reply
+04/12/2016 05:38:15 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:15 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:15 [ 8] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 05:38:15 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.2, ConversationID: 1.2)
+Endpoint: 127.0.0.1:10010
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":2},"MsgId":{"Pid":1,"Seq":2}}
+04/12/2016 05:38:15 [ 8] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 05:38:15 [ 9] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:15 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 1.3
+04/12/2016 05:38:15 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.2, ConversationID: 1.2)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":2},"MsgId":{"Pid":1,"Seq":2}}
+04/12/2016 05:38:15 [ 8] DEBUG  Dispatcher                    :       New Queue ID: 1.3
+04/12/2016 05:38:15 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:15 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/12/2016 05:38:15 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.2ConversationId: 1.2
+04/12/2016 05:38:15 [ 9] DEBUG  Dispatcher                    : Conversation  with id= 1.2 does not exist, trying to create new conversation.
+04/12/2016 05:38:15 [ 9] DEBUG  ConversationFactory           : Creating Conversation of type AliveConversation
+04/12/2016 05:38:15 [ 9] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.2
+04/12/2016 05:38:15 [ 9] DEBUG  Dispatcher                    :       New Queue ID: 1.2
+04/12/2016 05:38:15 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.2
+04/12/2016 05:38:15 [ 9] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:15 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.2: Message available!
+04/12/2016 05:38:15 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.2: Message available!
+04/12/2016 05:38:15 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.2: Message available!
+04/12/2016 05:38:15 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.2: Received Message is valid
+04/12/2016 05:38:15 [12] DEBUG  AliveConversation             : Creating Alive Response
+04/12/2016 05:38:15 [12] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 1.2: Conversation Id  for Response conversation: 1.2
+04/12/2016 05:38:15 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.2: Setting Message IDs
+04/12/2016 05:38:15 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.2: Conversation is initiating send.
+04/12/2016 05:38:15 [12] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 1.4, ConversationID: 1.2)
+Endpoint: 127.0.0.1:10007
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":2},"MsgId":{"Pid":1,"Seq":4},"Note":"I'm Alive","Success":true}
+04/12/2016 05:38:15 [12] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:15 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.2: Send succeeded.
+04/12/2016 05:38:15 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 1.4, ConversationID: 1.2)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":2},"MsgId":{"Pid":1,"Seq":4},"Note":"I'm Alive","Success":true}
+04/12/2016 05:38:15 [ 6] DEBUG  DummyGame                     : Message is valid
+04/12/2016 05:38:15 [ 6] INFO   BackgroundThread              : Stopping 
+04/12/2016 05:38:15 [ 6] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:15 [ 6] DEBUG  DummyGame                     : Player[2], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:38:15 PM
+04/12/2016 05:38:15 [ 6] DEBUG  DummyGame                     : Expecting to receive message of type LoginRequest
+04/12/2016 05:38:15 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:15 [ 9] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:15 [ 9] DEBUG  PlayerProcess                 : In Process Login function.
+04/12/2016 05:38:15 [ 9] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/12/2016 05:38:15 [ 9] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 1.5
+04/12/2016 05:38:15 [ 9] DEBUG  Dispatcher                    :       New Queue ID: 1.5
+04/12/2016 05:38:15 [ 9] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:16 [10] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 05:38:16 [10] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 1.3: Conversation Id  for Initiated conversation: 1.3
+04/12/2016 05:38:16 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Setting Message IDs
+04/12/2016 05:38:16 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Conversation is initiating send.
+04/12/2016 05:38:16 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 1.3, ConversationID: 1.3)
+Endpoint: 127.0.0.1:10007
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":3},"MsgId":{"Pid":1,"Seq":3},"StatusFilter":4}
+04/12/2016 05:38:16 [14] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 05:38:16 [10] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:16 [14] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 1.5: Conversation Id  for Initiated conversation: 1.5
+04/12/2016 05:38:16 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Setting Message IDs
+04/12/2016 05:38:16 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Conversation is initiating send.
+04/12/2016 05:38:16 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Send succeeded.
+04/12/2016 05:38:16 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.5, ConversationID: 1.5)
+Endpoint: 127.0.0.1:10015
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":5},"MsgId":{"Pid":1,"Seq":5},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:38:16 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:16 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Send succeeded.
+04/12/2016 05:38:16 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.5, ConversationID: 1.5)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":5},"MsgId":{"Pid":1,"Seq":5},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:38:16 [ 6] DEBUG  DummyGame                     : Message is valid
+04/12/2016 05:38:16 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:16 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:16 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:16 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:16 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:16 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:16 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:16 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:16 [ 6] DEBUG  DummyGame                     : Player[2], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:38:16 PM
+04/12/2016 05:38:16 [ 6] DEBUG  DummyGame                     : Expecting to receive message of type LoginRequest
+04/12/2016 05:38:16 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:16 [15] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:16 [15] DEBUG  PlayerProcess                 : In Process Login function.
+04/12/2016 05:38:16 [15] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/12/2016 05:38:16 [15] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 1.6
+04/12/2016 05:38:16 [15] DEBUG  Dispatcher                    :       New Queue ID: 1.6
+04/12/2016 05:38:16 [15] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:18 [17] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 05:38:18 [17] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 1.6: Conversation Id  for Initiated conversation: 1.6
+04/12/2016 05:38:18 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Setting Message IDs
+04/12/2016 05:38:18 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Conversation is initiating send.
+04/12/2016 05:38:18 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.6, ConversationID: 1.6)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":6},"MsgId":{"Pid":1,"Seq":6},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:38:18 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:18 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Send succeeded.
+04/12/2016 05:38:18 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.6, ConversationID: 1.6)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":6},"MsgId":{"Pid":1,"Seq":6},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:38:18 [ 6] DEBUG  DummyGame                     : Message is valid
+04/12/2016 05:38:18 [ 6] DEBUG  DummyGame                     : Player[2], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:38:18 PM
+04/12/2016 05:38:18 [ 6] DEBUG  DummyGame                     : Attempting to send message of type LoginReply
+04/12/2016 05:38:19 [18] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.7, ConversationID: 1.6)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":6},"MsgId":{"Pid":1,"Seq":7},"Note":null,"Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":10005},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10004},"Label":null,"ProcessId":1,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":10006}}
+04/12/2016 05:38:19 [18] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:21 [10] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 05:38:21 [10] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 1.3: Conversation Id  for Initiated conversation: 1.3
+04/12/2016 05:38:21 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Setting Message IDs
+04/12/2016 05:38:21 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Conversation is initiating send.
+04/12/2016 05:38:21 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 1.3, ConversationID: 1.3)
+Endpoint: 127.0.0.1:10007
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":3},"MsgId":{"Pid":1,"Seq":3},"StatusFilter":4}
+04/12/2016 05:38:21 [14] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 05:38:21 [14] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 1.5: Conversation Id  for Initiated conversation: 1.5
+04/12/2016 05:38:21 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Setting Message IDs
+04/12/2016 05:38:21 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Conversation is initiating send.
+04/12/2016 05:38:21 [10] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:21 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Send succeeded.
+04/12/2016 05:38:21 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.5, ConversationID: 1.5)
+Endpoint: 127.0.0.1:10015
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":5},"MsgId":{"Pid":1,"Seq":5},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:38:21 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:21 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Send succeeded.
+04/12/2016 05:38:24 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:24 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:24 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:24 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:24 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:24 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:24 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:24 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:24 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:24 [18] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:24 [18] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 05:38:24 [18] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 05:38:24 [ 6] DEBUG  DummyGame                     : Player[3], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:38:24 PM
+04/12/2016 05:38:24 [ 6] DEBUG  DummyGame                     : Expecting to receive message of type GameListRequest
+04/12/2016 05:38:24 [18] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 1.8
+04/12/2016 05:38:24 [18] DEBUG  Dispatcher                    :       New Queue ID: 1.8
+04/12/2016 05:38:24 [18] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:24 [17] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 05:38:24 [17] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 1.6: Conversation Id  for Initiated conversation: 1.6
+04/12/2016 05:38:24 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Setting Message IDs
+04/12/2016 05:38:24 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Conversation is initiating send.
+04/12/2016 05:38:24 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.6, ConversationID: 1.6)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":6},"MsgId":{"Pid":1,"Seq":6},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:38:24 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:24 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Send succeeded.
+04/12/2016 05:38:26 [10] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 05:38:26 [14] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 05:38:26 [10] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 1.3: Conversation Id  for Initiated conversation: 1.3
+04/12/2016 05:38:26 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Setting Message IDs
+04/12/2016 05:38:26 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Conversation is initiating send.
+04/12/2016 05:38:26 [14] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 1.5: Conversation Id  for Initiated conversation: 1.5
+04/12/2016 05:38:26 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Setting Message IDs
+04/12/2016 05:38:26 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Conversation is initiating send.
+04/12/2016 05:38:26 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 1.3, ConversationID: 1.3)
+Endpoint: 127.0.0.1:10007
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":3},"MsgId":{"Pid":1,"Seq":3},"StatusFilter":4}
+04/12/2016 05:38:26 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.5, ConversationID: 1.5)
+Endpoint: 127.0.0.1:10015
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":5},"MsgId":{"Pid":1,"Seq":5},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:38:26 [10] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:26 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.3: Send succeeded.
+04/12/2016 05:38:26 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:26 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.5: Send succeeded.
+04/12/2016 05:38:27 [20] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 05:38:27 [20] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 1.8: Conversation Id  for Initiated conversation: 1.8
+04/12/2016 05:38:27 [20] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.8: Setting Message IDs
+04/12/2016 05:38:27 [20] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.8: Conversation is initiating send.
+04/12/2016 05:38:27 [20] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 1.8, ConversationID: 1.8)
+Endpoint: 127.0.0.1:10011
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":8},"MsgId":{"Pid":1,"Seq":8},"StatusFilter":4}
+04/12/2016 05:38:27 [20] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:27 [20] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.8: Send succeeded.
+04/12/2016 05:38:27 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.GameListRequest, MessageID: 1.8, ConversationID: 1.8)
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":8},"MsgId":{"Pid":1,"Seq":8},"StatusFilter":4}
+04/12/2016 05:38:27 [ 6] DEBUG  DummyGame                     : Message is valid
+04/12/2016 05:38:27 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:27 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:27 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:27 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:27 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:27 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:27 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:27 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:27 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:27 [ 6] DEBUG  DummyGame                     : Player[3], EP: CommunicationLayer.LocalEndPoint, Time: Tuesday, 4, 12, 16 5:38:27 PM
+04/12/2016 05:38:27 [21] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:27 [21] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 05:38:27 [21] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 05:38:27 [21] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 1.9
+04/12/2016 05:38:27 [21] DEBUG  Dispatcher                    :       New Queue ID: 1.9
+04/12/2016 05:38:27 [21] INFO   BackgroundThread              : Starting 
+04/12/2016 05:38:27 [ 6] DEBUG  DummyGame                     : Expecting to receive message of type GameListRequest
+04/12/2016 05:38:29 [17] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 05:38:29 [17] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 1.6: Conversation Id  for Initiated conversation: 1.6
+04/12/2016 05:38:29 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Setting Message IDs
+04/12/2016 05:38:29 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Conversation is initiating send.
+04/12/2016 05:38:29 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 1.6, ConversationID: 1.6)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":6},"MsgId":{"Pid":1,"Seq":6},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/12/2016 05:38:29 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:29 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 1.6: Send succeeded.
+04/12/2016 05:38:30 [23] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 05:38:30 [23] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 1.9: Conversation Id  for Initiated conversation: 1.9
+04/12/2016 05:38:30 [23] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.9: Setting Message IDs
+04/12/2016 05:38:30 [23] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.9: Conversation is initiating send.
+04/12/2016 05:38:30 [23] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 1.9, ConversationID: 1.9)
+Endpoint: 127.0.0.1:10003
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":9},"MsgId":{"Pid":1,"Seq":9},"StatusFilter":4}
+04/12/2016 05:38:30 [23] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:30 [23] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.9: Send succeeded.
+04/12/2016 05:38:30 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.GameListRequest, MessageID: 1.9, ConversationID: 1.9)
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":9},"MsgId":{"Pid":1,"Seq":9},"StatusFilter":4}
+04/12/2016 05:38:30 [ 6] DEBUG  DummyGame                     : Message is valid
+04/12/2016 05:38:30 [24] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.10, ConversationID: 1.9)
+Endpoint: 127.0.0.1:10005
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":9},"MsgId":{"Pid":1,"Seq":10},"Note":"Test","Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":true,"HitPoints":10,"LifePoints":12,"ProcessId":7,"Type":3}],"GameId":77,"GameManagerId":1,"Label":"TestGame","MaxPlayers":3,"MinPlayers":3,"StartingPlayers":[1,3],"Status":4,"Winners":null}]}
+04/12/2016 05:38:30 [24] DEBUG  PostMan                       : Message Delivered
+04/12/2016 05:38:30 [22] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.10, ConversationID: 1.9)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":9},"MsgId":{"Pid":1,"Seq":10},"Note":"Test","Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":true,"HitPoints":10,"LifePoints":12,"ProcessId":7,"Type":3}],"GameId":77,"GameManagerId":1,"Label":"TestGame","MaxPlayers":3,"MinPlayers":3,"StartingPlayers":[1,3],"Status":4,"Winners":null}]}
+04/12/2016 05:38:30 [24] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 05:38:30 [24] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.10ConversationId: 1.9
+04/12/2016 05:38:30 [24] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 1.9
+04/12/2016 05:38:30 [23] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.9: Message available!
+04/12/2016 05:38:30 [23] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.9: Message available!
+04/12/2016 05:38:30 [23] DEBUG  Conversation                  : GameListConversation, ConversationID: 1.9: Received Message is valid
+04/12/2016 05:38:30 [23] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 05:38:30 [23] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 05:38:30 [23] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 05:38:30 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:30 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:30 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:30 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:30 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:30 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 05:38:30 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 05:38:30 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.

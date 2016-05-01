@@ -1,0 +1,554 @@
+04/12/2016 12:02:50 [ 8] DEBUG  PlayerConnection              : Using Local Settings.
+04/12/2016 12:02:50 [ 8] DEBUG  PlayerConnection              : Starting Application. 
+04/12/2016 12:02:50 [ 8] DEBUG  PlayerConnection              : Initializing Subsystem
+04/12/2016 12:02:50 [ 8] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 12:02:50 [ 8] DEBUG  PlayerConnection              : Initializing Player
+04/12/2016 12:02:50 [ 8] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 12:02:50 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 12:02:50 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:02:50 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:02:50 [10] DEBUG  PlayerProcess                 : In Process Login function.
+04/12/2016 12:02:50 [10] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/12/2016 12:02:50 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/12/2016 12:02:50 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/12/2016 12:02:50 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:02:51 [11] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 12:02:51 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/12/2016 12:02:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/12/2016 12:02:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/12/2016 12:02:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/12/2016 12:02:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/12/2016 12:02:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/12/2016 12:02:51 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":"The Instructor","ProcessType":3,"PublicKey":null}
+04/12/2016 12:02:51 [11] DEBUG  PostMan                       : Message Delivered
+04/12/2016 12:02:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/12/2016 12:02:51 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.148, ConversationID: 0.1)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":1,"Seq":148},"Note":"Logged in","Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":12003},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10000},"Label":"The Instructor","ProcessId":9,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":12002}}
+04/12/2016 12:02:51 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/12/2016 12:02:51 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.148ConversationId: 0.1
+04/12/2016 12:02:51 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.1
+04/12/2016 12:02:51 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message available!
+04/12/2016 12:02:52 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message available!
+04/12/2016 12:02:52 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/12/2016 12:02:52 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/12/2016 12:02:52 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/12/2016 12:02:52 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Received Message is valid
+04/12/2016 12:02:52 [11] DEBUG  LoginConversation             : Received a login reply message.
+04/12/2016 12:02:52 [11] DEBUG  LoginConversation             : Proxy endpoint is 127.0.0.1:12003
+04/12/2016 12:02:52 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 12:02:52 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 12:02:52 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:02:52 [10] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 12:02:52 [10] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 12:02:52 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 9.2
+04/12/2016 12:02:52 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.2
+04/12/2016 12:02:52 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:02:53 [11] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 12:02:53 [11] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 9.2: Conversation Id  for Initiated conversation: 9.2
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Setting Message IDs
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Message has IDs
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Message is valid
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Envelope is valid
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Conversation is initiating send.
+04/12/2016 12:02:53 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 9.2, ConversationID: 9.2)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":9,"Seq":2},"MsgId":{"Pid":9,"Seq":2},"StatusFilter":4}
+04/12/2016 12:02:53 [11] DEBUG  PostMan                       : Message Delivered
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Send succeeded.
+04/12/2016 12:02:53 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.149, ConversationID: 9.2)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":9,"Seq":2},"MsgId":{"Pid":1,"Seq":149},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 12:02:53 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 12:02:53 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.149ConversationId: 9.2
+04/12/2016 12:02:53 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 9.2
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Message available!
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Message available!
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Message has IDs
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Message is valid
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Envelope is valid
+04/12/2016 12:02:53 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 9.2: Received Message is valid
+04/12/2016 12:02:53 [11] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 12:02:53 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 12:02:53 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 12:03:27 [12] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.157, ConversationID: 1.157)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":157},"MsgId":{"Pid":1,"Seq":157}}
+04/12/2016 12:03:27 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:27 [16] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/12/2016 12:03:33 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:33 [16] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.157ConversationId: 1.157
+04/12/2016 12:03:33 [16] DEBUG  Dispatcher                    : Conversation  with id= 1.157 does not exist, trying to create new conversation.
+04/12/2016 12:03:33 [16] DEBUG  ConversationFactory           : Creating Conversation of type AliveConversation
+04/12/2016 12:03:33 [16] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.157
+04/12/2016 12:03:33 [16] DEBUG  Dispatcher                    :       New Queue ID: 1.157
+04/12/2016 12:03:33 [16] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.157
+04/12/2016 12:03:33 [16] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:33 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Message available!
+04/12/2016 12:03:33 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Message available!
+04/12/2016 12:03:37 [12] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.157, ConversationID: 1.157)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":157},"MsgId":{"Pid":1,"Seq":157}}
+04/12/2016 12:03:37 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Message available!
+04/12/2016 12:03:41 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:41 [16] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/12/2016 12:03:41 [16] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.157ConversationId: 1.157
+04/12/2016 12:03:41 [16] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.157
+04/12/2016 12:03:41 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Message has IDs
+04/12/2016 12:03:41 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Message is valid
+04/12/2016 12:03:41 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Envelope is valid
+04/12/2016 12:03:43 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.3
+04/12/2016 12:03:43 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Received Message is valid
+04/12/2016 12:03:43 [17] DEBUG  AliveConversation             : Creating Alive Response
+04/12/2016 12:03:43 [17] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 1.157: Conversation Id  for Response conversation: 1.157
+04/12/2016 12:03:43 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Setting Message IDs
+04/12/2016 12:03:43 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Message has IDs
+04/12/2016 12:03:43 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.3
+04/12/2016 12:03:43 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:43 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Message is valid
+04/12/2016 12:03:43 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Envelope is valid
+04/12/2016 12:03:43 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Conversation is initiating send.
+04/12/2016 12:03:43 [17] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 9.4, ConversationID: 1.157)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":157},"MsgId":{"Pid":9,"Seq":4},"Note":"I'm Alive","Success":true}
+04/12/2016 12:03:43 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 12:03:43 [17] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.157: Send succeeded.
+04/12/2016 12:03:44 [16] DEBUG  JoinGameConversation          : Queuing join game request. 
+04/12/2016 12:03:44 [16] DEBUG  JoinGameConversation          : Requesting GameId: 3
+04/12/2016 12:03:44 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.3: No games available
+04/12/2016 12:03:44 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.3: Conversation Failed
+04/12/2016 12:03:44 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.3: Conversation Ending
+04/12/2016 12:03:44 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:44 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:44 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:44 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.3: Conversation Failed
+04/12/2016 12:03:44 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.3: Conversation Ending
+04/12/2016 12:03:44 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:44 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:44 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:45 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:45 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:45 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:45 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.5
+04/12/2016 12:03:45 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.5
+04/12/2016 12:03:45 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:46 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.5: No games available
+04/12/2016 12:03:46 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.5: Conversation Failed
+04/12/2016 12:03:46 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.5: Conversation Ending
+04/12/2016 12:03:46 [20] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:46 [20] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:46 [20] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:46 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.5: Conversation Failed
+04/12/2016 12:03:46 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.5: Conversation Ending
+04/12/2016 12:03:46 [20] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:46 [20] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:46 [20] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:46 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:46 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:46 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:46 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.6
+04/12/2016 12:03:46 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.6
+04/12/2016 12:03:46 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:47 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.6: No games available
+04/12/2016 12:03:47 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.6: Conversation Failed
+04/12/2016 12:03:47 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.6: Conversation Ending
+04/12/2016 12:03:47 [15] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:47 [15] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:47 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:47 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.6: Conversation Failed
+04/12/2016 12:03:47 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.6: Conversation Ending
+04/12/2016 12:03:47 [15] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:47 [15] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:47 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:47 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:47 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:47 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:47 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.7
+04/12/2016 12:03:47 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.7
+04/12/2016 12:03:47 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:49 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.7: No games available
+04/12/2016 12:03:49 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.7: Conversation Failed
+04/12/2016 12:03:49 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.7: Conversation Ending
+04/12/2016 12:03:49 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:49 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:49 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:49 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.7: Conversation Failed
+04/12/2016 12:03:49 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.7: Conversation Ending
+04/12/2016 12:03:49 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:49 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:49 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:49 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:49 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:49 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:49 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.8
+04/12/2016 12:03:49 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.8
+04/12/2016 12:03:49 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:50 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.8: No games available
+04/12/2016 12:03:50 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.8: Conversation Failed
+04/12/2016 12:03:50 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.8: Conversation Ending
+04/12/2016 12:03:50 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:50 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:50 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:50 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.8: Conversation Failed
+04/12/2016 12:03:50 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.8: Conversation Ending
+04/12/2016 12:03:50 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:50 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:50 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:50 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:50 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:50 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:50 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.9
+04/12/2016 12:03:50 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.9
+04/12/2016 12:03:50 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:51 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.9: No games available
+04/12/2016 12:03:51 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.9: Conversation Failed
+04/12/2016 12:03:51 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.9: Conversation Ending
+04/12/2016 12:03:51 [20] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:51 [20] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:51 [20] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:51 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.9: Conversation Failed
+04/12/2016 12:03:51 [20] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.9: Conversation Ending
+04/12/2016 12:03:51 [20] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:51 [20] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:51 [20] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:51 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:51 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:51 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:51 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.10
+04/12/2016 12:03:51 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.10
+04/12/2016 12:03:51 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:53 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.10: No games available
+04/12/2016 12:03:53 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.10: Conversation Failed
+04/12/2016 12:03:53 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.10: Conversation Ending
+04/12/2016 12:03:53 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:53 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:53 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:53 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.10: Conversation Failed
+04/12/2016 12:03:53 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.10: Conversation Ending
+04/12/2016 12:03:53 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:53 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:53 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:53 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:53 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:53 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:53 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.11
+04/12/2016 12:03:53 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.11
+04/12/2016 12:03:53 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:54 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.11: No games available
+04/12/2016 12:03:54 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.11: Conversation Failed
+04/12/2016 12:03:54 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.11: Conversation Ending
+04/12/2016 12:03:54 [19] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:54 [19] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:54 [19] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:54 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.11: Conversation Failed
+04/12/2016 12:03:54 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.11: Conversation Ending
+04/12/2016 12:03:54 [19] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:54 [19] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:54 [19] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:54 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:54 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:54 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:54 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.12
+04/12/2016 12:03:54 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.12
+04/12/2016 12:03:54 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:55 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.12: No games available
+04/12/2016 12:03:55 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.12: Conversation Failed
+04/12/2016 12:03:55 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.12: Conversation Ending
+04/12/2016 12:03:55 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:55 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:55 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:55 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.12: Conversation Failed
+04/12/2016 12:03:55 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.12: Conversation Ending
+04/12/2016 12:03:55 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:55 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:55 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:56 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:56 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:56 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:56 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.13
+04/12/2016 12:03:56 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.13
+04/12/2016 12:03:56 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:56 [12] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.161, ConversationID: 1.161)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":161},"MsgId":{"Pid":1,"Seq":161}}
+04/12/2016 12:03:56 [18] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/12/2016 12:03:56 [18] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.161ConversationId: 1.161
+04/12/2016 12:03:57 [18] DEBUG  Dispatcher                    : Conversation  with id= 1.161 does not exist, trying to create new conversation.
+04/12/2016 12:03:57 [18] DEBUG  ConversationFactory           : Creating Conversation of type AliveConversation
+04/12/2016 12:03:57 [18] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.161
+04/12/2016 12:03:57 [18] DEBUG  Dispatcher                    :       New Queue ID: 1.161
+04/12/2016 12:03:57 [18] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.161
+04/12/2016 12:03:57 [18] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Message available!
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Message available!
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Message available!
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Message has IDs
+04/12/2016 12:03:57 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.13: No games available
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Message is valid
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Envelope is valid
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Received Message is valid
+04/12/2016 12:03:57 [20] DEBUG  AliveConversation             : Creating Alive Response
+04/12/2016 12:03:57 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.13: Conversation Failed
+04/12/2016 12:03:57 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.13: Conversation Ending
+04/12/2016 12:03:57 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:57 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:57 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:57 [20] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 1.161: Conversation Id  for Response conversation: 1.161
+04/12/2016 12:03:57 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:57 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.13: Conversation Failed
+04/12/2016 12:03:57 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.13: Conversation Ending
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Setting Message IDs
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Message has IDs
+04/12/2016 12:03:57 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:57 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Message is valid
+04/12/2016 12:03:57 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:57 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Envelope is valid
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Conversation is initiating send.
+04/12/2016 12:03:57 [20] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 9.14, ConversationID: 1.161)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":161},"MsgId":{"Pid":9,"Seq":14},"Note":"I'm Alive","Success":true}
+04/12/2016 12:03:57 [20] DEBUG  PostMan                       : Message Delivered
+04/12/2016 12:03:57 [20] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.161: Send succeeded.
+04/12/2016 12:03:57 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:57 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.15
+04/12/2016 12:03:57 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.15
+04/12/2016 12:03:57 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:03:58 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.15: No games available
+04/12/2016 12:03:59 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.15: Conversation Failed
+04/12/2016 12:03:59 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.15: Conversation Ending
+04/12/2016 12:03:59 [15] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:59 [15] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:59 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:59 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.15: Conversation Failed
+04/12/2016 12:03:59 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.15: Conversation Ending
+04/12/2016 12:03:59 [15] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:03:59 [15] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:03:59 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:03:59 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:03:59 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:03:59 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:03:59 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.16
+04/12/2016 12:03:59 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.16
+04/12/2016 12:03:59 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:00 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.16: No games available
+04/12/2016 12:04:00 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.16: Conversation Failed
+04/12/2016 12:04:00 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.16: Conversation Ending
+04/12/2016 12:04:00 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:00 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:00 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:00 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.16: Conversation Failed
+04/12/2016 12:04:00 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.16: Conversation Ending
+04/12/2016 12:04:00 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:00 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:00 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:00 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:00 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:00 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:00 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.17
+04/12/2016 12:04:00 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.17
+04/12/2016 12:04:00 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:01 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.17: No games available
+04/12/2016 12:04:01 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.17: Conversation Failed
+04/12/2016 12:04:01 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.17: Conversation Ending
+04/12/2016 12:04:01 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:01 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:01 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:01 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.17: Conversation Failed
+04/12/2016 12:04:01 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.17: Conversation Ending
+04/12/2016 12:04:01 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:01 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:01 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:01 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:01 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:01 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:01 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.18
+04/12/2016 12:04:01 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.18
+04/12/2016 12:04:01 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:03 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.18: No games available
+04/12/2016 12:04:03 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.18: Conversation Failed
+04/12/2016 12:04:03 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.18: Conversation Ending
+04/12/2016 12:04:03 [19] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:03 [19] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:03 [19] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:03 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.18: Conversation Failed
+04/12/2016 12:04:03 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.18: Conversation Ending
+04/12/2016 12:04:03 [19] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:03 [19] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:03 [19] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:03 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:03 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:03 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:03 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.19
+04/12/2016 12:04:03 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.19
+04/12/2016 12:04:03 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:04 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.19: No games available
+04/12/2016 12:04:04 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.19: Conversation Failed
+04/12/2016 12:04:04 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.19: Conversation Ending
+04/12/2016 12:04:04 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:04 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:04 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:04 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.19: Conversation Failed
+04/12/2016 12:04:04 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.19: Conversation Ending
+04/12/2016 12:04:04 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:04 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:04 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:04 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:04 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:04 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:04 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.20
+04/12/2016 12:04:04 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.20
+04/12/2016 12:04:04 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:05 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.20: No games available
+04/12/2016 12:04:05 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.20: Conversation Failed
+04/12/2016 12:04:05 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.20: Conversation Ending
+04/12/2016 12:04:05 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:05 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:05 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:05 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.20: Conversation Failed
+04/12/2016 12:04:05 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.20: Conversation Ending
+04/12/2016 12:04:05 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:05 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:05 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:06 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:06 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:06 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:06 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.21
+04/12/2016 12:04:06 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.21
+04/12/2016 12:04:06 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:07 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.21: No games available
+04/12/2016 12:04:07 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.21: Conversation Failed
+04/12/2016 12:04:07 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.21: Conversation Ending
+04/12/2016 12:04:07 [15] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:07 [15] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:07 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:07 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.21: Conversation Failed
+04/12/2016 12:04:07 [15] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.21: Conversation Ending
+04/12/2016 12:04:07 [15] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:07 [15] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:07 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:07 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:07 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:07 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:07 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.22
+04/12/2016 12:04:07 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.22
+04/12/2016 12:04:07 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:08 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.22: No games available
+04/12/2016 12:04:08 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.22: Conversation Failed
+04/12/2016 12:04:08 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.22: Conversation Ending
+04/12/2016 12:04:08 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:08 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:08 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:08 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.22: Conversation Failed
+04/12/2016 12:04:08 [18] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.22: Conversation Ending
+04/12/2016 12:04:08 [18] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:08 [18] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:08 [18] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:08 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:08 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:08 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:08 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.23
+04/12/2016 12:04:08 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.23
+04/12/2016 12:04:08 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:09 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.23: No games available
+04/12/2016 12:04:09 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.23: Conversation Failed
+04/12/2016 12:04:09 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.23: Conversation Ending
+04/12/2016 12:04:09 [19] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:09 [19] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:09 [19] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:09 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.23: Conversation Failed
+04/12/2016 12:04:10 [19] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.23: Conversation Ending
+04/12/2016 12:04:10 [19] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:10 [19] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:10 [19] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:10 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:10 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:10 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:10 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.24
+04/12/2016 12:04:10 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.24
+04/12/2016 12:04:10 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:11 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.24: No games available
+04/12/2016 12:04:11 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.24: Conversation Failed
+04/12/2016 12:04:11 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.24: Conversation Ending
+04/12/2016 12:04:11 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:11 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:11 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:11 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.24: Conversation Failed
+04/12/2016 12:04:11 [16] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.24: Conversation Ending
+04/12/2016 12:04:11 [16] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:04:11 [16] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:04:11 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:04:27 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 12:04:30 [10] DEBUG  PlayerProcess                 : In Process JoinGame function.
+04/12/2016 12:04:30 [12] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.165, ConversationID: 1.165)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":165},"MsgId":{"Pid":1,"Seq":165}}
+04/12/2016 12:04:38 [10] DEBUG  ConversationFactory           : Creating Conversation of type JoinGameConversation
+04/12/2016 12:04:38 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/12/2016 12:04:44 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.165ConversationId: 1.165
+04/12/2016 12:04:45 [14] DEBUG  Dispatcher                    : Conversation  with id= 1.165 does not exist, trying to create new conversation.
+04/12/2016 12:04:46 [14] DEBUG  ConversationFactory           : Creating Conversation of type AliveConversation
+04/12/2016 12:04:50 [14] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.165
+04/12/2016 12:04:57 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 9.25
+04/12/2016 12:04:57 [14] DEBUG  Dispatcher                    :       New Queue ID: 1.165
+04/12/2016 12:04:57 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.165
+04/12/2016 12:04:57 [14] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:57 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Message available!
+04/12/2016 12:04:57 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Message available!
+04/12/2016 12:04:57 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Message available!
+04/12/2016 12:04:57 [10] DEBUG  Dispatcher                    :       New Queue ID: 9.25
+04/12/2016 12:04:57 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 12:04:57 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Message has IDs
+04/12/2016 12:04:57 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Message is valid
+04/12/2016 12:04:57 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Envelope is valid
+04/12/2016 12:04:57 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Received Message is valid
+04/12/2016 12:04:57 [13] DEBUG  AliveConversation             : Creating Alive Response
+04/12/2016 12:05:05 [12] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.169, ConversationID: 1.169)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":169},"MsgId":{"Pid":1,"Seq":169}}
+04/12/2016 12:05:05 [13] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 1.165: Conversation Id  for Response conversation: 1.165
+04/12/2016 12:05:05 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Setting Message IDs
+04/12/2016 12:05:05 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Message has IDs
+04/12/2016 12:05:05 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Message is valid
+04/12/2016 12:05:05 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Envelope is valid
+04/12/2016 12:05:05 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Conversation is initiating send.
+04/12/2016 12:05:05 [13] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 9.26, ConversationID: 1.165)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":165},"MsgId":{"Pid":9,"Seq":26},"Note":"I'm Alive","Success":true}
+04/12/2016 12:05:05 [22] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/12/2016 12:05:05 [13] DEBUG  PostMan                       : Message Delivered
+04/12/2016 12:05:05 [13] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.165: Send succeeded.
+04/12/2016 12:05:05 [22] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.169ConversationId: 1.169
+04/12/2016 12:05:05 [22] DEBUG  Dispatcher                    : Conversation  with id= 1.169 does not exist, trying to create new conversation.
+04/12/2016 12:05:07 [22] DEBUG  ConversationFactory           : Creating Conversation of type AliveConversation
+04/12/2016 12:05:07 [22] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.169
+04/12/2016 12:05:07 [22] DEBUG  Dispatcher                    :       New Queue ID: 1.169
+04/12/2016 12:05:07 [22] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.169
+04/12/2016 12:05:07 [22] INFO   BackgroundThread              : Starting 
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Message available!
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Message available!
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Message available!
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Message has IDs
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Message is valid
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Envelope is valid
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Received Message is valid
+04/12/2016 12:05:07 [21] DEBUG  AliveConversation             : Creating Alive Response
+04/12/2016 12:05:07 [21] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 1.169: Conversation Id  for Response conversation: 1.169
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Setting Message IDs
+04/12/2016 12:05:07 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Message has IDs
+04/12/2016 12:05:08 [14] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.25: No games available
+04/12/2016 12:05:08 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Message is valid
+04/12/2016 12:05:08 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Envelope is valid
+04/12/2016 12:05:08 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Conversation is initiating send.
+04/12/2016 12:05:08 [21] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 9.27, ConversationID: 1.169)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":169},"MsgId":{"Pid":9,"Seq":27},"Note":"I'm Alive","Success":true}
+04/12/2016 12:05:08 [21] DEBUG  PostMan                       : Message Delivered
+04/12/2016 12:05:08 [21] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.169: Send succeeded.
+04/12/2016 12:05:08 [14] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.25: Conversation Failed
+04/12/2016 12:05:08 [14] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.25: Conversation Ending
+04/12/2016 12:05:08 [14] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:05:09 [14] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:05:09 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:05:09 [14] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.25: Conversation Failed
+04/12/2016 12:05:09 [14] ERROR  Conversation                  : JoinGameConversation, ConversationID: 9.25: Conversation Ending
+04/12/2016 12:05:09 [14] INFO   Conversation                  : Conversation Failed
+04/12/2016 12:05:09 [14] INFO   BackgroundThread              : Stopping 
+04/12/2016 12:05:20 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/12/2016 12:05:29 [10] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------

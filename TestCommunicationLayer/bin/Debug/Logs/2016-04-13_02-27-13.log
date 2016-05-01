@@ -1,0 +1,7 @@
+04/13/2016 02:27:13 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Note":"Test1: postman1 to postman2","Success":false}
+04/13/2016 02:27:13 [ 9] DEBUG  PostMan                       : Message Delivered
+04/13/2016 02:27:13 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Note":"Test1: postman1 to postman2","Success":false}
+04/13/2016 02:27:13 [ 6] DEBUG  DummyGame                     : Message is valid

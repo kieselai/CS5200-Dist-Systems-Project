@@ -1,0 +1,507 @@
+04/13/2016 12:08:13 [ 8] DEBUG  PlayerConnection              : Using Local Settings.
+04/13/2016 12:08:13 [ 8] DEBUG  PlayerConnection              : Starting Application. 
+04/13/2016 12:08:13 [ 8] DEBUG  PlayerConnection              : Initializing Subsystem
+04/13/2016 12:08:13 [ 8] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/13/2016 12:08:13 [ 8] DEBUG  PlayerConnection              : Initializing Player
+04/13/2016 12:08:13 [ 8] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/13/2016 12:08:13 [ 8] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:13 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:13 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:13 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:13 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/13/2016 12:08:13 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/13/2016 12:08:13 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:15 [13] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:15 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 12:08:15 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 12:08:15 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 12:08:15 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:15 [13] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:16 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/13/2016 12:08:22 [13] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:22 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 12:08:22 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 12:08:22 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 12:08:22 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:22 [13] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:22 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/13/2016 12:08:28 [13] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:28 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 12:08:28 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 12:08:28 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 12:08:28 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:28 [13] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:28 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/13/2016 12:08:28 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.1, ConversationID: 0.1)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":1,"Seq":1},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:29 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:29 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.1ConversationId: 0.1
+04/13/2016 12:08:29 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.1
+04/13/2016 12:08:29 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message available!
+04/13/2016 12:08:29 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message available!
+04/13/2016 12:08:29 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Received Message is valid
+04/13/2016 12:08:29 [13] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:29 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.1: LoginReply.Success was false
+04/13/2016 12:08:29 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation Failed
+04/13/2016 12:08:29 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation Ending
+04/13/2016 12:08:29 [13] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:29 [13] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:29 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:29 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation Failed
+04/13/2016 12:08:29 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation Ending
+04/13/2016 12:08:29 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:29 [13] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:29 [13] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:29 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:29 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:29 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.2
+04/13/2016 12:08:29 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/13/2016 12:08:29 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:31 [15] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:31 [15] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/13/2016 12:08:31 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/13/2016 12:08:31 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/13/2016 12:08:31 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:31 [15] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:31 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.2, ConversationID: 0.2)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":1,"Seq":2},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:31 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/13/2016 12:08:31 [17] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:31 [17] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.2ConversationId: 0.2
+04/13/2016 12:08:31 [17] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.2
+04/13/2016 12:08:31 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message available!
+04/13/2016 12:08:31 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message available!
+04/13/2016 12:08:31 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Received Message is valid
+04/13/2016 12:08:31 [15] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:32 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.2: LoginReply.Success was false
+04/13/2016 12:08:32 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation Failed
+04/13/2016 12:08:32 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation Ending
+04/13/2016 12:08:32 [15] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:32 [15] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:32 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:32 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation Failed
+04/13/2016 12:08:32 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation Ending
+04/13/2016 12:08:32 [15] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:32 [15] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:32 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:32 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:32 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:32 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.3
+04/13/2016 12:08:32 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.3
+04/13/2016 12:08:32 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:34 [13] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:34 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.3: Conversation Id  for Initiated conversation: 0.3
+04/13/2016 12:08:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Setting Message IDs
+04/13/2016 12:08:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Conversation is initiating send.
+04/13/2016 12:08:34 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.3, ConversationID: 0.3)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":3},"MsgId":{"Pid":0,"Seq":3},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:34 [13] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:34 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.3, ConversationID: 0.3)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":3},"MsgId":{"Pid":1,"Seq":3},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Send succeeded.
+04/13/2016 12:08:34 [17] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:34 [17] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.3ConversationId: 0.3
+04/13/2016 12:08:34 [17] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.3
+04/13/2016 12:08:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Message available!
+04/13/2016 12:08:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Message available!
+04/13/2016 12:08:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.3: Received Message is valid
+04/13/2016 12:08:34 [13] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:34 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.3: LoginReply.Success was false
+04/13/2016 12:08:34 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.3: Conversation Failed
+04/13/2016 12:08:34 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.3: Conversation Ending
+04/13/2016 12:08:34 [13] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:34 [13] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:34 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:35 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.3: Conversation Failed
+04/13/2016 12:08:35 [13] ERROR  Conversation                  : LoginConversation, ConversationID: 0.3: Conversation Ending
+04/13/2016 12:08:35 [13] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:35 [13] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:35 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:35 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:35 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:35 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.4
+04/13/2016 12:08:35 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.4
+04/13/2016 12:08:35 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:37 [14] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:37 [14] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.4: Conversation Id  for Initiated conversation: 0.4
+04/13/2016 12:08:37 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.4: Setting Message IDs
+04/13/2016 12:08:37 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.4: Conversation is initiating send.
+04/13/2016 12:08:37 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.4, ConversationID: 0.4)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":4},"MsgId":{"Pid":0,"Seq":4},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:37 [14] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:37 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.4, ConversationID: 0.4)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":4},"MsgId":{"Pid":1,"Seq":4},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:37 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.4: Send succeeded.
+04/13/2016 12:08:37 [16] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:37 [16] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.4ConversationId: 0.4
+04/13/2016 12:08:37 [16] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.4
+04/13/2016 12:08:37 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.4: Message available!
+04/13/2016 12:08:37 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.4: Message available!
+04/13/2016 12:08:37 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.4: Received Message is valid
+04/13/2016 12:08:37 [14] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:37 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.4: LoginReply.Success was false
+04/13/2016 12:08:37 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.4: Conversation Failed
+04/13/2016 12:08:37 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.4: Conversation Ending
+04/13/2016 12:08:37 [14] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:37 [14] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:37 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:37 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.4: Conversation Failed
+04/13/2016 12:08:37 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.4: Conversation Ending
+04/13/2016 12:08:37 [14] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:37 [14] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:37 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:37 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:38 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:38 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.5
+04/13/2016 12:08:38 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.5
+04/13/2016 12:08:38 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:40 [17] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:40 [17] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.5: Conversation Id  for Initiated conversation: 0.5
+04/13/2016 12:08:40 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.5: Setting Message IDs
+04/13/2016 12:08:40 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.5: Conversation is initiating send.
+04/13/2016 12:08:40 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.5, ConversationID: 0.5)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":5},"MsgId":{"Pid":0,"Seq":5},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:40 [17] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:40 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.5, ConversationID: 0.5)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":5},"MsgId":{"Pid":1,"Seq":5},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:40 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.5: Send succeeded.
+04/13/2016 12:08:40 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:40 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.5ConversationId: 0.5
+04/13/2016 12:08:40 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.5
+04/13/2016 12:08:40 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.5: Message available!
+04/13/2016 12:08:40 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.5: Message available!
+04/13/2016 12:08:40 [17] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.5: Received Message is valid
+04/13/2016 12:08:40 [17] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:40 [17] ERROR  Conversation                  : LoginConversation, ConversationID: 0.5: LoginReply.Success was false
+04/13/2016 12:08:40 [17] ERROR  Conversation                  : LoginConversation, ConversationID: 0.5: Conversation Failed
+04/13/2016 12:08:40 [17] ERROR  Conversation                  : LoginConversation, ConversationID: 0.5: Conversation Ending
+04/13/2016 12:08:40 [17] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:40 [17] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:40 [17] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:40 [17] ERROR  Conversation                  : LoginConversation, ConversationID: 0.5: Conversation Failed
+04/13/2016 12:08:40 [17] ERROR  Conversation                  : LoginConversation, ConversationID: 0.5: Conversation Ending
+04/13/2016 12:08:40 [17] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:40 [17] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:40 [17] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:40 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:40 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:40 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.6
+04/13/2016 12:08:40 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.6
+04/13/2016 12:08:40 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:43 [16] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:43 [16] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.6: Conversation Id  for Initiated conversation: 0.6
+04/13/2016 12:08:43 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.6: Setting Message IDs
+04/13/2016 12:08:43 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.6: Conversation is initiating send.
+04/13/2016 12:08:43 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.6, ConversationID: 0.6)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":6},"MsgId":{"Pid":0,"Seq":6},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:43 [16] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:43 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.6, ConversationID: 0.6)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":6},"MsgId":{"Pid":1,"Seq":6},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:43 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.6: Send succeeded.
+04/13/2016 12:08:43 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:43 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.6ConversationId: 0.6
+04/13/2016 12:08:43 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.6
+04/13/2016 12:08:43 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.6: Message available!
+04/13/2016 12:08:43 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.6: Message available!
+04/13/2016 12:08:43 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.6: Received Message is valid
+04/13/2016 12:08:43 [16] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:43 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.6: LoginReply.Success was false
+04/13/2016 12:08:43 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.6: Conversation Failed
+04/13/2016 12:08:43 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.6: Conversation Ending
+04/13/2016 12:08:43 [16] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:43 [16] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:43 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:43 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.6: Conversation Failed
+04/13/2016 12:08:43 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.6: Conversation Ending
+04/13/2016 12:08:43 [16] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:43 [16] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:43 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:43 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:43 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:43 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.7
+04/13/2016 12:08:43 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.7
+04/13/2016 12:08:43 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:46 [14] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:46 [14] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.7: Conversation Id  for Initiated conversation: 0.7
+04/13/2016 12:08:46 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.7: Setting Message IDs
+04/13/2016 12:08:46 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.7: Conversation is initiating send.
+04/13/2016 12:08:46 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.7, ConversationID: 0.7)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":7},"MsgId":{"Pid":0,"Seq":7},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:46 [14] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:46 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.7, ConversationID: 0.7)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":7},"MsgId":{"Pid":1,"Seq":7},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:46 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.7: Send succeeded.
+04/13/2016 12:08:46 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:46 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.7ConversationId: 0.7
+04/13/2016 12:08:46 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.7
+04/13/2016 12:08:46 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.7: Message available!
+04/13/2016 12:08:46 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.7: Message available!
+04/13/2016 12:08:46 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.7: Received Message is valid
+04/13/2016 12:08:46 [14] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:46 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.7: LoginReply.Success was false
+04/13/2016 12:08:46 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.7: Conversation Failed
+04/13/2016 12:08:46 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.7: Conversation Ending
+04/13/2016 12:08:46 [14] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:46 [14] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:46 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:46 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.7: Conversation Failed
+04/13/2016 12:08:46 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.7: Conversation Ending
+04/13/2016 12:08:46 [14] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:46 [14] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:46 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:46 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:46 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:46 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.8
+04/13/2016 12:08:46 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.8
+04/13/2016 12:08:46 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:49 [16] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:49 [16] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.8: Conversation Id  for Initiated conversation: 0.8
+04/13/2016 12:08:49 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.8: Setting Message IDs
+04/13/2016 12:08:49 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.8: Conversation is initiating send.
+04/13/2016 12:08:49 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.8, ConversationID: 0.8)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":8},"MsgId":{"Pid":0,"Seq":8},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:49 [16] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:49 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.8, ConversationID: 0.8)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":8},"MsgId":{"Pid":1,"Seq":8},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:49 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.8: Send succeeded.
+04/13/2016 12:08:49 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:49 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.8ConversationId: 0.8
+04/13/2016 12:08:49 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.8
+04/13/2016 12:08:49 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.8: Message available!
+04/13/2016 12:08:49 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.8: Message available!
+04/13/2016 12:08:49 [16] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.8: Received Message is valid
+04/13/2016 12:08:49 [16] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:49 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.8: LoginReply.Success was false
+04/13/2016 12:08:49 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.8: Conversation Failed
+04/13/2016 12:08:49 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.8: Conversation Ending
+04/13/2016 12:08:49 [16] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:49 [16] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:49 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:49 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.8: Conversation Failed
+04/13/2016 12:08:49 [16] ERROR  Conversation                  : LoginConversation, ConversationID: 0.8: Conversation Ending
+04/13/2016 12:08:49 [16] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:49 [16] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:49 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:49 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:49 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:49 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.9
+04/13/2016 12:08:49 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.9
+04/13/2016 12:08:49 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:51 [15] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:51 [15] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.9: Conversation Id  for Initiated conversation: 0.9
+04/13/2016 12:08:52 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.9: Setting Message IDs
+04/13/2016 12:08:52 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.9: Conversation is initiating send.
+04/13/2016 12:08:52 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.9, ConversationID: 0.9)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":9},"MsgId":{"Pid":0,"Seq":9},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:52 [15] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:52 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.9, ConversationID: 0.9)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":9},"MsgId":{"Pid":1,"Seq":9},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:52 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.9: Send succeeded.
+04/13/2016 12:08:52 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:52 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.9ConversationId: 0.9
+04/13/2016 12:08:52 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.9
+04/13/2016 12:08:52 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.9: Message available!
+04/13/2016 12:08:52 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.9: Message available!
+04/13/2016 12:08:52 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.9: Received Message is valid
+04/13/2016 12:08:52 [15] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:52 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.9: LoginReply.Success was false
+04/13/2016 12:08:52 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.9: Conversation Failed
+04/13/2016 12:08:52 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.9: Conversation Ending
+04/13/2016 12:08:52 [15] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:52 [15] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:52 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:52 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.9: Conversation Failed
+04/13/2016 12:08:52 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.9: Conversation Ending
+04/13/2016 12:08:52 [15] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:52 [15] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:52 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:52 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:52 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:52 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.10
+04/13/2016 12:08:52 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.10
+04/13/2016 12:08:52 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:54 [ 9] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:54 [ 9] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.10: Conversation Id  for Initiated conversation: 0.10
+04/13/2016 12:08:54 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.10: Setting Message IDs
+04/13/2016 12:08:54 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.10: Conversation is initiating send.
+04/13/2016 12:08:54 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.10, ConversationID: 0.10)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":10},"MsgId":{"Pid":0,"Seq":10},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:54 [ 9] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:54 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.10, ConversationID: 0.10)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":10},"MsgId":{"Pid":1,"Seq":10},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:54 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.10: Send succeeded.
+04/13/2016 12:08:55 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:55 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.10ConversationId: 0.10
+04/13/2016 12:08:55 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.10
+04/13/2016 12:08:55 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.10: Message available!
+04/13/2016 12:08:55 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.10: Message available!
+04/13/2016 12:08:55 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.10: Received Message is valid
+04/13/2016 12:08:55 [ 9] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:55 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.10: LoginReply.Success was false
+04/13/2016 12:08:55 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.10: Conversation Failed
+04/13/2016 12:08:55 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.10: Conversation Ending
+04/13/2016 12:08:55 [ 9] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:55 [ 9] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:55 [ 9] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:55 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.10: Conversation Failed
+04/13/2016 12:08:55 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.10: Conversation Ending
+04/13/2016 12:08:55 [ 9] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:55 [ 9] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:55 [ 9] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:55 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:55 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:55 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.11
+04/13/2016 12:08:55 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.11
+04/13/2016 12:08:55 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:08:57 [14] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:08:57 [14] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.11: Conversation Id  for Initiated conversation: 0.11
+04/13/2016 12:08:57 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.11: Setting Message IDs
+04/13/2016 12:08:57 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.11: Conversation is initiating send.
+04/13/2016 12:08:57 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.11, ConversationID: 0.11)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":11},"MsgId":{"Pid":0,"Seq":11},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:08:57 [14] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:08:57 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.11, ConversationID: 0.11)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":11},"MsgId":{"Pid":1,"Seq":11},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:08:57 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.11: Send succeeded.
+04/13/2016 12:08:58 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:08:58 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.11ConversationId: 0.11
+04/13/2016 12:08:58 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.11
+04/13/2016 12:08:58 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.11: Message available!
+04/13/2016 12:08:58 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.11: Message available!
+04/13/2016 12:08:58 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.11: Received Message is valid
+04/13/2016 12:08:58 [14] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:08:58 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.11: LoginReply.Success was false
+04/13/2016 12:08:58 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.11: Conversation Failed
+04/13/2016 12:08:58 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.11: Conversation Ending
+04/13/2016 12:08:58 [14] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:58 [14] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:58 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:58 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.11: Conversation Failed
+04/13/2016 12:08:58 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.11: Conversation Ending
+04/13/2016 12:08:58 [14] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:08:58 [14] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:08:58 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:08:58 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:08:58 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:08:58 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.12
+04/13/2016 12:08:58 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.12
+04/13/2016 12:08:58 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:09:00 [15] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:09:00 [15] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.12: Conversation Id  for Initiated conversation: 0.12
+04/13/2016 12:09:00 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.12: Setting Message IDs
+04/13/2016 12:09:00 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.12: Conversation is initiating send.
+04/13/2016 12:09:00 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.12, ConversationID: 0.12)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":12},"MsgId":{"Pid":0,"Seq":12},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:09:00 [15] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:09:00 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.12, ConversationID: 0.12)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":12},"MsgId":{"Pid":1,"Seq":12},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:09:00 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.12: Send succeeded.
+04/13/2016 12:09:00 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:09:00 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.12ConversationId: 0.12
+04/13/2016 12:09:00 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.12
+04/13/2016 12:09:01 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.12: Message available!
+04/13/2016 12:09:01 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.12: Message available!
+04/13/2016 12:09:01 [15] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.12: Received Message is valid
+04/13/2016 12:09:01 [15] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:09:01 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.12: LoginReply.Success was false
+04/13/2016 12:09:01 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.12: Conversation Failed
+04/13/2016 12:09:01 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.12: Conversation Ending
+04/13/2016 12:09:01 [15] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:09:01 [15] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:09:01 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:09:01 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.12: Conversation Failed
+04/13/2016 12:09:01 [15] ERROR  Conversation                  : LoginConversation, ConversationID: 0.12: Conversation Ending
+04/13/2016 12:09:01 [15] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:09:01 [15] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:09:01 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:09:01 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:09:01 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:09:01 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.13
+04/13/2016 12:09:01 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.13
+04/13/2016 12:09:01 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:09:03 [14] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:09:03 [14] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.13: Conversation Id  for Initiated conversation: 0.13
+04/13/2016 12:09:03 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.13: Setting Message IDs
+04/13/2016 12:09:03 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.13: Conversation is initiating send.
+04/13/2016 12:09:03 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.13, ConversationID: 0.13)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":13},"MsgId":{"Pid":0,"Seq":13},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:09:03 [14] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:09:03 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.13, ConversationID: 0.13)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":13},"MsgId":{"Pid":1,"Seq":13},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:09:03 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.13: Send succeeded.
+04/13/2016 12:09:03 [16] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:09:03 [16] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.13ConversationId: 0.13
+04/13/2016 12:09:03 [16] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.13
+04/13/2016 12:09:03 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.13: Message available!
+04/13/2016 12:09:03 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.13: Message available!
+04/13/2016 12:09:04 [14] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.13: Received Message is valid
+04/13/2016 12:09:04 [14] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:09:04 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.13: LoginReply.Success was false
+04/13/2016 12:09:04 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.13: Conversation Failed
+04/13/2016 12:09:04 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.13: Conversation Ending
+04/13/2016 12:09:04 [14] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:09:04 [14] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:09:04 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:09:04 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.13: Conversation Failed
+04/13/2016 12:09:04 [14] ERROR  Conversation                  : LoginConversation, ConversationID: 0.13: Conversation Ending
+04/13/2016 12:09:04 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:09:04 [14] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:09:04 [14] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:09:04 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:09:04 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:09:04 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.14
+04/13/2016 12:09:04 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.14
+04/13/2016 12:09:04 [11] INFO   BackgroundThread              : Starting 
+04/13/2016 12:09:06 [ 9] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 12:09:06 [ 9] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.14: Conversation Id  for Initiated conversation: 0.14
+04/13/2016 12:09:06 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.14: Setting Message IDs
+04/13/2016 12:09:06 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.14: Conversation is initiating send.
+04/13/2016 12:09:06 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.14, ConversationID: 0.14)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":14},"MsgId":{"Pid":0,"Seq":14},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/13/2016 12:09:06 [ 9] DEBUG  PostMan                       : Message Delivered
+04/13/2016 12:09:06 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.14: Send succeeded.
+04/13/2016 12:09:06 [12] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.14, ConversationID: 0.14)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":14},"MsgId":{"Pid":1,"Seq":14},"Note":"Invalid Process Information.  To register a process, it must have an end point, a label, and be either a game manager or player","Success":false,"PennyBankEndPoint":null,"PennyBankPublicKey":null,"ProcessInfo":null,"ProxyEndPoint":null}
+04/13/2016 12:09:06 [13] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/13/2016 12:09:06 [13] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.14ConversationId: 0.14
+04/13/2016 12:09:06 [13] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.14
+04/13/2016 12:09:06 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.14: Message available!
+04/13/2016 12:09:06 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.14: Message available!
+04/13/2016 12:09:06 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.14: Received Message is valid
+04/13/2016 12:09:06 [ 9] DEBUG  Conversation                  : Received a Message of type: LoginReply
+04/13/2016 12:09:06 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.14: LoginReply.Success was false
+04/13/2016 12:09:06 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.14: Conversation Failed
+04/13/2016 12:09:06 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.14: Conversation Ending
+04/13/2016 12:09:06 [ 9] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:09:06 [ 9] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:09:06 [ 9] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:09:06 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.14: Conversation Failed
+04/13/2016 12:09:06 [ 9] ERROR  Conversation                  : LoginConversation, ConversationID: 0.14: Conversation Ending
+04/13/2016 12:09:06 [ 9] INFO   Conversation                  : Conversation Failed
+04/13/2016 12:09:07 [ 9] INFO   BackgroundThread              : Stopping 
+04/13/2016 12:09:07 [ 9] DEBUG  BackgroundThread              : Leaving Stop
+04/13/2016 12:09:07 [11] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 12:09:07 [11] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 12:09:07 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.15
+04/13/2016 12:09:07 [11] DEBUG  Dispatcher                    :       New Queue ID: 0.15
+04/13/2016 12:09:07 [11] INFO   BackgroundThread              : Starting 

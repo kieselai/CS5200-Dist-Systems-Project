@@ -1,0 +1,8 @@
+04/10/2016 02:28:33 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/10/2016 02:28:33 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/10/2016 02:28:33 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: , ConversationID: )
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":null,"MsgId":null,"Note":"Test1: p1 to p2","Success":false}
+04/10/2016 02:28:33 [ 9] DEBUG  PostMan                       : Message Delivered
+04/10/2016 02:28:33 [ 6] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.Reply, MessageID: , ConversationID: )
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":null,"MsgId":null,"Note":"Test1: p1 to p2","Success":false}

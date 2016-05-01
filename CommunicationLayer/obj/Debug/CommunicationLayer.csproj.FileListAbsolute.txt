@@ -1,0 +1,17 @@
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\CommunicationLayer.dll
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\CommunicationLayer.pdb
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\log4net.dll
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\Messages.dll
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\MyUtilities.dll
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\Prism.dll
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\SharedObjects.dll
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\Utils.dll
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\Messages.pdb
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\SharedObjects.pdb
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\Utils.pdb
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\MyUtilities.pdb
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\log4net.xml
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\bin\Debug\Prism.xml
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\obj\Debug\CommunicationLayer.csprojResolveAssemblyReference.cache
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\obj\Debug\CommunicationLayer.dll
+D:\Drive\School\CS5200\LocalGame\CommunicationLayer\obj\Debug\CommunicationLayer.pdb

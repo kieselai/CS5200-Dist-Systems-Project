@@ -1,0 +1,12 @@
+04/08/2016 11:44:11 [ 6] DEBUG  PostMan                       : Port is: 10000
+04/08/2016 11:44:11 [ 6] DEBUG  PostMan                       : Port is: 10000
+04/08/2016 11:44:11 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/08/2016 11:44:11 [ 6] DEBUG  PostMan                       : Port is: 10000
+04/08/2016 11:44:12 [ 6] DEBUG  PostMan                       : Port is: 10000
+04/08/2016 11:44:12 [ 6] DEBUG  PostMan                       : Port is: 10000
+04/08/2016 11:44:12 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/08/2016 11:44:12 [ 6] DEBUG  PostMan                       : Port is: 10000
+04/08/2016 11:44:12 [ 6] INFO   BackgroundThread              : Starting 
+04/08/2016 11:44:12 [ 8] INFO   BackgroundThread              : Starting 
+04/08/2016 11:44:12 [ 8] DEBUG  PlayerProcess                 : In Process Login function.
+04/08/2016 11:44:12 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.2

@@ -1,0 +1,12 @@
+04/08/2016 08:40:05 [ 6] INFO   BackgroundThread              : Starting 
+04/08/2016 08:40:05 [ 8] DEBUG  TCPSocket                     : Opening TCP Socket
+04/08/2016 08:40:05 [ 8] DEBUG  TCPSocket                     : Binding to local Endpoint
+04/08/2016 08:40:05 [ 6] DEBUG  TCPSocket                     : Destination Endpoint is: 0.0.0.0:10000
+04/08/2016 08:40:05 [ 6] INFO   BackgroundThread              : Starting 
+04/08/2016 08:40:05 [ 9] DEBUG  TCPSocket                     : Opening Remote TCP Connection
+04/08/2016 08:40:05 [ 9] DEBUG  TCPSocket                     : System.Net.Sockets.SocketException (0x80004005): The requested address is not valid in its context 0.0.0.0:10000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at CommunicationLayer.TCPSocket.EstablishConnection(PublicEndPoint ep, Action`1 afterConnect) in D:\Drive\School\CS5200\LocalGame\CommunicationLayer\TCPSocket.cs:line 70
+04/08/2016 08:40:05 [ 9] INFO   BackgroundThread              : Stopping 
+04/08/2016 08:40:05 [ 9] DEBUG  BackgroundThread              : Leaving Stop

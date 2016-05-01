@@ -1,0 +1,63 @@
+04/13/2016 09:32:31 [ 9] DEBUG  PlayerConnection              : Using Local Settings.
+04/13/2016 09:32:31 [ 9] DEBUG  PlayerConnection              : Starting Application. 
+04/13/2016 09:32:31 [ 9] DEBUG  PlayerConnection              : Initializing Subsystem
+04/13/2016 09:32:31 [ 9] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/13/2016 09:32:31 [ 9] DEBUG  PlayerConnection              : Initializing Player
+04/13/2016 09:32:31 [ 9] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/13/2016 09:32:31 [ 9] INFO   BackgroundThread              : Starting 
+04/13/2016 09:32:31 [ 6] INFO   BackgroundThread              : Starting 
+04/13/2016 09:32:31 [ 6] DEBUG  PlayerProcess                 : In Process Login function.
+04/13/2016 09:32:31 [ 6] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/13/2016 09:32:32 [ 6] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/13/2016 09:32:32 [ 6] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/13/2016 09:32:32 [ 6] INFO   BackgroundThread              : Starting 
+04/13/2016 09:32:34 [13] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 09:32:34 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 09:32:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 09:32:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 09:32:34 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":"The Instructor","ProcessType":3,"PublicKey":null}
+04/13/2016 09:32:34 [13] DEBUG  PostMan                       : Message Delivered
+04/13/2016 09:32:34 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/13/2016 09:32:37 [ 9] DEBUG  PlayerProcess+<Logout>d__19   : In Process Logout function.
+04/13/2016 09:32:37 [14] DEBUG  ConversationFactory           : Creating Conversation of type LogoutConversation
+04/13/2016 09:32:37 [14] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LogoutConversation, 0.2
+04/13/2016 09:32:37 [14] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/13/2016 09:32:37 [14] INFO   BackgroundThread              : Starting 
+04/13/2016 09:32:39 [15] DEBUG  LogoutConversation            : Queuing logout request. 
+04/13/2016 09:32:39 [15] DEBUG  InitiatedConversation         : LogoutConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/13/2016 09:32:39 [15] DEBUG  Conversation                  : LogoutConversation, ConversationID: 0.2: Setting Message IDs
+04/13/2016 09:32:39 [15] DEBUG  Conversation                  : LogoutConversation, ConversationID: 0.2: Conversation is initiating send.
+04/13/2016 09:32:39 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LogoutRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LogoutRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2}}
+04/13/2016 09:32:39 [15] DEBUG  PostMan                       : Message Delivered
+04/13/2016 09:32:39 [15] DEBUG  Conversation                  : LogoutConversation, ConversationID: 0.2: Send succeeded.
+04/13/2016 09:32:40 [13] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 09:32:40 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 09:32:40 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 09:32:40 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 09:32:40 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":"The Instructor","ProcessType":3,"PublicKey":null}
+04/13/2016 09:32:40 [13] DEBUG  PostMan                       : Message Delivered
+04/13/2016 09:32:40 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/13/2016 09:32:45 [15] DEBUG  LogoutConversation            : Queuing logout request. 
+04/13/2016 09:32:45 [15] DEBUG  InitiatedConversation         : LogoutConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/13/2016 09:32:45 [15] DEBUG  Conversation                  : LogoutConversation, ConversationID: 0.2: Setting Message IDs
+04/13/2016 09:32:45 [15] DEBUG  Conversation                  : LogoutConversation, ConversationID: 0.2: Conversation is initiating send.
+04/13/2016 09:32:45 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LogoutRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LogoutRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2}}
+04/13/2016 09:32:45 [15] DEBUG  PostMan                       : Message Delivered
+04/13/2016 09:32:45 [15] DEBUG  Conversation                  : LogoutConversation, ConversationID: 0.2: Send succeeded.
+04/13/2016 09:32:46 [13] DEBUG  LoginConversation             : Creating login request. 
+04/13/2016 09:32:46 [13] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/13/2016 09:32:46 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/13/2016 09:32:47 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/13/2016 09:32:47 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":"The Instructor","ProcessType":3,"PublicKey":null}
+04/13/2016 09:32:47 [13] DEBUG  PostMan                       : Message Delivered
+04/13/2016 09:32:47 [13] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.

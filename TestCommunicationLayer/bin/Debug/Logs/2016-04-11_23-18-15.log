@@ -1,0 +1,673 @@
+04/11/2016 11:18:15 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/11/2016 11:18:15 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/11/2016 11:18:15 [ 6] INFO   BackgroundThread              : Starting 
+04/11/2016 11:18:15 [ 8] INFO   BackgroundThread              : Starting 
+04/11/2016 11:18:15 [ 8] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/11/2016 11:18:15 [ 8] DEBUG  PlayerProcess                 : In Process Login function.
+04/11/2016 11:18:15 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.2
+04/11/2016 11:18:15 [ 8] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/11/2016 11:18:15 [ 8] INFO   BackgroundThread              : Starting 
+04/11/2016 11:18:15 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:15 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:15 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10001
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/11/2016 11:18:15 [10] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:15 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:15 [ 9] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/11/2016 11:18:15 [10] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/11/2016 11:18:15 [10] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 0.1ConversationId: 0.1
+04/11/2016 11:18:15 [10] DEBUG  Dispatcher                    : Conversation  with id= 0.1 does not exist, trying to create new conversation.
+04/11/2016 11:18:15 [10] ERROR  Dispatcher                    : New conversation returned from factory is Null!
+04/11/2016 11:18:15 [10] ERROR  Dispatcher                    : An error was encountered while creating a new conversation queue
+04/11/2016 11:18:15 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:15 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:15 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:15 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:18:16 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/11/2016 11:18:16 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:16 [11] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:16 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:17 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:18 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:19 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:20 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:18:21 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/11/2016 11:18:21 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:21 [11] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:21 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:22 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10001
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/11/2016 11:18:25 [12] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:25 [ 9] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/11/2016 11:18:25 [10] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/11/2016 11:18:25 [10] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 0.1ConversationId: 0.1
+04/11/2016 11:18:25 [10] DEBUG  Dispatcher                    : Conversation  with id= 0.1 does not exist, trying to create new conversation.
+04/11/2016 11:18:25 [10] ERROR  Dispatcher                    : New conversation returned from factory is Null!
+04/11/2016 11:18:25 [10] ERROR  Dispatcher                    : An error was encountered while creating a new conversation queue
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:25 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:18:26 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/11/2016 11:18:26 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:26 [11] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:26 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:27 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:28 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:29 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:30 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:31 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:18:32 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/11/2016 11:18:32 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:32 [11] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:32 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:33 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:34 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:35 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10001
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/11/2016 11:18:36 [12] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:36 [ 9] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/11/2016 11:18:36 [10] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/11/2016 11:18:36 [10] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 0.1ConversationId: 0.1
+04/11/2016 11:18:36 [10] DEBUG  Dispatcher                    : Conversation  with id= 0.1 does not exist, trying to create new conversation.
+04/11/2016 11:18:36 [10] ERROR  Dispatcher                    : New conversation returned from factory is Null!
+04/11/2016 11:18:36 [10] ERROR  Dispatcher                    : An error was encountered while creating a new conversation queue
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:36 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:18:37 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/11/2016 11:18:37 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:37 [11] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:37 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:38 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:39 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:40 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:41 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  LoginConversation             : Creating login request. 
+04/11/2016 11:18:42 [11] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for Initiated conversation: 0.2
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/11/2016 11:18:42 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:42 [11] DEBUG  PostMan                       : Message Delivered
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:42 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:43 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:44 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:45 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available
+04/11/2016 11:18:46 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available

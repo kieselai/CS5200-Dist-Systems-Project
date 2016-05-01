@@ -1,0 +1,1321 @@
+04/12/2016 11:56:11 [ 7] DEBUG  PlayerConnection              : Using Local Settings.
+04/12/2016 11:56:11 [ 7] DEBUG  PlayerConnection              : Starting Application. 
+04/12/2016 11:56:11 [ 7] DEBUG  PlayerConnection              : Initializing Subsystem
+04/12/2016 11:56:11 [ 7] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 11:56:11 [ 7] DEBUG  PlayerConnection              : Initializing Player
+04/12/2016 11:56:11 [ 7] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 11:56:11 [ 7] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:11 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:11 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:11 [13] DEBUG  PlayerProcess                 : In Process Login function.
+04/12/2016 11:56:11 [13] DEBUG  ConversationFactory           : Creating Conversation of type LoginConversation
+04/12/2016 11:56:11 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/12/2016 11:56:11 [13] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/12/2016 11:56:11 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:12 [ 9] DEBUG  LoginConversation             : Creating login request. 
+04/12/2016 11:56:13 [ 9] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/12/2016 11:56:13 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":"The Instructor","ProcessType":3,"PublicKey":null}
+04/12/2016 11:56:13 [ 9] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/12/2016 11:56:13 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.59, ConversationID: 0.1)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":1,"Seq":59},"Note":"Logged in","Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":12003},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10000},"Label":"The Instructor","ProcessId":7,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":12002}}
+04/12/2016 11:56:13 [11] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.LoginReply)
+04/12/2016 11:56:13 [11] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.59ConversationId: 0.1
+04/12/2016 11:56:13 [11] DEBUG  Dispatcher                    : Successsfully queued a new message of type LoginReply, for conversation: 0.1
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message available!
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message available!
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/12/2016 11:56:13 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Received Message is valid
+04/12/2016 11:56:13 [ 9] DEBUG  LoginConversation             : Received a login reply message.
+04/12/2016 11:56:13 [ 9] DEBUG  LoginConversation             : Proxy endpoint is 127.0.0.1:12003
+04/12/2016 11:56:13 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:13 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:13 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:13 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:13 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:13 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.2
+04/12/2016 11:56:13 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.2
+04/12/2016 11:56:13 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:14 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:14 [14] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.2: Conversation Id  for Initiated conversation: 7.2
+04/12/2016 11:56:14 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Setting Message IDs
+04/12/2016 11:56:14 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Message has IDs
+04/12/2016 11:56:14 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Message is valid
+04/12/2016 11:56:14 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Envelope is valid
+04/12/2016 11:56:14 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Conversation is initiating send.
+04/12/2016 11:56:14 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.2, ConversationID: 7.2)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":2},"MsgId":{"Pid":7,"Seq":2},"StatusFilter":4}
+04/12/2016 11:56:14 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:14 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Send succeeded.
+04/12/2016 11:56:14 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.60, ConversationID: 7.2)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":2},"MsgId":{"Pid":1,"Seq":60},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:15 [12] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:15 [12] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.60ConversationId: 7.2
+04/12/2016 11:56:15 [12] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.2
+04/12/2016 11:56:15 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Message available!
+04/12/2016 11:56:15 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Message available!
+04/12/2016 11:56:15 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Message has IDs
+04/12/2016 11:56:15 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Message is valid
+04/12/2016 11:56:15 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Envelope is valid
+04/12/2016 11:56:15 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.2: Received Message is valid
+04/12/2016 11:56:15 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:15 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:15 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:15 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:15 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:15 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:15 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.3
+04/12/2016 11:56:15 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.3
+04/12/2016 11:56:15 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:16 [12] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:16 [12] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.3: Conversation Id  for Initiated conversation: 7.3
+04/12/2016 11:56:16 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Setting Message IDs
+04/12/2016 11:56:16 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Message has IDs
+04/12/2016 11:56:16 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Message is valid
+04/12/2016 11:56:16 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Envelope is valid
+04/12/2016 11:56:16 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Conversation is initiating send.
+04/12/2016 11:56:16 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.3, ConversationID: 7.3)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":3},"MsgId":{"Pid":7,"Seq":3},"StatusFilter":4}
+04/12/2016 11:56:16 [12] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:16 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Send succeeded.
+04/12/2016 11:56:16 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.61, ConversationID: 7.3)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":3},"MsgId":{"Pid":1,"Seq":61},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:16 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:16 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.61ConversationId: 7.3
+04/12/2016 11:56:16 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.3
+04/12/2016 11:56:16 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Message available!
+04/12/2016 11:56:17 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Message available!
+04/12/2016 11:56:17 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Message has IDs
+04/12/2016 11:56:17 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Message is valid
+04/12/2016 11:56:17 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Envelope is valid
+04/12/2016 11:56:17 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.3: Received Message is valid
+04/12/2016 11:56:17 [12] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:17 [12] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:17 [12] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:17 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:17 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:17 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:17 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.4
+04/12/2016 11:56:17 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.4
+04/12/2016 11:56:17 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:18 [11] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:18 [11] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.4: Conversation Id  for Initiated conversation: 7.4
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Setting Message IDs
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Message has IDs
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Message is valid
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Envelope is valid
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Conversation is initiating send.
+04/12/2016 11:56:18 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.4, ConversationID: 7.4)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":4},"MsgId":{"Pid":7,"Seq":4},"StatusFilter":4}
+04/12/2016 11:56:18 [11] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:18 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.62, ConversationID: 7.4)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":4},"MsgId":{"Pid":1,"Seq":62},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Send succeeded.
+04/12/2016 11:56:18 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:18 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.62ConversationId: 7.4
+04/12/2016 11:56:18 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.4
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Message available!
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Message available!
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Message has IDs
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Message is valid
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Envelope is valid
+04/12/2016 11:56:18 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.4: Received Message is valid
+04/12/2016 11:56:18 [11] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:18 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:18 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:19 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:19 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:19 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:19 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.5
+04/12/2016 11:56:19 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.5
+04/12/2016 11:56:19 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:20 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:20 [15] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.5: Conversation Id  for Initiated conversation: 7.5
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Setting Message IDs
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Message has IDs
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Message is valid
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Envelope is valid
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Conversation is initiating send.
+04/12/2016 11:56:20 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.5, ConversationID: 7.5)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":5},"MsgId":{"Pid":7,"Seq":5},"StatusFilter":4}
+04/12/2016 11:56:20 [15] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:20 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.63, ConversationID: 7.5)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":5},"MsgId":{"Pid":1,"Seq":63},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Send succeeded.
+04/12/2016 11:56:20 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:20 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.63ConversationId: 7.5
+04/12/2016 11:56:20 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.5
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Message available!
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Message available!
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Message has IDs
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Message is valid
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Envelope is valid
+04/12/2016 11:56:20 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.5: Received Message is valid
+04/12/2016 11:56:20 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:20 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:20 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:20 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:20 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:20 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:20 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.6
+04/12/2016 11:56:20 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.6
+04/12/2016 11:56:20 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:22 [12] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:22 [12] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.6: Conversation Id  for Initiated conversation: 7.6
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Setting Message IDs
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Message has IDs
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Message is valid
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Envelope is valid
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Conversation is initiating send.
+04/12/2016 11:56:22 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.6, ConversationID: 7.6)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":6},"MsgId":{"Pid":7,"Seq":6},"StatusFilter":4}
+04/12/2016 11:56:22 [12] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:22 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.64, ConversationID: 7.6)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":6},"MsgId":{"Pid":1,"Seq":64},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Send succeeded.
+04/12/2016 11:56:22 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:22 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.64ConversationId: 7.6
+04/12/2016 11:56:22 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.6
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Message available!
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Message available!
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Message has IDs
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Message is valid
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Envelope is valid
+04/12/2016 11:56:22 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.6: Received Message is valid
+04/12/2016 11:56:22 [12] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:22 [12] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:22 [12] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:22 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:22 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:22 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:22 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.7
+04/12/2016 11:56:22 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.7
+04/12/2016 11:56:22 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:23 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:23 [15] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.7: Conversation Id  for Initiated conversation: 7.7
+04/12/2016 11:56:23 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Setting Message IDs
+04/12/2016 11:56:23 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Message has IDs
+04/12/2016 11:56:23 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Message is valid
+04/12/2016 11:56:23 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Envelope is valid
+04/12/2016 11:56:23 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Conversation is initiating send.
+04/12/2016 11:56:23 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.7, ConversationID: 7.7)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":7},"MsgId":{"Pid":7,"Seq":7},"StatusFilter":4}
+04/12/2016 11:56:23 [15] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:23 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.65, ConversationID: 7.7)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":7},"MsgId":{"Pid":1,"Seq":65},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:23 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Send succeeded.
+04/12/2016 11:56:24 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:24 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.65ConversationId: 7.7
+04/12/2016 11:56:24 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.7
+04/12/2016 11:56:24 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Message available!
+04/12/2016 11:56:24 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Message available!
+04/12/2016 11:56:24 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Message has IDs
+04/12/2016 11:56:24 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Message is valid
+04/12/2016 11:56:24 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Envelope is valid
+04/12/2016 11:56:24 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.7: Received Message is valid
+04/12/2016 11:56:24 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:24 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:24 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:24 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:24 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:24 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:24 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.8
+04/12/2016 11:56:24 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.8
+04/12/2016 11:56:24 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:25 [11] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:25 [11] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.8: Conversation Id  for Initiated conversation: 7.8
+04/12/2016 11:56:25 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Setting Message IDs
+04/12/2016 11:56:25 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Message has IDs
+04/12/2016 11:56:25 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Message is valid
+04/12/2016 11:56:25 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Envelope is valid
+04/12/2016 11:56:25 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Conversation is initiating send.
+04/12/2016 11:56:25 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.8, ConversationID: 7.8)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":8},"MsgId":{"Pid":7,"Seq":8},"StatusFilter":4}
+04/12/2016 11:56:25 [11] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:25 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.66, ConversationID: 7.8)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":8},"MsgId":{"Pid":1,"Seq":66},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:25 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Send succeeded.
+04/12/2016 11:56:25 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:25 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.66ConversationId: 7.8
+04/12/2016 11:56:25 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.8
+04/12/2016 11:56:25 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Message available!
+04/12/2016 11:56:25 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Message available!
+04/12/2016 11:56:26 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Message has IDs
+04/12/2016 11:56:26 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Message is valid
+04/12/2016 11:56:26 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Envelope is valid
+04/12/2016 11:56:26 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.8: Received Message is valid
+04/12/2016 11:56:26 [11] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:26 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:26 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:26 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:26 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:26 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:26 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.9
+04/12/2016 11:56:26 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.9
+04/12/2016 11:56:26 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:27 [12] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:27 [12] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.9: Conversation Id  for Initiated conversation: 7.9
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Setting Message IDs
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Message has IDs
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Message is valid
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Envelope is valid
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Conversation is initiating send.
+04/12/2016 11:56:27 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.9, ConversationID: 7.9)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":9},"MsgId":{"Pid":7,"Seq":9},"StatusFilter":4}
+04/12/2016 11:56:27 [12] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:27 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.67, ConversationID: 7.9)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":9},"MsgId":{"Pid":1,"Seq":67},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Send succeeded.
+04/12/2016 11:56:27 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:27 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.67ConversationId: 7.9
+04/12/2016 11:56:27 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.9
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Message available!
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Message available!
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Message has IDs
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Message is valid
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Envelope is valid
+04/12/2016 11:56:27 [12] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.9: Received Message is valid
+04/12/2016 11:56:27 [12] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:27 [12] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:27 [12] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:28 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:28 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:28 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:28 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.10
+04/12/2016 11:56:28 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.10
+04/12/2016 11:56:28 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:29 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:29 [14] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.10: Conversation Id  for Initiated conversation: 7.10
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Setting Message IDs
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Message has IDs
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Message is valid
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Envelope is valid
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Conversation is initiating send.
+04/12/2016 11:56:29 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.10, ConversationID: 7.10)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":10},"MsgId":{"Pid":7,"Seq":10},"StatusFilter":4}
+04/12/2016 11:56:29 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:29 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.68, ConversationID: 7.10)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":10},"MsgId":{"Pid":1,"Seq":68},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Send succeeded.
+04/12/2016 11:56:29 [16] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:29 [16] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.68ConversationId: 7.10
+04/12/2016 11:56:29 [16] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.10
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Message available!
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Message available!
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Message has IDs
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Message is valid
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Envelope is valid
+04/12/2016 11:56:29 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.10: Received Message is valid
+04/12/2016 11:56:29 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:29 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:29 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:29 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:29 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:29 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:29 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.11
+04/12/2016 11:56:29 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.11
+04/12/2016 11:56:29 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:31 [ 9] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:31 [ 9] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.11: Conversation Id  for Initiated conversation: 7.11
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Setting Message IDs
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Message has IDs
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Message is valid
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Envelope is valid
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Conversation is initiating send.
+04/12/2016 11:56:31 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.11, ConversationID: 7.11)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":11},"MsgId":{"Pid":7,"Seq":11},"StatusFilter":4}
+04/12/2016 11:56:31 [ 9] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Send succeeded.
+04/12/2016 11:56:31 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.69, ConversationID: 7.11)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":11},"MsgId":{"Pid":1,"Seq":69},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:31 [11] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:31 [11] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.69ConversationId: 7.11
+04/12/2016 11:56:31 [11] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.11
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Message available!
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Message available!
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Message has IDs
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Message is valid
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Envelope is valid
+04/12/2016 11:56:31 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.11: Received Message is valid
+04/12/2016 11:56:31 [ 9] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:31 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:31 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:31 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:31 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:31 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:31 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.12
+04/12/2016 11:56:31 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.12
+04/12/2016 11:56:31 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:32 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:32 [14] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.12: Conversation Id  for Initiated conversation: 7.12
+04/12/2016 11:56:32 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Setting Message IDs
+04/12/2016 11:56:32 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Message has IDs
+04/12/2016 11:56:32 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Message is valid
+04/12/2016 11:56:32 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Envelope is valid
+04/12/2016 11:56:32 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Conversation is initiating send.
+04/12/2016 11:56:32 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.12, ConversationID: 7.12)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":12},"MsgId":{"Pid":7,"Seq":12},"StatusFilter":4}
+04/12/2016 11:56:32 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:32 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Send succeeded.
+04/12/2016 11:56:32 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.70, ConversationID: 7.12)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":12},"MsgId":{"Pid":1,"Seq":70},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:32 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:33 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.70ConversationId: 7.12
+04/12/2016 11:56:33 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.12
+04/12/2016 11:56:33 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Message available!
+04/12/2016 11:56:33 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Message available!
+04/12/2016 11:56:33 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Message has IDs
+04/12/2016 11:56:33 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Message is valid
+04/12/2016 11:56:33 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Envelope is valid
+04/12/2016 11:56:33 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.12: Received Message is valid
+04/12/2016 11:56:33 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:33 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:33 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:33 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:33 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:33 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:33 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.13
+04/12/2016 11:56:33 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.13
+04/12/2016 11:56:33 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:34 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:34 [16] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.13: Conversation Id  for Initiated conversation: 7.13
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Setting Message IDs
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Message has IDs
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Message is valid
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Envelope is valid
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Conversation is initiating send.
+04/12/2016 11:56:34 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.13, ConversationID: 7.13)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":13},"MsgId":{"Pid":7,"Seq":13},"StatusFilter":4}
+04/12/2016 11:56:34 [16] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Send succeeded.
+04/12/2016 11:56:34 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.71, ConversationID: 7.13)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":13},"MsgId":{"Pid":1,"Seq":71},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:34 [15] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:34 [15] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.71ConversationId: 7.13
+04/12/2016 11:56:34 [15] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.13
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Message available!
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Message available!
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Message has IDs
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Message is valid
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Envelope is valid
+04/12/2016 11:56:34 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.13: Received Message is valid
+04/12/2016 11:56:34 [16] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:34 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:34 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:35 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:35 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:35 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:35 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.14
+04/12/2016 11:56:35 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.14
+04/12/2016 11:56:35 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:36 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:36 [14] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.14: Conversation Id  for Initiated conversation: 7.14
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Setting Message IDs
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Message has IDs
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Message is valid
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Envelope is valid
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Conversation is initiating send.
+04/12/2016 11:56:36 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.14, ConversationID: 7.14)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":14},"MsgId":{"Pid":7,"Seq":14},"StatusFilter":4}
+04/12/2016 11:56:36 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Send succeeded.
+04/12/2016 11:56:36 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.72, ConversationID: 7.14)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":14},"MsgId":{"Pid":1,"Seq":72},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:36 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:36 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.72ConversationId: 7.14
+04/12/2016 11:56:36 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.14
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Message available!
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Message available!
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Message has IDs
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Message is valid
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Envelope is valid
+04/12/2016 11:56:36 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.14: Received Message is valid
+04/12/2016 11:56:36 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:36 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:36 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:36 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:36 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:36 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:36 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.15
+04/12/2016 11:56:36 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.15
+04/12/2016 11:56:36 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:38 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:38 [15] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.15: Conversation Id  for Initiated conversation: 7.15
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Setting Message IDs
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Message has IDs
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Message is valid
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Envelope is valid
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Conversation is initiating send.
+04/12/2016 11:56:38 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.15, ConversationID: 7.15)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":15},"MsgId":{"Pid":7,"Seq":15},"StatusFilter":4}
+04/12/2016 11:56:38 [15] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Send succeeded.
+04/12/2016 11:56:38 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.73, ConversationID: 7.15)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":15},"MsgId":{"Pid":1,"Seq":73},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:38 [12] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:38 [12] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.73ConversationId: 7.15
+04/12/2016 11:56:38 [12] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.15
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Message available!
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Message available!
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Message has IDs
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Message is valid
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Envelope is valid
+04/12/2016 11:56:38 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.15: Received Message is valid
+04/12/2016 11:56:38 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:38 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:38 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:38 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:38 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:38 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:38 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.16
+04/12/2016 11:56:38 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.16
+04/12/2016 11:56:38 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:39 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:39 [14] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.16: Conversation Id  for Initiated conversation: 7.16
+04/12/2016 11:56:39 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Setting Message IDs
+04/12/2016 11:56:39 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Message has IDs
+04/12/2016 11:56:39 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Message is valid
+04/12/2016 11:56:39 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Envelope is valid
+04/12/2016 11:56:39 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Conversation is initiating send.
+04/12/2016 11:56:39 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.16, ConversationID: 7.16)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":16},"MsgId":{"Pid":7,"Seq":16},"StatusFilter":4}
+04/12/2016 11:56:39 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:39 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Send succeeded.
+04/12/2016 11:56:39 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.74, ConversationID: 7.16)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":16},"MsgId":{"Pid":1,"Seq":74},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:39 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:40 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.74ConversationId: 7.16
+04/12/2016 11:56:40 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.16
+04/12/2016 11:56:40 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Message available!
+04/12/2016 11:56:40 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Message available!
+04/12/2016 11:56:40 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Message has IDs
+04/12/2016 11:56:40 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Message is valid
+04/12/2016 11:56:40 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Envelope is valid
+04/12/2016 11:56:40 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.16: Received Message is valid
+04/12/2016 11:56:40 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:40 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:40 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:40 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:40 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:40 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:40 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.17
+04/12/2016 11:56:40 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.17
+04/12/2016 11:56:40 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:41 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:41 [16] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.17: Conversation Id  for Initiated conversation: 7.17
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Setting Message IDs
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Message has IDs
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Message is valid
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Envelope is valid
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Conversation is initiating send.
+04/12/2016 11:56:41 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.17, ConversationID: 7.17)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":17},"MsgId":{"Pid":7,"Seq":17},"StatusFilter":4}
+04/12/2016 11:56:41 [16] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Send succeeded.
+04/12/2016 11:56:41 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.75, ConversationID: 7.17)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":17},"MsgId":{"Pid":1,"Seq":75},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:41 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:41 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.75ConversationId: 7.17
+04/12/2016 11:56:41 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.17
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Message available!
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Message available!
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Message has IDs
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Message is valid
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Envelope is valid
+04/12/2016 11:56:41 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.17: Received Message is valid
+04/12/2016 11:56:41 [16] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:41 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:41 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:42 [10] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.79, ConversationID: 1.79)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":79},"MsgId":{"Pid":1,"Seq":79}}
+04/12/2016 11:56:42 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/12/2016 11:56:42 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.79ConversationId: 1.79
+04/12/2016 11:56:42 [14] DEBUG  Dispatcher                    : Conversation  with id= 1.79 does not exist, trying to create new conversation.
+04/12/2016 11:56:42 [14] DEBUG  ConversationFactory           : Creating Conversation of type AliveConversation
+04/12/2016 11:56:42 [14] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.79
+04/12/2016 11:56:42 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:42 [14] DEBUG  Dispatcher                    :       New Queue ID: 1.79
+04/12/2016 11:56:42 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:42 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:42 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.18
+04/12/2016 11:56:42 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.18
+04/12/2016 11:56:42 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:42 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.79
+04/12/2016 11:56:42 [14] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Message available!
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Message available!
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Message available!
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Message has IDs
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Message is valid
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Envelope is valid
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Received Message is valid
+04/12/2016 11:56:42 [12] DEBUG  AliveConversation             : Creating Alive Response
+04/12/2016 11:56:42 [12] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 1.79: Conversation Id  for Response conversation: 1.79
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Setting Message IDs
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Message has IDs
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Message is valid
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Envelope is valid
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Conversation is initiating send.
+04/12/2016 11:56:42 [12] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 7.19, ConversationID: 1.79)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":79},"MsgId":{"Pid":7,"Seq":19},"Note":"I'm Alive","Success":true}
+04/12/2016 11:56:42 [12] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:42 [12] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.79: Send succeeded.
+04/12/2016 11:56:43 [ 9] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:43 [ 9] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.18: Conversation Id  for Initiated conversation: 7.18
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Setting Message IDs
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Message has IDs
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Message is valid
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Envelope is valid
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Conversation is initiating send.
+04/12/2016 11:56:43 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.18, ConversationID: 7.18)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":18},"MsgId":{"Pid":7,"Seq":18},"StatusFilter":4}
+04/12/2016 11:56:43 [ 9] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Send succeeded.
+04/12/2016 11:56:43 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.80, ConversationID: 7.18)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":18},"MsgId":{"Pid":1,"Seq":80},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:43 [11] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:43 [11] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.80ConversationId: 7.18
+04/12/2016 11:56:43 [11] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.18
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Message available!
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Message available!
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Message has IDs
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Message is valid
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Envelope is valid
+04/12/2016 11:56:43 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.18: Received Message is valid
+04/12/2016 11:56:43 [ 9] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:43 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:43 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:43 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:43 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:43 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:43 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.20
+04/12/2016 11:56:43 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.20
+04/12/2016 11:56:43 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:45 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:45 [14] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.20: Conversation Id  for Initiated conversation: 7.20
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Setting Message IDs
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Message has IDs
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Message is valid
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Envelope is valid
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Conversation is initiating send.
+04/12/2016 11:56:45 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.20, ConversationID: 7.20)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":20},"MsgId":{"Pid":7,"Seq":20},"StatusFilter":4}
+04/12/2016 11:56:45 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Send succeeded.
+04/12/2016 11:56:45 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.81, ConversationID: 7.20)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":20},"MsgId":{"Pid":1,"Seq":81},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:45 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:45 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.81ConversationId: 7.20
+04/12/2016 11:56:45 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.20
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Message available!
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Message available!
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Message has IDs
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Message is valid
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Envelope is valid
+04/12/2016 11:56:45 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.20: Received Message is valid
+04/12/2016 11:56:45 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:45 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:45 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:45 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:45 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:45 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:45 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.21
+04/12/2016 11:56:45 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.21
+04/12/2016 11:56:45 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:46 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:46 [15] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.21: Conversation Id  for Initiated conversation: 7.21
+04/12/2016 11:56:46 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Setting Message IDs
+04/12/2016 11:56:46 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Message has IDs
+04/12/2016 11:56:46 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Message is valid
+04/12/2016 11:56:46 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Envelope is valid
+04/12/2016 11:56:46 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Conversation is initiating send.
+04/12/2016 11:56:46 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.21, ConversationID: 7.21)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":21},"MsgId":{"Pid":7,"Seq":21},"StatusFilter":4}
+04/12/2016 11:56:46 [15] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:46 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Send succeeded.
+04/12/2016 11:56:46 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.82, ConversationID: 7.21)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":21},"MsgId":{"Pid":1,"Seq":82},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:47 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:47 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.82ConversationId: 7.21
+04/12/2016 11:56:47 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.21
+04/12/2016 11:56:47 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Message available!
+04/12/2016 11:56:47 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Message available!
+04/12/2016 11:56:47 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Message has IDs
+04/12/2016 11:56:47 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Message is valid
+04/12/2016 11:56:47 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Envelope is valid
+04/12/2016 11:56:47 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.21: Received Message is valid
+04/12/2016 11:56:47 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:47 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:47 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:47 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:47 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:47 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:47 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.22
+04/12/2016 11:56:47 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.22
+04/12/2016 11:56:47 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:48 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:48 [16] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.22: Conversation Id  for Initiated conversation: 7.22
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Setting Message IDs
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Message has IDs
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Message is valid
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Envelope is valid
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Conversation is initiating send.
+04/12/2016 11:56:48 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.22, ConversationID: 7.22)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":22},"MsgId":{"Pid":7,"Seq":22},"StatusFilter":4}
+04/12/2016 11:56:48 [16] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Send succeeded.
+04/12/2016 11:56:48 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.83, ConversationID: 7.22)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":22},"MsgId":{"Pid":1,"Seq":83},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:48 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:48 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.83ConversationId: 7.22
+04/12/2016 11:56:48 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.22
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Message available!
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Message available!
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Message has IDs
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Message is valid
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Envelope is valid
+04/12/2016 11:56:48 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.22: Received Message is valid
+04/12/2016 11:56:48 [16] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:49 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:49 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:49 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:49 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:49 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:49 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.23
+04/12/2016 11:56:49 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.23
+04/12/2016 11:56:49 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:50 [11] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:50 [11] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.23: Conversation Id  for Initiated conversation: 7.23
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Setting Message IDs
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Message has IDs
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Message is valid
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Envelope is valid
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Conversation is initiating send.
+04/12/2016 11:56:50 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.23, ConversationID: 7.23)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":23},"MsgId":{"Pid":7,"Seq":23},"StatusFilter":4}
+04/12/2016 11:56:50 [11] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:50 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.84, ConversationID: 7.23)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":23},"MsgId":{"Pid":1,"Seq":84},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Send succeeded.
+04/12/2016 11:56:50 [16] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:50 [16] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.84ConversationId: 7.23
+04/12/2016 11:56:50 [16] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.23
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Message available!
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Message available!
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Message has IDs
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Message is valid
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Envelope is valid
+04/12/2016 11:56:50 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.23: Received Message is valid
+04/12/2016 11:56:50 [11] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:50 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:50 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:51 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:51 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:51 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:51 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.24
+04/12/2016 11:56:51 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.24
+04/12/2016 11:56:51 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:52 [ 9] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:52 [ 9] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.24: Conversation Id  for Initiated conversation: 7.24
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Setting Message IDs
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Message has IDs
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Message is valid
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Envelope is valid
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Conversation is initiating send.
+04/12/2016 11:56:52 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.24, ConversationID: 7.24)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":24},"MsgId":{"Pid":7,"Seq":24},"StatusFilter":4}
+04/12/2016 11:56:52 [ 9] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Send succeeded.
+04/12/2016 11:56:52 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.85, ConversationID: 7.24)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":24},"MsgId":{"Pid":1,"Seq":85},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:52 [11] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:52 [11] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.85ConversationId: 7.24
+04/12/2016 11:56:52 [11] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.24
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Message available!
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Message available!
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Message has IDs
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Message is valid
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Envelope is valid
+04/12/2016 11:56:52 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.24: Received Message is valid
+04/12/2016 11:56:52 [ 9] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:52 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:52 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:52 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:52 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:52 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:52 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.25
+04/12/2016 11:56:52 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.25
+04/12/2016 11:56:52 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:53 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:54 [16] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.25: Conversation Id  for Initiated conversation: 7.25
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Setting Message IDs
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Message has IDs
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Message is valid
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Envelope is valid
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Conversation is initiating send.
+04/12/2016 11:56:54 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.25, ConversationID: 7.25)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":25},"MsgId":{"Pid":7,"Seq":25},"StatusFilter":4}
+04/12/2016 11:56:54 [16] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:54 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.86, ConversationID: 7.25)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":25},"MsgId":{"Pid":1,"Seq":86},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Send succeeded.
+04/12/2016 11:56:54 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:54 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.86ConversationId: 7.25
+04/12/2016 11:56:54 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.25
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Message available!
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Message available!
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Message has IDs
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Message is valid
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Envelope is valid
+04/12/2016 11:56:54 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.25: Received Message is valid
+04/12/2016 11:56:54 [16] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:54 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:54 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:54 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:54 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:54 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:54 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.26
+04/12/2016 11:56:54 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.26
+04/12/2016 11:56:54 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:55 [17] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:55 [17] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.26: Conversation Id  for Initiated conversation: 7.26
+04/12/2016 11:56:55 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Setting Message IDs
+04/12/2016 11:56:55 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Message has IDs
+04/12/2016 11:56:55 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Message is valid
+04/12/2016 11:56:55 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Envelope is valid
+04/12/2016 11:56:55 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Conversation is initiating send.
+04/12/2016 11:56:55 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.26, ConversationID: 7.26)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":26},"MsgId":{"Pid":7,"Seq":26},"StatusFilter":4}
+04/12/2016 11:56:55 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:55 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.87, ConversationID: 7.26)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":26},"MsgId":{"Pid":1,"Seq":87},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:55 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Send succeeded.
+04/12/2016 11:56:56 [16] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:56 [16] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.87ConversationId: 7.26
+04/12/2016 11:56:56 [16] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.26
+04/12/2016 11:56:56 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Message available!
+04/12/2016 11:56:56 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Message available!
+04/12/2016 11:56:56 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Message has IDs
+04/12/2016 11:56:56 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Message is valid
+04/12/2016 11:56:56 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Envelope is valid
+04/12/2016 11:56:56 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.26: Received Message is valid
+04/12/2016 11:56:56 [17] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:56 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:56 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:56 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:56 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:56 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:56 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.27
+04/12/2016 11:56:56 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.27
+04/12/2016 11:56:56 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:57 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:57 [14] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.27: Conversation Id  for Initiated conversation: 7.27
+04/12/2016 11:56:57 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Setting Message IDs
+04/12/2016 11:56:57 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Message has IDs
+04/12/2016 11:56:57 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Message is valid
+04/12/2016 11:56:57 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Envelope is valid
+04/12/2016 11:56:57 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Conversation is initiating send.
+04/12/2016 11:56:57 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.27, ConversationID: 7.27)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":27},"MsgId":{"Pid":7,"Seq":27},"StatusFilter":4}
+04/12/2016 11:56:57 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:57 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.88, ConversationID: 7.27)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":27},"MsgId":{"Pid":1,"Seq":88},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:57 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Send succeeded.
+04/12/2016 11:56:57 [15] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:57 [15] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.88ConversationId: 7.27
+04/12/2016 11:56:57 [15] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.27
+04/12/2016 11:56:57 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Message available!
+04/12/2016 11:56:58 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Message available!
+04/12/2016 11:56:58 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Message has IDs
+04/12/2016 11:56:58 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Message is valid
+04/12/2016 11:56:58 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Envelope is valid
+04/12/2016 11:56:58 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.27: Received Message is valid
+04/12/2016 11:56:58 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:56:58 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:58 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:56:58 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:56:58 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:56:58 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:56:58 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.28
+04/12/2016 11:56:58 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.28
+04/12/2016 11:56:58 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:56:59 [17] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:56:59 [17] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.28: Conversation Id  for Initiated conversation: 7.28
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Setting Message IDs
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Message has IDs
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Message is valid
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Envelope is valid
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Conversation is initiating send.
+04/12/2016 11:56:59 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.28, ConversationID: 7.28)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":28},"MsgId":{"Pid":7,"Seq":28},"StatusFilter":4}
+04/12/2016 11:56:59 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:56:59 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.89, ConversationID: 7.28)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":28},"MsgId":{"Pid":1,"Seq":89},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Send succeeded.
+04/12/2016 11:56:59 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:56:59 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.89ConversationId: 7.28
+04/12/2016 11:56:59 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.28
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Message available!
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Message available!
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Message has IDs
+04/12/2016 11:56:59 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Message is valid
+04/12/2016 11:57:00 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Envelope is valid
+04/12/2016 11:57:00 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.28: Received Message is valid
+04/12/2016 11:57:00 [17] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:00 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:00 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:00 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:00 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:00 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:00 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.29
+04/12/2016 11:57:00 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.29
+04/12/2016 11:57:00 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:01 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:01 [16] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.29: Conversation Id  for Initiated conversation: 7.29
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Setting Message IDs
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Message has IDs
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Message is valid
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Envelope is valid
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Conversation is initiating send.
+04/12/2016 11:57:01 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.29, ConversationID: 7.29)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":29},"MsgId":{"Pid":7,"Seq":29},"StatusFilter":4}
+04/12/2016 11:57:01 [16] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:01 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.90, ConversationID: 7.29)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":29},"MsgId":{"Pid":1,"Seq":90},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Send succeeded.
+04/12/2016 11:57:01 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:01 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.90ConversationId: 7.29
+04/12/2016 11:57:01 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.29
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Message available!
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Message available!
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Message has IDs
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Message is valid
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Envelope is valid
+04/12/2016 11:57:01 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.29: Received Message is valid
+04/12/2016 11:57:01 [16] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:01 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:01 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:01 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:01 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:01 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:01 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.30
+04/12/2016 11:57:02 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.30
+04/12/2016 11:57:02 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:03 [17] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:03 [17] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.30: Conversation Id  for Initiated conversation: 7.30
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Setting Message IDs
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Message has IDs
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Message is valid
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Envelope is valid
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Conversation is initiating send.
+04/12/2016 11:57:03 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.30, ConversationID: 7.30)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":30},"MsgId":{"Pid":7,"Seq":30},"StatusFilter":4}
+04/12/2016 11:57:03 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:03 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.91, ConversationID: 7.30)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":30},"MsgId":{"Pid":1,"Seq":91},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Send succeeded.
+04/12/2016 11:57:03 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:03 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.91ConversationId: 7.30
+04/12/2016 11:57:03 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.30
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Message available!
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Message available!
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Message has IDs
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Message is valid
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Envelope is valid
+04/12/2016 11:57:03 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.30: Received Message is valid
+04/12/2016 11:57:03 [17] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:03 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:03 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:03 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:03 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:03 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:03 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.31
+04/12/2016 11:57:03 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.31
+04/12/2016 11:57:03 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:04 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:04 [16] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.31: Conversation Id  for Initiated conversation: 7.31
+04/12/2016 11:57:04 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Setting Message IDs
+04/12/2016 11:57:04 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Message has IDs
+04/12/2016 11:57:04 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Message is valid
+04/12/2016 11:57:04 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Envelope is valid
+04/12/2016 11:57:04 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Conversation is initiating send.
+04/12/2016 11:57:04 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.31, ConversationID: 7.31)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":31},"MsgId":{"Pid":7,"Seq":31},"StatusFilter":4}
+04/12/2016 11:57:05 [16] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:05 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.92, ConversationID: 7.31)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":31},"MsgId":{"Pid":1,"Seq":92},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:05 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Send succeeded.
+04/12/2016 11:57:05 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:05 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.92ConversationId: 7.31
+04/12/2016 11:57:05 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.31
+04/12/2016 11:57:05 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Message available!
+04/12/2016 11:57:05 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Message available!
+04/12/2016 11:57:05 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Message has IDs
+04/12/2016 11:57:05 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Message is valid
+04/12/2016 11:57:05 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Envelope is valid
+04/12/2016 11:57:05 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.31: Received Message is valid
+04/12/2016 11:57:05 [16] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:05 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:05 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:05 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:05 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:05 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:05 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.32
+04/12/2016 11:57:05 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.32
+04/12/2016 11:57:05 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:06 [17] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:06 [17] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.32: Conversation Id  for Initiated conversation: 7.32
+04/12/2016 11:57:06 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Setting Message IDs
+04/12/2016 11:57:06 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Message has IDs
+04/12/2016 11:57:06 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Message is valid
+04/12/2016 11:57:06 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Envelope is valid
+04/12/2016 11:57:06 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Conversation is initiating send.
+04/12/2016 11:57:06 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.32, ConversationID: 7.32)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":32},"MsgId":{"Pid":7,"Seq":32},"StatusFilter":4}
+04/12/2016 11:57:06 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:06 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.93, ConversationID: 7.32)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":32},"MsgId":{"Pid":1,"Seq":93},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:06 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Send succeeded.
+04/12/2016 11:57:06 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:06 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.93ConversationId: 7.32
+04/12/2016 11:57:07 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.32
+04/12/2016 11:57:07 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Message available!
+04/12/2016 11:57:07 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Message available!
+04/12/2016 11:57:07 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Message has IDs
+04/12/2016 11:57:07 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Message is valid
+04/12/2016 11:57:07 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Envelope is valid
+04/12/2016 11:57:07 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.32: Received Message is valid
+04/12/2016 11:57:07 [17] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:07 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:07 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:07 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:07 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:07 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:07 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.33
+04/12/2016 11:57:07 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.33
+04/12/2016 11:57:07 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:08 [16] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:08 [16] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.33: Conversation Id  for Initiated conversation: 7.33
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Setting Message IDs
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Message has IDs
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Message is valid
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Envelope is valid
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Conversation is initiating send.
+04/12/2016 11:57:08 [16] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.33, ConversationID: 7.33)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":33},"MsgId":{"Pid":7,"Seq":33},"StatusFilter":4}
+04/12/2016 11:57:08 [16] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:08 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.94, ConversationID: 7.33)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":33},"MsgId":{"Pid":1,"Seq":94},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Send succeeded.
+04/12/2016 11:57:08 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:08 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.94ConversationId: 7.33
+04/12/2016 11:57:08 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.33
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Message available!
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Message available!
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Message has IDs
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Message is valid
+04/12/2016 11:57:08 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Envelope is valid
+04/12/2016 11:57:09 [16] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.33: Received Message is valid
+04/12/2016 11:57:09 [16] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:09 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:09 [16] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:09 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:09 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:09 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:09 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.34
+04/12/2016 11:57:09 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.34
+04/12/2016 11:57:09 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:10 [17] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:10 [17] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.34: Conversation Id  for Initiated conversation: 7.34
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Setting Message IDs
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Message has IDs
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Message is valid
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Envelope is valid
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Conversation is initiating send.
+04/12/2016 11:57:10 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.34, ConversationID: 7.34)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":34},"MsgId":{"Pid":7,"Seq":34},"StatusFilter":4}
+04/12/2016 11:57:10 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:10 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.95, ConversationID: 7.34)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":34},"MsgId":{"Pid":1,"Seq":95},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Send succeeded.
+04/12/2016 11:57:10 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:10 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.95ConversationId: 7.34
+04/12/2016 11:57:10 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.34
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Message available!
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Message available!
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Message has IDs
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Message is valid
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Envelope is valid
+04/12/2016 11:57:10 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.34: Received Message is valid
+04/12/2016 11:57:10 [17] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:10 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:10 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:10 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:10 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:10 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:10 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.35
+04/12/2016 11:57:10 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.35
+04/12/2016 11:57:10 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:12 [11] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:12 [11] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.35: Conversation Id  for Initiated conversation: 7.35
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Setting Message IDs
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Message has IDs
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Message is valid
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Envelope is valid
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Conversation is initiating send.
+04/12/2016 11:57:12 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.35, ConversationID: 7.35)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":35},"MsgId":{"Pid":7,"Seq":35},"StatusFilter":4}
+04/12/2016 11:57:12 [11] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:12 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.96, ConversationID: 7.35)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":35},"MsgId":{"Pid":1,"Seq":96},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Send succeeded.
+04/12/2016 11:57:12 [15] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:12 [15] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.96ConversationId: 7.35
+04/12/2016 11:57:12 [15] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.35
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Message available!
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Message available!
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Message has IDs
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Message is valid
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Envelope is valid
+04/12/2016 11:57:12 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.35: Received Message is valid
+04/12/2016 11:57:12 [11] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:12 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:12 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:12 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:12 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:12 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:12 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.36
+04/12/2016 11:57:12 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.36
+04/12/2016 11:57:12 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:13 [10] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.99, ConversationID: 1.99)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":99},"MsgId":{"Pid":1,"Seq":99}}
+04/12/2016 11:57:13 [15] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.AliveRequest)
+04/12/2016 11:57:13 [15] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.99ConversationId: 1.99
+04/12/2016 11:57:13 [15] DEBUG  Dispatcher                    : Conversation  with id= 1.99 does not exist, trying to create new conversation.
+04/12/2016 11:57:13 [15] DEBUG  ConversationFactory           : Creating Conversation of type AliveConversation
+04/12/2016 11:57:13 [15] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.99
+04/12/2016 11:57:13 [15] DEBUG  Dispatcher                    :       New Queue ID: 1.99
+04/12/2016 11:57:13 [15] DEBUG  Dispatcher                    : Successsfully queued a new message of type AliveRequest, for conversation: 1.99
+04/12/2016 11:57:13 [15] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Message available!
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Message available!
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Message available!
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Message has IDs
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Message is valid
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Envelope is valid
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Received Message is valid
+04/12/2016 11:57:13 [16] DEBUG  AliveConversation             : Creating Alive Response
+04/12/2016 11:57:13 [16] DEBUG  ResponseConversation          : AliveConversation, ConversationID: 1.99: Conversation Id  for Response conversation: 1.99
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Setting Message IDs
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Message has IDs
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Message is valid
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Envelope is valid
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Conversation is initiating send.
+04/12/2016 11:57:13 [16] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 7.37, ConversationID: 1.99)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":99},"MsgId":{"Pid":7,"Seq":37},"Note":"I'm Alive","Success":true}
+04/12/2016 11:57:13 [16] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:13 [16] DEBUG  Conversation                  : AliveConversation, ConversationID: 1.99: Send succeeded.
+04/12/2016 11:57:13 [17] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:13 [17] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.36: Conversation Id  for Initiated conversation: 7.36
+04/12/2016 11:57:13 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Setting Message IDs
+04/12/2016 11:57:13 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Message has IDs
+04/12/2016 11:57:13 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Message is valid
+04/12/2016 11:57:13 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Envelope is valid
+04/12/2016 11:57:13 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Conversation is initiating send.
+04/12/2016 11:57:13 [17] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.36, ConversationID: 7.36)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":36},"MsgId":{"Pid":7,"Seq":36},"StatusFilter":4}
+04/12/2016 11:57:13 [17] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:13 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Send succeeded.
+04/12/2016 11:57:13 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.101, ConversationID: 7.36)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":36},"MsgId":{"Pid":1,"Seq":101},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:13 [14] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:14 [14] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.101ConversationId: 7.36
+04/12/2016 11:57:14 [14] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.36
+04/12/2016 11:57:14 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Message available!
+04/12/2016 11:57:14 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Message available!
+04/12/2016 11:57:14 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Message has IDs
+04/12/2016 11:57:14 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Message is valid
+04/12/2016 11:57:14 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Envelope is valid
+04/12/2016 11:57:14 [17] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.36: Received Message is valid
+04/12/2016 11:57:14 [17] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:14 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:14 [17] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:14 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:14 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:14 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:14 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.38
+04/12/2016 11:57:14 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.38
+04/12/2016 11:57:14 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:15 [ 9] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:15 [ 9] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.38: Conversation Id  for Initiated conversation: 7.38
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Setting Message IDs
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Message has IDs
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Message is valid
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Envelope is valid
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Conversation is initiating send.
+04/12/2016 11:57:15 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.38, ConversationID: 7.38)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":38},"MsgId":{"Pid":7,"Seq":38},"StatusFilter":4}
+04/12/2016 11:57:15 [ 9] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Send succeeded.
+04/12/2016 11:57:15 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.102, ConversationID: 7.38)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":38},"MsgId":{"Pid":1,"Seq":102},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:15 [11] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:15 [11] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.102ConversationId: 7.38
+04/12/2016 11:57:15 [11] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.38
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Message available!
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Message available!
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Message has IDs
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Message is valid
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Envelope is valid
+04/12/2016 11:57:15 [ 9] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.38: Received Message is valid
+04/12/2016 11:57:16 [ 9] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:16 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:16 [ 9] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:16 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:16 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:16 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:16 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.39
+04/12/2016 11:57:16 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.39
+04/12/2016 11:57:16 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:17 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:17 [15] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.39: Conversation Id  for Initiated conversation: 7.39
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Setting Message IDs
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Message has IDs
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Message is valid
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Envelope is valid
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Conversation is initiating send.
+04/12/2016 11:57:17 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.39, ConversationID: 7.39)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":39},"MsgId":{"Pid":7,"Seq":39},"StatusFilter":4}
+04/12/2016 11:57:17 [15] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Send succeeded.
+04/12/2016 11:57:17 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.103, ConversationID: 7.39)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":39},"MsgId":{"Pid":1,"Seq":103},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:17 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:17 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.103ConversationId: 7.39
+04/12/2016 11:57:17 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.39
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Message available!
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Message available!
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Message has IDs
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Message is valid
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Envelope is valid
+04/12/2016 11:57:17 [15] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.39: Received Message is valid
+04/12/2016 11:57:17 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:17 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:17 [15] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:18 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:18 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:18 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:18 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.40
+04/12/2016 11:57:18 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.40
+04/12/2016 11:57:18 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:19 [11] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:19 [11] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.40: Conversation Id  for Initiated conversation: 7.40
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Setting Message IDs
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Message has IDs
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Message is valid
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Envelope is valid
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Conversation is initiating send.
+04/12/2016 11:57:19 [11] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.40, ConversationID: 7.40)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":40},"MsgId":{"Pid":7,"Seq":40},"StatusFilter":4}
+04/12/2016 11:57:19 [11] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Send succeeded.
+04/12/2016 11:57:19 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.104, ConversationID: 7.40)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":40},"MsgId":{"Pid":1,"Seq":104},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:19 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:19 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.104ConversationId: 7.40
+04/12/2016 11:57:19 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.40
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Message available!
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Message available!
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Message has IDs
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Message is valid
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Envelope is valid
+04/12/2016 11:57:19 [11] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.40: Received Message is valid
+04/12/2016 11:57:19 [11] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:19 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:19 [11] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:19 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:19 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:19 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:19 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.41
+04/12/2016 11:57:19 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.41
+04/12/2016 11:57:19 [13] INFO   BackgroundThread              : Starting 
+04/12/2016 11:57:20 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 11:57:20 [14] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 7.41: Conversation Id  for Initiated conversation: 7.41
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Setting Message IDs
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Message has IDs
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Message is valid
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Envelope is valid
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Conversation is initiating send.
+04/12/2016 11:57:21 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.41, ConversationID: 7.41)
+Endpoint: 127.0.0.1:12000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":41},"MsgId":{"Pid":7,"Seq":41},"StatusFilter":4}
+04/12/2016 11:57:21 [14] DEBUG  PostMan                       : Message Delivered
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Send succeeded.
+04/12/2016 11:57:21 [10] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.105, ConversationID: 7.41)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":41},"MsgId":{"Pid":1,"Seq":105},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5}],"GameId":3,"GameManagerId":2,"Label":"GM89891's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/12/2016 11:57:21 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.ReplyMessages.GameListReply)
+04/12/2016 11:57:21 [ 9] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 1.105ConversationId: 7.41
+04/12/2016 11:57:21 [ 9] DEBUG  Dispatcher                    : Successsfully queued a new message of type GameListReply, for conversation: 7.41
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Message available!
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Message available!
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Message has IDs
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Message is valid
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Envelope is valid
+04/12/2016 11:57:21 [14] DEBUG  Conversation                  : GameListConversation, ConversationID: 7.41: Received Message is valid
+04/12/2016 11:57:21 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/12/2016 11:57:21 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:21 [14] INFO   Conversation                  : Conversation Succeeded
+04/12/2016 11:57:21 [13] DEBUG  PlayerProcess                 : ------------- At top of Player process loop -------------
+04/12/2016 11:57:21 [13] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 11:57:21 [13] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 11:57:21 [13] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.42
+04/12/2016 11:57:21 [13] DEBUG  Dispatcher                    :       New Queue ID: 7.42
+04/12/2016 11:57:21 [13] INFO   BackgroundThread              : Starting 

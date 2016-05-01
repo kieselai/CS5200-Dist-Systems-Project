@@ -1,0 +1,23 @@
+04/12/2016 02:05:37 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 02:05:37 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 02:05:37 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 02:05:37 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 02:05:37 [ 8] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/12/2016 02:05:37 [ 8] DEBUG  ConversationFactory           : Creating Conversation of type GameListConversation
+04/12/2016 02:05:37 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 0.1
+04/12/2016 02:05:37 [ 8] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/12/2016 02:05:37 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 02:05:38 [10] DEBUG  GameListConversation          : Queuing game list request. 
+04/12/2016 02:05:38 [10] DEBUG  InitiatedConversation         : GameListConversation, ConversationID: 0.1: Conversation Id  for Initiated conversation: 0.1
+04/12/2016 02:05:38 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 0.1: Setting Message IDs
+04/12/2016 02:05:38 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 0.1: Message has IDs
+04/12/2016 02:05:38 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 0.1: Message is valid
+04/12/2016 02:05:38 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 0.1: Envelope is valid
+04/12/2016 02:05:38 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 0.1: Conversation is initiating send.
+04/12/2016 02:05:38 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"StatusFilter":4}
+04/12/2016 02:05:38 [10] DEBUG  PostMan                       : Message Delivered
+04/12/2016 02:05:38 [10] DEBUG  Conversation                  : GameListConversation, ConversationID: 0.1: Send succeeded.
+04/12/2016 02:05:38 [ 6] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.GameListRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"StatusFilter":4}

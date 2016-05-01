@@ -1,0 +1,9 @@
+04/09/2016 10:33:43 [ 7] DEBUG  PlayerConnection              : Using Local Settings.
+04/09/2016 10:33:43 [ 7] DEBUG  PlayerConnection              : Starting Application. 
+04/09/2016 10:33:43 [ 7] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/09/2016 10:33:43 [ 7] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/09/2016 10:33:43 [ 7] INFO   BackgroundThread              : Starting 
+04/09/2016 10:33:43 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 10:33:43 [10] DEBUG  PlayerProcess                 : In Process Login function.
+04/09/2016 10:33:43 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/09/2016 10:33:43 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.1

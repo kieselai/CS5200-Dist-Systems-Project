@@ -1,0 +1,37 @@
+04/12/2016 01:23:03 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/12/2016 01:23:03 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/12/2016 01:23:03 [ 6] INFO   BackgroundThread              : Starting 
+04/12/2016 01:23:03 [ 8] INFO   BackgroundThread              : Starting 
+04/12/2016 01:23:03 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.ReadyToStart, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10002
+JSON: {"__type":"ReadyToStart:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"GameId":8}
+04/12/2016 01:23:03 [10] DEBUG  PostMan                       : Message Delivered
+04/12/2016 01:23:03 [ 9] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.ReadyToStart, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"ReadyToStart:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"GameId":8}
+04/12/2016 01:23:03 [10] INFO   ispatcher+<>c__DisplayClass7_0: New Message Received: (Messages.RequestMessages.ReadyToStart)
+04/12/2016 01:23:03 [10] INFO   ispatcher+<>c__DisplayClass7_0: MessageId: 0.1ConversationId: 0.1
+04/12/2016 01:23:03 [10] DEBUG  Dispatcher                    : Conversation  with id= 0.1 does not exist, trying to create new conversation.
+04/12/2016 01:23:03 [10] DEBUG  ConversationFactory           : Creating Conversation of type GameStartConversation
+04/12/2016 01:23:03 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameStartConversation, 0.1
+04/12/2016 01:23:03 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/12/2016 01:23:03 [10] DEBUG  Dispatcher                    : Successsfully queued a new message of type ReadyToStart, for conversation: 0.1
+04/12/2016 01:23:03 [10] INFO   BackgroundThread              : Starting 
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message available!
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message available!
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message available!
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message has IDs
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message is valid
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Envelope is valid
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Received Message is valid
+04/12/2016 01:23:03 [10] DEBUG  GameStartConversation         : Responding to Game Start Request
+04/12/2016 01:23:03 [10] DEBUG  ResponseConversation          : GameStartConversation, ConversationID: 0.1: Conversation Id  for Response conversation: 0.1
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Setting Message IDs
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message has IDs
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Message is valid
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Envelope is valid
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Conversation is initiating send.
+04/12/2016 01:23:03 [10] DEBUG  PostMan                       : Sending UDP (Messages.Routing, MessageID: 0.2, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10001
+JSON: {"__type":"Routing:#Messages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":2},"InnerMessage":{"__type":"StartGame:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":2},"Note":"Ready","Success":true},"ToProcessIds":[10]}
+04/12/2016 01:23:03 [10] DEBUG  PostMan                       : Message Delivered
+04/12/2016 01:23:03 [10] DEBUG  Conversation                  : GameStartConversation, ConversationID: 0.1: Send succeeded.

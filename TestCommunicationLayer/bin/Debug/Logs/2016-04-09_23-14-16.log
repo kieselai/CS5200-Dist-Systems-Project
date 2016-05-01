@@ -1,0 +1,22 @@
+04/09/2016 11:14:16 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/09/2016 11:14:18 [ 6] INFO   BackgroundThread              : Starting 
+04/09/2016 11:14:18 [ 8] INFO   BackgroundThread              : Starting 
+04/09/2016 11:14:18 [ 8] DEBUG  PlayerProcess                 : In Process Login function.
+04/09/2016 11:14:18 [ 8] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.2
+04/09/2016 11:14:18 [ 8] DEBUG  Dispatcher                    :       New Queue ID: 0.2
+04/09/2016 11:14:18 [ 8] DEBUG  LoginConversation             : Creating login request. 
+04/09/2016 11:14:18 [ 8] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.2: Conversation Id  for initiated conversation: 0.2
+04/09/2016 11:14:18 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Setting Message IDs
+04/09/2016 11:14:18 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message has IDs
+04/09/2016 11:14:18 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Message is valid
+04/09/2016 11:14:18 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Envelope is valid
+04/09/2016 11:14:18 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Conversation is initiating send.
+04/09/2016 11:14:18 [10] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.AliveRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1}}
+04/09/2016 11:14:18 [ 8] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.2, ConversationID: 0.2)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":2},"MsgId":{"Pid":0,"Seq":2},"Identity":{"ANumber":null,"Alias":null,"FirstName":null,"LastName":null},"ProcessLabel":null,"ProcessType":3,"PublicKey":null}
+04/09/2016 11:14:18 [10] DEBUG  PostMan                       : Message Delivered
+04/09/2016 11:14:18 [ 8] DEBUG  PostMan                       : Message Delivered
+04/09/2016 11:14:18 [ 8] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: Send succeeded.
+04/09/2016 11:14:18 [ 8] INFO   BackgroundThread              : Starting 
+04/09/2016 11:14:19 [10] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.2: No message available

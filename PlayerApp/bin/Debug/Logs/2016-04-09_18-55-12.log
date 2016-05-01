@@ -1,0 +1,215 @@
+04/09/2016 06:55:17 [ 8] DEBUG  PlayerConnection              : Using Local Settings.
+04/09/2016 06:55:17 [ 8] DEBUG  PlayerConnection              : Starting Application. 
+04/09/2016 06:55:17 [ 8] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/09/2016 06:55:17 [ 8] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/09/2016 06:55:17 [ 8] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:17 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:17 [10] DEBUG  PlayerProcess                 : In Process Login function.
+04/09/2016 06:55:17 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/09/2016 06:55:17 [10] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/09/2016 06:55:17 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:17 [12] DEBUG  LoginConversation             : Creating login request. 
+04/09/2016 06:55:17 [12] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 0.1
+04/09/2016 06:55:17 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"A00000001","Alias":"The Instructor","FirstName":"The","LastName":"Instructor"},"ProcessLabel":"The Instructor","ProcessType":3,"PublicKey":null}
+04/09/2016 06:55:17 [12] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:55:17 [11] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.LoginReply, MessageID: 1.98, ConversationID: 0.1)
+JSON: {"__type":"LoginReply:#Messages.ReplyMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":1,"Seq":98},"Note":"Logged in","Success":true,"PennyBankEndPoint":{"Host":"127.0.0.1","Port":12003},"PennyBankPublicKey":null,"ProcessInfo":{"EndPoint":{"Host":"127.0.0.1","Port":10000},"Label":"The Instructor","ProcessId":7,"Status":3,"Type":3},"ProxyEndPoint":{"Host":"127.0.0.1","Port":12002}}
+04/09/2016 06:55:17 [11] INFO   Dispatcher                    : New Message Received: (Messages.ReplyMessages.LoginReply)
+04/09/2016 06:55:17 [11] INFO   Dispatcher                    : MessageId: 1.98ConversationId: 0.1
+04/09/2016 06:55:22 [12] DEBUG  LoginConversation             : Received a login reply message.
+04/09/2016 06:55:22 [12] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:22 [12] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:22 [10] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/09/2016 06:55:22 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.2
+04/09/2016 06:55:22 [10] DEBUG  Dispatcher                    :       New Queue ID: 7.2
+04/09/2016 06:55:22 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:22 [15] DEBUG  GameListConversation          : Queuing game list request. 
+04/09/2016 06:55:22 [15] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 7.2
+04/09/2016 06:55:22 [15] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.2, ConversationID: 7.2)
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":2},"MsgId":{"Pid":7,"Seq":2},"StatusFilter":4}
+04/09/2016 06:55:22 [15] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:55:22 [11] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.99, ConversationID: 7.2)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":2},"MsgId":{"Pid":1,"Seq":99},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":6,"Type":3}],"GameId":3,"GameManagerId":2,"Label":"GM52385's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/09/2016 06:55:22 [11] INFO   Dispatcher                    : New Message Received: (Messages.ReplyMessages.GameListReply)
+04/09/2016 06:55:22 [11] INFO   Dispatcher                    : MessageId: 1.99ConversationId: 7.2
+04/09/2016 06:55:27 [15] DEBUG  GameListConversation          : Received a game list reply message.
+04/09/2016 06:55:27 [15] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:27 [15] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:27 [10] DEBUG  PlayerProcess                 : Life points is null, game needs to be started.
+04/09/2016 06:55:27 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 7.3
+04/09/2016 06:55:27 [10] DEBUG  Dispatcher                    :       New Queue ID: 7.3
+04/09/2016 06:55:27 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:27 [14] DEBUG  JoinGameConversation          : Queuing join game request. 
+04/09/2016 06:55:27 [14] DEBUG  JoinGameConversation          : Requesting GameId: 3
+04/09/2016 06:55:27 [14] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 7.3
+04/09/2016 06:55:27 [14] DEBUG  PostMan                       : Sending UDP (Messages.Routing, MessageID: 7.3, ConversationID: 7.3)
+JSON: {"__type":"Routing:#Messages","ConvId":{"Pid":7,"Seq":3},"MsgId":{"Pid":7,"Seq":3},"InnerMessage":{"__type":"JoinGameRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":3},"MsgId":{"Pid":7,"Seq":3},"GameId":3,"Process":{"EndPoint":{"Host":"127.0.0.1","Port":10000},"Label":"The Instructor","ProcessId":7,"Status":4,"Type":3}},"ToProcessIds":[2]}
+04/09/2016 06:55:28 [10] DEBUG  PlayerProcess                 : No games available, setting status to 'Registered'
+04/09/2016 06:55:28 [14] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:55:28 [11] DEBUG  PostMan                       : Received UDP (Messages.Routing, MessageID: 2.48, ConversationID: 7.3)
+JSON: {"__type":"Routing:#Messages","ConvId":{"Pid":7,"Seq":3},"MsgId":{"Pid":2,"Seq":48},"InnerMessage":{"__type":"JoinGameReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":3},"MsgId":{"Pid":2,"Seq":48},"Note":null,"Success":true,"GameId":3,"InitialLifePoints":100},"ToProcessIds":[7]}
+04/09/2016 06:55:28 [11] INFO   Dispatcher                    : New Message Received: (Messages.Routing)
+04/09/2016 06:55:28 [11] INFO   Dispatcher                    : MessageId: 2.48ConversationId: 7.3
+04/09/2016 06:55:28 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.105, ConversationID: 1.105)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":105},"MsgId":{"Pid":1,"Seq":105}}
+04/09/2016 06:55:28 [11] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/09/2016 06:55:28 [10] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/09/2016 06:55:28 [11] INFO   Dispatcher                    : MessageId: 1.105ConversationId: 1.105
+04/09/2016 06:55:28 [11] DEBUG  Dispatcher                    : Conversation  with id= 1.105 does not exist, trying to create new conversation.
+04/09/2016 06:55:28 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.4
+04/09/2016 06:55:28 [10] DEBUG  Dispatcher                    :       New Queue ID: 7.4
+04/09/2016 06:55:28 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:28 [12] DEBUG  GameListConversation          : Queuing game list request. 
+04/09/2016 06:55:28 [12] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 7.4
+04/09/2016 06:55:28 [12] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.4, ConversationID: 7.4)
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":4},"MsgId":{"Pid":7,"Seq":4},"StatusFilter":4}
+04/09/2016 06:55:28 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.105
+04/09/2016 06:55:28 [12] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:55:28 [11] DEBUG  Dispatcher                    :       New Queue ID: 1.105
+04/09/2016 06:55:28 [11] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:28 [15] DEBUG  AliveConversation             : Creating Alive Response
+04/09/2016 06:55:28 [15] DEBUG  ResponseConversation          : Conversation Id  for Response conversation: 1.105
+04/09/2016 06:55:28 [15] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 7.5, ConversationID: 1.105)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":105},"MsgId":{"Pid":7,"Seq":5},"Note":"I'm Alive","Success":true}
+04/09/2016 06:55:28 [15] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:55:29 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AllowanceDeliveryRequest, MessageID: 1.107, ConversationID: 1.107)
+JSON: {"__type":"AllowanceDeliveryRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":107},"MsgId":{"Pid":1,"Seq":107},"NumberOfPennies":400,"PortNumber":12998}
+04/09/2016 06:55:29 [11] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AllowanceDeliveryRequest)
+04/09/2016 06:55:29 [11] INFO   Dispatcher                    : MessageId: 1.107ConversationId: 1.107
+04/09/2016 06:55:29 [11] DEBUG  Dispatcher                    : Conversation  with id= 1.107 does not exist, trying to create new conversation.
+04/09/2016 06:55:29 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AllowanceDeliveryConversation, 1.107
+04/09/2016 06:55:29 [11] DEBUG  Dispatcher                    :       New Queue ID: 1.107
+04/09/2016 06:55:29 [11] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:29 [17] DEBUG  AllowanceDeliveryConversation : Received Allowance Delivery Request. 
+04/09/2016 06:55:29 [17] DEBUG  TCPSocket                     : Destination Endpoint is: 127.0.0.1:12998
+04/09/2016 06:55:29 [17] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:29 [17] DEBUG  TCPSocket                     : Opening Remote TCP Connection
+04/09/2016 06:55:29 [17] DEBUG  TCPSocket                     : TCP Socket connected to 127.0.0.1:12998
+04/09/2016 06:55:29 [17] INFO   AllowanceDeliveryConversation : IN TCP RECEIVE!!!!
+04/09/2016 06:55:29 [17] DEBUG  TCPSocket                     : Reading bytes in TCP Reader
+04/09/2016 06:55:29 [17] DEBUG  TCPSocket                     : System.Net.Sockets.SocketException (0x80004005): A non-blocking socket operation could not be completed immediately
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 size, SocketFlags socketFlags)
+   at CommunicationLayer.TCPSocket.Read(Socket handler, Int32 numBytes) in D:\Drive\School\CS5200\LocalGame\CommunicationLayer\TCPSocket.cs:line 108
+   at Player.Conversation.AllowanceDeliveryConversation.<OpenTCPStream>b__6_0(Socket handler) in D:\Drive\School\CS5200\LocalGame\Player\Conversation\AllowanceDeliveryConversation.cs:line 40
+   at CommunicationLayer.TCPSocket.EstablishConnection(PublicEndPoint ep, Action`1 afterConnect) in D:\Drive\School\CS5200\LocalGame\CommunicationLayer\TCPSocket.cs:line 54
+04/09/2016 06:55:29 [17] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:29 [17] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:33 [14] DEBUG  JoinGameConversation          : Received a game join message.
+04/09/2016 06:55:33 [14] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:33 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:34 [12] ERROR  GameListConversation          : Either the message received was null, or no games are available. 
+04/09/2016 06:55:34 [12] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:34 [12] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:34 [10] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/09/2016 06:55:34 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.6
+04/09/2016 06:55:34 [10] DEBUG  Dispatcher                    :       New Queue ID: 7.6
+04/09/2016 06:55:34 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:34 [14] DEBUG  GameListConversation          : Queuing game list request. 
+04/09/2016 06:55:34 [14] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 7.6
+04/09/2016 06:55:34 [14] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.6, ConversationID: 7.6)
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":6},"MsgId":{"Pid":7,"Seq":6},"StatusFilter":4}
+04/09/2016 06:55:34 [14] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:55:34 [11] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.108, ConversationID: 7.6)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":6},"MsgId":{"Pid":1,"Seq":108},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":6,"Type":3},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":7,"Type":3}],"GameId":3,"GameManagerId":2,"Label":"GM52385's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/09/2016 06:55:34 [11] INFO   Dispatcher                    : New Message Received: (Messages.ReplyMessages.GameListReply)
+04/09/2016 06:55:34 [11] INFO   Dispatcher                    : MessageId: 1.108ConversationId: 7.6
+04/09/2016 06:55:39 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AllowanceDeliveryRequest, MessageID: 1.107, ConversationID: 1.107)
+JSON: {"__type":"AllowanceDeliveryRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":107},"MsgId":{"Pid":1,"Seq":107},"NumberOfPennies":400,"PortNumber":12998}
+04/09/2016 06:55:39 [11] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AllowanceDeliveryRequest)
+04/09/2016 06:55:39 [11] INFO   Dispatcher                    : MessageId: 1.107ConversationId: 1.107
+04/09/2016 06:55:39 [14] DEBUG  GameListConversation          : Received a game list reply message.
+04/09/2016 06:55:39 [14] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:39 [14] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:39 [10] DEBUG  PlayerProcess                 : Life points is null, game needs to be started.
+04/09/2016 06:55:39 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.JoinGameConversation, 7.7
+04/09/2016 06:55:39 [10] DEBUG  Dispatcher                    :       New Queue ID: 7.7
+04/09/2016 06:55:39 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:39 [12] DEBUG  JoinGameConversation          : Queuing join game request. 
+04/09/2016 06:55:39 [12] DEBUG  JoinGameConversation          : Requesting GameId: 3
+04/09/2016 06:55:39 [12] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 7.7
+04/09/2016 06:55:39 [12] DEBUG  PostMan                       : Sending UDP (Messages.Routing, MessageID: 7.7, ConversationID: 7.7)
+JSON: {"__type":"Routing:#Messages","ConvId":{"Pid":7,"Seq":7},"MsgId":{"Pid":7,"Seq":7},"InnerMessage":{"__type":"JoinGameRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":7},"MsgId":{"Pid":7,"Seq":7},"GameId":3,"Process":{"EndPoint":{"Host":"127.0.0.1","Port":10000},"Label":"The Instructor","ProcessId":7,"Status":4,"Type":3}},"ToProcessIds":[2]}
+04/09/2016 06:55:39 [10] DEBUG  PlayerProcess                 : No games available, setting status to 'Registered'
+04/09/2016 06:55:39 [12] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:55:39 [11] DEBUG  PostMan                       : Received UDP (Messages.Routing, MessageID: 2.54, ConversationID: 7.7)
+JSON: {"__type":"Routing:#Messages","ConvId":{"Pid":7,"Seq":7},"MsgId":{"Pid":2,"Seq":54},"InnerMessage":{"__type":"JoinGameReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":7},"MsgId":{"Pid":2,"Seq":54},"Note":null,"Success":true,"GameId":3,"InitialLifePoints":100},"ToProcessIds":[7]}
+04/09/2016 06:55:39 [11] INFO   Dispatcher                    : New Message Received: (Messages.Routing)
+04/09/2016 06:55:39 [11] INFO   Dispatcher                    : MessageId: 2.54ConversationId: 7.7
+04/09/2016 06:55:39 [11] DEBUG  PostMan                       : Received UDP (Messages.Routing, MessageID: 2.57, ConversationID: 2.57)
+JSON: {"__type":"Routing:#Messages","ConvId":{"Pid":2,"Seq":57},"MsgId":{"Pid":2,"Seq":57},"InnerMessage":{"__type":"GameStatusNotification:#Messages.RequestMessages","ConvId":{"Pid":2,"Seq":57},"MsgId":{"Pid":2,"Seq":57},"Game":{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":6,"Type":3},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":7,"Type":3}],"GameId":3,"GameManagerId":2,"Label":"GM52385's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}},"ToProcessIds":[5,4,6,7]}
+04/09/2016 06:55:40 [11] INFO   Dispatcher                    : New Message Received: (Messages.Routing)
+04/09/2016 06:55:40 [10] DEBUG  PlayerProcess                 : In Process GetGameList function.
+04/09/2016 06:55:40 [11] INFO   Dispatcher                    : MessageId: 2.57ConversationId: 2.57
+04/09/2016 06:55:40 [11] DEBUG  Dispatcher                    : Conversation  with id= 2.57 does not exist, trying to create new conversation.
+04/09/2016 06:55:40 [10] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameListConversation, 7.8
+04/09/2016 06:55:40 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.GameStatusConversation, 2.57
+04/09/2016 06:55:40 [11] DEBUG  Dispatcher                    :       New Queue ID: 2.57
+04/09/2016 06:55:40 [11] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:40 [15] DEBUG  GameStatusConversation        : Received Game Status Message
+04/09/2016 06:55:40 [10] DEBUG  Dispatcher                    :       New Queue ID: 7.8
+04/09/2016 06:55:40 [10] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:40 [13] DEBUG  GameListConversation          : Queuing game list request. 
+04/09/2016 06:55:40 [13] DEBUG  InitiatedConversation         : Conversation Id  for initiated conversation: 7.8
+04/09/2016 06:55:40 [13] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.GameListRequest, MessageID: 7.8, ConversationID: 7.8)
+JSON: {"__type":"GameListRequest:#Messages.RequestMessages","ConvId":{"Pid":7,"Seq":8},"MsgId":{"Pid":7,"Seq":8},"StatusFilter":4}
+04/09/2016 06:55:40 [13] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:55:40 [11] DEBUG  PostMan                       : Received UDP (Messages.ReplyMessages.GameListReply, MessageID: 1.110, ConversationID: 7.8)
+JSON: {"__type":"GameListReply:#Messages.ReplyMessages","ConvId":{"Pid":7,"Seq":8},"MsgId":{"Pid":1,"Seq":110},"Note":null,"Success":true,"GameInfo":[{"CurrentProcesses":[{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":5,"Type":4},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":4,"Type":5},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":6,"Type":3},{"HasUmbrellaRaised":false,"HitPoints":0,"LifePoints":100,"ProcessId":7,"Type":3}],"GameId":3,"GameManagerId":2,"Label":"GM52385's 1st Game","MaxPlayers":5,"MinPlayers":3,"StartingPlayers":[],"Status":4,"Winners":null}]}
+04/09/2016 06:55:40 [11] INFO   Dispatcher                    : New Message Received: (Messages.ReplyMessages.GameListReply)
+04/09/2016 06:55:40 [11] INFO   Dispatcher                    : MessageId: 1.110ConversationId: 7.8
+04/09/2016 06:55:40 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AllowanceDeliveryRequest, MessageID: 1.111, ConversationID: 1.111)
+JSON: {"__type":"AllowanceDeliveryRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":111},"MsgId":{"Pid":1,"Seq":111},"NumberOfPennies":400,"PortNumber":12997}
+04/09/2016 06:55:40 [11] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AllowanceDeliveryRequest)
+04/09/2016 06:55:40 [11] INFO   Dispatcher                    : MessageId: 1.111ConversationId: 1.111
+04/09/2016 06:55:40 [11] DEBUG  Dispatcher                    : Conversation  with id= 1.111 does not exist, trying to create new conversation.
+04/09/2016 06:55:40 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AllowanceDeliveryConversation, 1.111
+04/09/2016 06:55:40 [11] DEBUG  Dispatcher                    :       New Queue ID: 1.111
+04/09/2016 06:55:40 [11] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:40 [16] DEBUG  AllowanceDeliveryConversation : Received Allowance Delivery Request. 
+04/09/2016 06:55:41 [16] DEBUG  TCPSocket                     : Destination Endpoint is: 127.0.0.1:12997
+04/09/2016 06:55:41 [16] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:41 [16] DEBUG  TCPSocket                     : Opening Remote TCP Connection
+04/09/2016 06:55:41 [16] DEBUG  TCPSocket                     : TCP Socket connected to 127.0.0.1:12997
+04/09/2016 06:55:41 [16] INFO   AllowanceDeliveryConversation : IN TCP RECEIVE!!!!
+04/09/2016 06:55:41 [16] DEBUG  TCPSocket                     : Reading bytes in TCP Reader
+04/09/2016 06:55:41 [16] DEBUG  TCPSocket                     : System.Net.Sockets.SocketException (0x80004005): A non-blocking socket operation could not be completed immediately
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 size, SocketFlags socketFlags)
+   at CommunicationLayer.TCPSocket.Read(Socket handler, Int32 numBytes) in D:\Drive\School\CS5200\LocalGame\CommunicationLayer\TCPSocket.cs:line 108
+   at Player.Conversation.AllowanceDeliveryConversation.<OpenTCPStream>b__6_0(Socket handler) in D:\Drive\School\CS5200\LocalGame\Player\Conversation\AllowanceDeliveryConversation.cs:line 40
+   at CommunicationLayer.TCPSocket.EstablishConnection(PublicEndPoint ep, Action`1 afterConnect) in D:\Drive\School\CS5200\LocalGame\CommunicationLayer\TCPSocket.cs:line 54
+04/09/2016 06:55:41 [16] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:41 [16] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:44 [12] DEBUG  JoinGameConversation          : Received a game join message.
+04/09/2016 06:55:44 [12] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:44 [12] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:45 [13] DEBUG  GameListConversation          : Received a game list reply message.
+04/09/2016 06:55:45 [13] INFO   BackgroundThread              : Stopping 
+04/09/2016 06:55:45 [13] DEBUG  BackgroundThread              : Leaving Stop
+04/09/2016 06:55:49 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AllowanceDeliveryRequest, MessageID: 1.107, ConversationID: 1.107)
+JSON: {"__type":"AllowanceDeliveryRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":107},"MsgId":{"Pid":1,"Seq":107},"NumberOfPennies":400,"PortNumber":12998}
+04/09/2016 06:55:49 [11] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AllowanceDeliveryRequest)
+04/09/2016 06:55:49 [11] INFO   Dispatcher                    : MessageId: 1.107ConversationId: 1.107
+04/09/2016 06:55:50 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AllowanceDeliveryRequest, MessageID: 1.111, ConversationID: 1.111)
+JSON: {"__type":"AllowanceDeliveryRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":111},"MsgId":{"Pid":1,"Seq":111},"NumberOfPennies":400,"PortNumber":12997}
+04/09/2016 06:55:50 [11] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AllowanceDeliveryRequest)
+04/09/2016 06:55:50 [11] INFO   Dispatcher                    : MessageId: 1.111ConversationId: 1.111
+04/09/2016 06:55:59 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AliveRequest, MessageID: 1.115, ConversationID: 1.115)
+JSON: {"__type":"AliveRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":115},"MsgId":{"Pid":1,"Seq":115}}
+04/09/2016 06:55:59 [11] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AliveRequest)
+04/09/2016 06:55:59 [11] INFO   Dispatcher                    : MessageId: 1.115ConversationId: 1.115
+04/09/2016 06:55:59 [11] DEBUG  Dispatcher                    : Conversation  with id= 1.115 does not exist, trying to create new conversation.
+04/09/2016 06:55:59 [11] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.AliveConversation, 1.115
+04/09/2016 06:55:59 [11] DEBUG  Dispatcher                    :       New Queue ID: 1.115
+04/09/2016 06:55:59 [11] INFO   BackgroundThread              : Starting 
+04/09/2016 06:55:59 [12] DEBUG  AliveConversation             : Creating Alive Response
+04/09/2016 06:55:59 [12] DEBUG  ResponseConversation          : Conversation Id  for Response conversation: 1.115
+04/09/2016 06:55:59 [12] DEBUG  PostMan                       : Sending UDP (Messages.ReplyMessages.Reply, MessageID: 7.9, ConversationID: 1.115)
+JSON: {"__type":"Reply:#Messages.ReplyMessages","ConvId":{"Pid":1,"Seq":115},"MsgId":{"Pid":7,"Seq":9},"Note":"I'm Alive","Success":true}
+04/09/2016 06:55:59 [12] DEBUG  PostMan                       : Message Delivered
+04/09/2016 06:56:00 [11] DEBUG  PostMan                       : Received UDP (Messages.RequestMessages.AllowanceDeliveryRequest, MessageID: 1.111, ConversationID: 1.111)
+JSON: {"__type":"AllowanceDeliveryRequest:#Messages.RequestMessages","ConvId":{"Pid":1,"Seq":111},"MsgId":{"Pid":1,"Seq":111},"NumberOfPennies":400,"PortNumber":12997}
+04/09/2016 06:56:00 [11] INFO   Dispatcher                    : New Message Received: (Messages.RequestMessages.AllowanceDeliveryRequest)
+04/09/2016 06:56:00 [11] INFO   Dispatcher                    : MessageId: 1.111ConversationId: 1.111

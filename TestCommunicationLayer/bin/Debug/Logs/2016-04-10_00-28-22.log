@@ -1,0 +1,22 @@
+04/10/2016 12:28:22 [ 6] DEBUG  PlayerProcess                 : Initializeing Player Subsystem.
+04/10/2016 12:28:22 [ 6] DEBUG  PlayerProcess                 : Initializing Player Details.
+04/10/2016 12:28:22 [ 6] INFO   BackgroundThread              : Starting 
+04/10/2016 12:28:22 [ 9] INFO   BackgroundThread              : Starting 
+04/10/2016 12:28:22 [ 9] DEBUG  PlayerProcess                 : In Process Login function.
+04/10/2016 12:28:22 [ 9] DEBUG  Dispatcher                    : Adding Conversation Player.Conversation.LoginConversation, 0.1
+04/10/2016 12:28:22 [ 9] DEBUG  Dispatcher                    :       New Queue ID: 0.1
+04/10/2016 12:28:22 [ 9] DEBUG  LoginConversation             : Creating login request. 
+04/10/2016 12:28:22 [ 9] DEBUG  InitiatedConversation         : LoginConversation, ConversationID: 0.1: Conversation Id  for initiated conversation: 0.1
+04/10/2016 12:28:22 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Setting Message IDs
+04/10/2016 12:28:22 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message has IDs
+04/10/2016 12:28:22 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Message is valid
+04/10/2016 12:28:22 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Envelope is valid
+04/10/2016 12:28:22 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Conversation is initiating send.
+04/10/2016 12:28:22 [ 9] DEBUG  PostMan                       : Sending UDP (Messages.RequestMessages.LoginRequest, MessageID: 0.1, ConversationID: 0.1)
+Endpoint: 127.0.0.1:10000
+JSON: {"__type":"LoginRequest:#Messages.RequestMessages","ConvId":{"Pid":0,"Seq":1},"MsgId":{"Pid":0,"Seq":1},"Identity":{"ANumber":"anumber","Alias":"alias","FirstName":"first","LastName":"last"},"ProcessLabel":"alias","ProcessType":3,"PublicKey":null}
+04/10/2016 12:28:22 [ 9] DEBUG  PostMan                       : Message Delivered
+04/10/2016 12:28:22 [ 9] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: Send succeeded.
+04/10/2016 12:28:22 [ 9] INFO   BackgroundThread              : Starting 
+04/10/2016 12:28:23 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
+04/10/2016 12:28:24 [11] DEBUG  Conversation                  : LoginConversation, ConversationID: 0.1: No message available
