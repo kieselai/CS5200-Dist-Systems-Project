@@ -1,27 +1,19 @@
-﻿using PlayerApp.Generic;
-using Player;
-using System.ComponentModel;
+﻿using AppCommon.ViewModels;
 using PlayerApp.Views;
-using System.Windows;
+using AppCommon;
+using AppCommon.Views;
 
 namespace PlayerApp.ViewModels
 {
-    public class MainWindowViewModel : BaseViewModel{
-
-        public MainWindowViewModel() : base("Player") {}
-
-        public void initialize() {
-            Navigate<LoginView>("MainRegion");
-            Navigate<MessageView>("MessageRegion");
-            Navigate<LogView>("LogRegion");
-        }
-
-        public void ChangeState(object sender, PropertyChangedEventArgs e) {
-            if(e.PropertyName == "Status") {
-                if(AppState.Connection.Player.PlayerState.Status == SharedObjects.ProcessInfo.StatusCode.Terminating) {
-                    AppState.Connection.Player.Stop();
-                }
-            }
+    public class MainWindowViewModel : AbstractMainWindowViewModel {
+        public override void initialize() {
+            AppDispatcher.Navigate<LoginView>("MainRegion");
+            base.initialize();
+            AppDispatcher.Navigate<OwnInfoView>("OwnInfoRegion");
+            AppDispatcher.DispatchUI(()=> {
+                AppDispatcher.GetView<CommonInfoView>("CommonInfoRegion").Visibility = System.Windows.Visibility.Hidden;
+                AppDispatcher.GetView<OwnInfoView>("OwnInfoRegion").Visibility = System.Windows.Visibility.Hidden;
+            });
         }
     }
 }

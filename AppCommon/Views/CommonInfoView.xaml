@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="AppCommon.Views.CommonInfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:mscor="clr-namespace:System;assembly=mscorlib" 
+             xmlns:local="clr-namespace:AppCommon"
+             Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="115" Width="auto" Height="113">
+        <DataGrid Name="ProcessInfoGrid"
+                  ItemsSource="{Binding ProcessInfoSource.View}" 
+                  HorizontalAlignment="Right" 
+                  VerticalAlignment="Bottom" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  VerticalScrollBarVisibility="Disabled"
+                  ScrollViewer.CanContentScroll="True" Height="50" Margin="0,50,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Process Id"       Binding="{Binding Path=ProcessId}"      MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Type"             Binding="{Binding Path=Type}"           MinWidth="100"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="EndPoint"         Binding="{Binding Path=EndPoint}"       MinWidth="100"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="Process Label"    Binding="{Binding Path=Label}"          MinWidth="100" IsReadOnly="True"  />
+                <DataGridTextColumn Header="Alive Timestamp"  Binding="{Binding Path=AliveTimestamp}" MinWidth="100"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="Alive Reties"     Binding="{Binding Path=AliveReties}"    MinWidth="100"  IsReadOnly="True"   />
+                <DataGridTextColumn Header="Status"           Binding="{Binding Path=Status}"         MinWidth="100" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Name="CurrentGameGrid"
+                  ItemsSource="{Binding GameSource.View}"
+                  HorizontalAlignment="right" 
+                  Margin="0,0,0.4,60" 
+                  VerticalAlignment="bottom" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  VerticalScrollBarVisibility="Disabled"
+                  HorizontalScrollBarVisibility="Disabled"
+                  ScrollViewer.CanContentScroll="False" Height="50" Width="702">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="GameId"  Binding="{Binding Path=GameId}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="GameManagerId"   Binding="{Binding Path=GameManagerId}"  MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Label"       Binding="{Binding Path=Label}"     MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="MaxPlayers"     Binding="{Binding Path=MaxPlayers}"   MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="MinPlayers"  Binding="{Binding Path=MinPlayers}" MinWidth="100"  IsReadOnly="True"  />
+                <!--<DataGridTextColumn Header="StartingPlayers"   Binding="{Binding Path=StartingPlayers}"  MinWidth="100"  IsReadOnly="True"  />-->
+                <DataGridTextColumn Header="Status"       Binding="{Binding Path=Status}"     MinWidth="100"  IsReadOnly="True"  />
+                <!--<DataGridTextColumn Header="Winners"     Binding="{Binding Path=Winners, Converter={StaticResource  IntArrayConverter}}"   MinWidth="100"  IsReadOnly="True"  />-->
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

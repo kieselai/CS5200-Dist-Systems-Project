@@ -1,12 +1,13 @@
 ﻿using MyUtilities;
 using SharedObjects;
-using System.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace CommunicationLayer {
     public class ProcessState : BindableEventObject {
 
         public ProcessState() {
             _procInfo = new ProcessInfo();
+            _currGame = new GameInfo();
             CurrentMessage = "";
         }
 
@@ -22,6 +23,16 @@ namespace CommunicationLayer {
             set { SetProperty( _procInfo, value, (p) => _procInfo.Info = value); }
         }
 
+        public ProcessInfo.StatusCode Status {
+            get { return ProcessInfo.Status;  }
+        }
+
+        private BindableGameInfo _currGame;
+        public  BindableGameInfo CurrentGame {
+            get { return _currGame; }
+            set { SetProperty( _currGame, value, (c)=> _currGame.Info = value); }
+        }
+
 
         private bool _isShutDown;
         public bool IsShutDown {
@@ -29,19 +40,11 @@ namespace CommunicationLayer {
             set { SetProperty(ref _isShutDown, value); }
         }
 
-        
 
-        public void Reset() {
-            ProcessInfo = new ProcessInfo {
-                AliveReties = 0,
-                AliveTimestamp = null,
-                EndPoint = null,
-                Label = null,
-                ProcessId = 0,
-                Status = SharedObjects.ProcessInfo.StatusCode.NotInitialized,
-                Type = SharedObjects.ProcessInfo.ProcessType.Unknown
-            };
+        public virtual void Reset() {
             CurrentMessage = "";
+            ProcessInfo.Reset();
+            CurrentGame.Reset();
         }
     }
 }

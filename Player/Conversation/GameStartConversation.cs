@@ -1,24 +1,13 @@
-﻿using CommunicationLayer;
-using SharedObjects;
-using Messages;
-using Messages.ReplyMessages;
+﻿
+
+using ProcessCommon.Conversation;
 
 namespace Player.Conversation
 {
-    public class GameStartConversation : ResponseConversation {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(GameStartConversation));
-        protected override bool ProcessRequest() {
-            return true;
-        }
-        private PlayerState PlayerState {
-            get { return ((PlayerState)SubSystem.State); }
-        }
-
-        protected override bool CreateResponse() {
-            log.Debug("Responding to Game Start Request");
-            OutgoingMessage = RouteTo(new StartGame { Success = true, Note = "Ready!" }, PlayerState.CurrentGame.GameManagerId );
-            PlayerState.ProcessInfo.Status = ProcessInfo.StatusCode.PlayingGame;
-            return true;
+    public class GameStartConversation : AbstractGameStartConversation {
+        protected override bool SetAndVerifyIds() {
+            GameManagerId = SubSystem.State.CurrentGame.GameManagerId;
+            return GameManagerId != 0;
         }
     }
 }

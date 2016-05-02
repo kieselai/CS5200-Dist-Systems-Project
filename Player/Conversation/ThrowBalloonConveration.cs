@@ -1,17 +1,13 @@
 ﻿using CommunicationLayer;
-using System.Collections.Concurrent;
 using SharedObjects;
 using Messages.RequestMessages;
 using Messages.ReplyMessages;
-using System;
-using Messages;
 using System.Linq;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace Player.Conversation
 {
-     public class ThrowBalloonConversation : InitiatedConversation {
+    public class ThrowBalloonConversation : InitiatedConversation {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(FillBalloonConversation));
 
         private PlayerState PlayerState {

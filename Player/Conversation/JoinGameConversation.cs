@@ -1,29 +1,22 @@
-﻿using CommunicationLayer;
-using SharedObjects;
-using Messages.RequestMessages;
+﻿using SharedObjects;
 using Messages.ReplyMessages;
-using Messages;
-using System;
+using ProcessCommon.Conversation;
 using Utils;
 
-namespace Player.Conversation {
-    public class JoinGameConversation : InitiatedConversation {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(JoinGameConversation));
+namespace Player.Conversation
+{
+    public class JoinGameConversation : AbstractJoinGameConversation {
         private PlayerState PlayerState {
             get { return ((PlayerState)SubSystem.State); }
         }
-        override protected bool CreateRequest() {
-            if ( PlayerState.OpenGames.Count > 0 ) {
+        override protected bool SetAndVerifyIds() {
+            if ( PlayerState.OpenGames != null && PlayerState.OpenGames.Count > 0 ) {
                 var openGames = PlayerState.OpenGames;
                 GameInfo nextAvailableGame = null;
                 SyncUtils.WaitForCondition( ()=> openGames.TryDequeue( out nextAvailableGame ) || openGames.Count == 0, 10, 10);
                 if ( nextAvailableGame != null ) {
-                    log.Debug("Queuing join game request. ");
-                    log.Debug("Requesting GameId: "+ nextAvailableGame.GameId);
-                    OutgoingMessage = RouteTo( new JoinGameRequest {
-                        GameId = nextAvailableGame.GameId,
-                        Process = SubSystem.State.ProcessInfo,
-                    },  nextAvailableGame.GameManagerId );
+                    GameId = nextAvailableGame.GameId;
+                    GameManagerId = nextAvailableGame.GameManagerId;
                     return true;
                 }
             }
@@ -31,22 +24,22 @@ namespace Player.Conversation {
             return false;
         }
 
-        override protected bool ProcessReply() {
+        protected override bool ProcessSuccess(JoinGameReply reply) {
             // Handle a game join reply
-            var joinGameReply = Cast<JoinGameReply>(IncomingMessage);
-            if ( joinGameReply != null && joinGameReply.Success == true && joinGameReply.InitialLifePoints > 0 ) {
-                PlayerState.InitialLifePoints = joinGameReply.InitialLifePoints;
-                PlayerState.ProcessInfo.Status = ProcessInfo.StatusCode.JoinedGame;
-                Success = true;
-                return true;
+            if ( reply.InitialLifePoints > 0 ) {
+                PlayerState.InitialLifePoints = reply.InitialLifePoints;
+                return base.ProcessSuccess(reply);
             }
             else {
-                var games = PlayerState.OpenGames;
-                if ( games == null || games.Count < 1 ) log.Error("No games available.  ");
-                else log.Error("An unknown error occured while attempting to join a game.");
-                MessageFailure();
+                ProcessFailure(reply);
+                return false;
             }
-            return false;
+        }
+        protected override void ProcessFailure(JoinGameReply reply) {
+            if( reply != null && reply.InitialLifePoints <= 0 ) {
+                MessageFailure("Initial life points is less than or equal to zero.");
+            }
+            else base.ProcessFailure(reply);
         }
     }
 }

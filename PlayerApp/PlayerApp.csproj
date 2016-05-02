@@ -94,45 +94,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Generic\BaseModule.cs" />
-    <Compile Include="Generic\BaseViewModel.cs" />
     <Compile Include="IntArrayValueConverter.cs" />
+    <Compile Include="Modules\OwnInfoModule.cs" />
     <Compile Include="Modules\LogoutModule.cs" />
-    <Compile Include="Modules\LogModule.cs" />
-    <Compile Include="Modules\MessageModule.cs" />
     <Compile Include="Modules\MainModule.cs" />
     <Compile Include="ViewModels\LogoutViewModel.cs" />
-    <Compile Include="ViewModels\StatusViewModel.cs" />
-    <Compile Include="ViewModels\LogViewModel.cs" />
-    <Compile Include="ViewModels\MessageViewModel.cs" />
-    <Compile Include="Views\LogoutView.xaml.cs">
-      <DependentUpon>LogoutView.xaml</DependentUpon>
+    <Compile Include="ViewModels\OwnInfoViewModel.cs" />
+    <Compile Include="Views\InitializedView.xaml.cs">
+      <DependentUpon>InitializedView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\LogView.xaml.cs">
-      <DependentUpon>LogView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\StatusView.xaml.cs">
-      <DependentUpon>StatusView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MessageView.xaml.cs">
-      <DependentUpon>MessageView.xaml</DependentUpon>
+    <Compile Include="Views\OwnInfoView.xaml.cs">
+      <DependentUpon>OwnInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
-    <Page Include="Views\LogoutView.xaml">
+    <Page Include="Views\InitializedView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\LogView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\StatusView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\MessageView.xaml">
+    <Page Include="Views\OwnInfoView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -144,7 +125,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AppState.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -200,6 +180,10 @@
       <Project>{3239fcca-21eb-4b04-b8ad-c442491e463e}</Project>
       <Name>Utils</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AppCommon\AppCommon.csproj">
+      <Project>{955fb5ab-c60f-4e8c-b13c-4ebd7817a2fc}</Project>
+      <Name>AppCommon</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CommunicationLayer\CommunicationLayer.csproj">
       <Project>{828ff253-42f6-44ec-b339-4992dfaeda59}</Project>
       <Name>CommunicationLayer</Name>
@@ -211,6 +195,10 @@
     <ProjectReference Include="..\Player\Player.csproj">
       <Project>{36b95ca1-d0c1-4970-b0b0-e50613edd8a8}</Project>
       <Name>Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProcessCommon\ProcessCommon.csproj">
+      <Project>{eb8823c3-ed29-4173-a630-09bc076b321d}</Project>
+      <Name>ProcessCommon</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

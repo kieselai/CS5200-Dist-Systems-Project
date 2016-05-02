@@ -1,6 +1,4 @@
 ﻿using CommunicationLayer;
-using SharedObjects;
-using Messages;
 using Messages.ReplyMessages;
 using System;
 using Messages.RequestMessages;

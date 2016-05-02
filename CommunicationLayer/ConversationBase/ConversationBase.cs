@@ -126,7 +126,7 @@ namespace CommunicationLayer
             if ( envelope == null ) {
                 return null;
             }
-            else if( envelope.Message.GetType() == typeof(Routing) ) {
+            else if( envelope.Message.GetType() == typeof(Routing) && typeof(T) != typeof(Routing) ) {
                 return (envelope.Message as Routing).InnerMessage as T;
             }
             return envelope.Message as T;

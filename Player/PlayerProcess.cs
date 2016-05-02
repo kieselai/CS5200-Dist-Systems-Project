@@ -5,54 +5,32 @@ using SharedObjects;
 using log4net;
 using System.Threading.Tasks;
 using System;
+using ProcessCommon;
 
 namespace Player
 {
-    public class PlayerProcess : CommunicationProcess  {
+    public class PlayerProcess : CommonProcessBase<PlayerConversationFactory, PlayerState>  {
         private static readonly ILog log = LogManager.GetLogger(typeof(PlayerProcess));
 
-        public PlayerState PlayerState {
-            get { return  (PlayerState)base.State; }
-        }
-
-        public PlayerProcess(): base( new PlayerState() ) {
-            SetStatus(ProcessInfo.StatusCode.NotInitialized);
-        }
-
-        public void initializeSubsystem(string registryEp) {
-            log.Debug("Initializeing Player Subsystem.");
-            initializeSubsystem(
-                new PlayerConversationFactory(), 
-                new PlayerEndpointLookup( registryEp ));
-        }
+        public PlayerProcess(): base() {}
 
         public void initializePlayer(string firstName, string lastName, string alias, string aNumber) {
             log.Debug("Initializing Player Details.");
-            PlayerState.IdentityInfo = new IdentityInfo {
+            TypedState.IdentityInfo = new IdentityInfo {
                 FirstName = firstName,
                 LastName  = lastName,
                 Alias     = alias,
                 ANumber   = aNumber
             };
-            PlayerState.ProcessInfo.Label = alias;
+            State.ProcessInfo.Label = alias;
         }
 
-        public void Reset() {
-            PlayerState.Pennies = new ResourceSet<Penny>();
-            PlayerState.Balloons = new ResourceSet<Balloon>();
-            PlayerState.CurrentGame = new GameInfo();
-            PlayerState.FilledBalloons = new ResourceSet<Balloon>();
-            PlayerState.HitPoints = 0;
-            PlayerState.InitialLifePoints = 0;
-            PlayerState.MyPlayer = new MyUtilities.BindableGameProcessData();
-            PlayerState.OpenGames = null;
-        }
         
         override protected void Process(object state) {
             SubSystem.Dispatcher.Start();
             while( KeepGoing ) {
                 //log.Debug("------------- At top of Player process loop -------------");
-                switch ( PlayerState.Status ) {
+                switch ( State.Status ) {
                     case ProcessInfo.StatusCode.NotInitialized:  Login();       break;
                     case ProcessInfo.StatusCode.Initializing:    break;
                     case ProcessInfo.StatusCode.Registered:      GetGameList(); break;
@@ -72,14 +50,14 @@ namespace Player
         protected void PlayGame() {
             log.Debug("In Process PlayGame function.");
             SetStatus(ProcessInfo.StatusCode.PlayingGame);
-            while(PlayerState.Status == ProcessInfo.StatusCode.PlayingGame) {
-                for( int i = 0; i < PlayerState.Pennies.AvailableCount; i+=3 ) {
+            while(State.Status == ProcessInfo.StatusCode.PlayingGame) {
+                for( int i = 0; i < TypedState.Pennies.AvailableCount; i+=3 ) {
                     Task.Run( ()=>SubSystem.Dispatcher.DispatchConversationAsync<BuyBalloonConversation>() );
                 }
-                for( int i = 0; i < PlayerState.Balloons.AvailableCount; i++ ) {
+                for( int i = 0; i < TypedState.Balloons.AvailableCount; i++ ) {
                     Task.Run( ()=>SubSystem.Dispatcher.DispatchConversationAsync<FillBalloonConversation>() );
                 }
-                for ( int i = 0; i < PlayerState.FilledBalloons.AvailableCount; i++ ) {
+                for ( int i = 0; i < TypedState.FilledBalloons.AvailableCount; i++ ) {
                     Task.Run( ()=>SubSystem.Dispatcher.DispatchConversationAsync<ThrowBalloonConversation>());
                 }
                 Thread.Sleep(100);
@@ -89,10 +67,10 @@ namespace Player
 
         override protected void SetStatus(ProcessInfo.StatusCode status) {
             if(StatusIsPossible(status)) {
-                PlayerState.ProcessInfo.Status = status;
+                State.ProcessInfo.Status = status;
                 string message = GetMessageFromStatus(status);
                 if( message != null ) {
-                     PlayerState.CurrentMessage = message;
+                     State.CurrentMessage = message;
                 }
             }
             else {
@@ -127,8 +105,8 @@ namespace Player
 
         public void GetGameList() {
             log.Debug("In Process GetGameList function.");
-            PlayerState.InitialLifePoints = 0;
-            PlayerState.OpenGames = null;
+            TypedState.InitialLifePoints = 0;
+            TypedState.OpenGames = null;
             var success = SubSystem.Dispatcher.DispatchConversation<GameListConversation>();
             if( success ) SetStatus( ProcessInfo.StatusCode.JoiningGame );
         }
@@ -141,7 +119,7 @@ namespace Player
 
         public void LeavingGame() {
             log.Debug("In Process LeavingGame function.");
-            PlayerState.CurrentMessage = "Game is ending without ranking.";
+            State.CurrentMessage = "Game is ending without ranking.";
             GameEnd();
         }
         public void Tied() {
@@ -160,14 +138,6 @@ namespace Player
             log.Debug("In Process GameEnd function.");
             Thread.Sleep(3000);
             SetStatus(ProcessInfo.StatusCode.Registered);
-        }
-
-        async public void Logout(Action<bool> callback) {
-            log.Debug("In Process Logout function.");
-            PlayerState.CurrentMessage = "Requesting log out";
-            var success = await SubSystem.Dispatcher.DispatchConversationAsync<LogoutConversation>();
-            if( success ) SetStatus( ProcessInfo.StatusCode.NotInitialized );
-            callback(success);
         }
     }
 }

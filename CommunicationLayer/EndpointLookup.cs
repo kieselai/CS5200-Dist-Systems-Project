@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Concurrent;
 using SharedObjects;
 
 namespace CommunicationLayer
 {
-    public abstract class EndpointLookup {
+    public class EndpointLookup {
         ConcurrentDictionary<string, PublicEndPoint> endpointMap;
         public EndpointLookup() {
             endpointMap   = new ConcurrentDictionary<string, PublicEndPoint>();

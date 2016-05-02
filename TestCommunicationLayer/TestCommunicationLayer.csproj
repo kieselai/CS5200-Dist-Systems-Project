@@ -92,6 +92,10 @@
       <Project>{36b95ca1-d0c1-4970-b0b0-e50613edd8a8}</Project>
       <Name>Player</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ProcessCommon\ProcessCommon.csproj">
+      <Project>{eb8823c3-ed29-4173-a630-09bc076b321d}</Project>
+      <Name>ProcessCommon</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">

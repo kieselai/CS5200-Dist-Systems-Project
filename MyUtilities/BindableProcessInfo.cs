@@ -31,6 +31,13 @@ namespace MyUtilities
         public BindableProcessInfo(ProcessInfo info)         { Info = info;      }
         public BindableProcessInfo(BindableProcessInfo info) { Info = info.Info; }
 
+        public void Reset() {
+            Info = new ProcessInfo {
+                Status = SharedObjects.ProcessInfo.StatusCode.NotInitialized,
+                Type = Info.Type
+            };
+        }
+
         public static implicit operator ProcessInfo(BindableProcessInfo info) {
             return info.Info;
         }

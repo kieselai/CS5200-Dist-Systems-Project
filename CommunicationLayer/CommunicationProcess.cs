@@ -1,43 +1,49 @@
 ﻿using SharedObjects;
 using System;
+using System.Collections.Generic;
 using Utils;
 
 
 namespace CommunicationLayer
 {
-    public abstract class CommunicationProcess : BackgroundThread {
-        public CommunicationSubsystem      SubSystem { get; set; }
-        public    ProcessState             State     { get; set; }
+    public interface ICommunicationProcess {
+        CommunicationSubsystem  SubSystem { get; set; }
+        ProcessState            State     { get; set; }
+        void Start(object state);
+        void Stop();
+        void Logout(Action<bool> callback);
+    }
 
-        public CommunicationProcess(ProcessState processState) : base() {
-            State = processState;
+    public abstract class CommunicationProcess<Conversation_Factory, Process_State> : BackgroundThread, ICommunicationProcess 
+            where Conversation_Factory : ConversationFactory, new() where Process_State : ProcessState, new() {
+        public CommunicationSubsystem  SubSystem  { get; set; }
+        public ProcessState            State      { get; set; }
+        public Process_State           TypedState { get { return State as Process_State; } }
+
+        public CommunicationProcess() : base() {
+            State = new Process_State();
+            SetStatus(ProcessInfo.StatusCode.NotInitialized);
         }
 
-        public void initializeSubsystem(ConversationFactory factory, EndpointLookup endpointLookup) {
-            SubSystem = new CommunicationSubsystem(factory, endpointLookup, State);
-        }
-
-        protected override void Process(object state) {
-            throw new NotImplementedException();
+        public void initializeSubsystem() {
+            SubSystem = new CommunicationSubsystem(new Conversation_Factory(), State);
         }
 
         virtual protected void SetStatus(ProcessInfo.StatusCode status) {
-            if( StatusIsPossible(status)) { }
-            State.ProcessInfo.Status = status;
+            if( StatusIsPossible(status) ) State.ProcessInfo.Status = status;
         }
 
         public bool StatusIsPossible( ProcessInfo.StatusCode status ) {
-            var isGameManager   = State.ProcessInfo.Type == ProcessInfo.ProcessType.GameManager;
             var isPlayer        = State.ProcessInfo.Type == ProcessInfo.ProcessType.Player;
+            var isGM = State.ProcessInfo.Type == ProcessInfo.ProcessType.GameManager;
             switch ( status ) {
-                case ProcessInfo.StatusCode.PlayingGame:     return isPlayer;
-                case ProcessInfo.StatusCode.HostingGame:     return isGameManager;
-                case ProcessInfo.StatusCode.LeavingGame:     return isPlayer;
+                case ProcessInfo.StatusCode.HostingGame:     return isGM;
                 case ProcessInfo.StatusCode.Won:             return isPlayer;
                 case ProcessInfo.StatusCode.Lost:            return isPlayer; 
                 case ProcessInfo.StatusCode.Tied:            return isPlayer;
                 default: return true;
             }
         }
+        public abstract void Logout(Action<bool> callback);
     }
 }

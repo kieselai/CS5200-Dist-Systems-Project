@@ -45,6 +45,15 @@ namespace MyUtilities
              _currentProcesses = new ObservableCollection<BindableGameProcessData>();
         }
 
+        public void Reset() {
+            Info = new GameInfo {
+                CurrentProcesses = new GameProcessData[]{},
+                StartingPlayers = new int[]{},
+                Status = GameInfo.StatusCode.NotInitialized,
+                Winners = new int[]{}
+            };
+        }
+
         public static implicit operator GameInfo(BindableGameInfo info) {
             return info.Info;
         }

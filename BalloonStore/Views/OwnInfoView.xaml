@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="BalloonStore.Views.OwnInfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:mscor="clr-namespace:System;assembly=mscorlib" 
+             xmlns:local="clr-namespace:BalloonStore"
+             Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="300" MinWidth="600" Width="auto">
+        <DataGrid Name="InGameInfoGrid"
+                  ItemsSource="{Binding InGameInfoSource.View}"
+                  HorizontalAlignment="Right" 
+                  Margin="0,0,0,180" 
+                  VerticalAlignment="Bottom" 
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False" 
+                  VerticalScrollBarVisibility="Disabled"
+                  HorizontalScrollBarVisibility="Disabled"
+                  ScrollViewer.CanContentScroll="False" Height="50">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Alias"   Binding="{Binding Path=Alias}" MinWidth="100"  IsReadOnly="True"  />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

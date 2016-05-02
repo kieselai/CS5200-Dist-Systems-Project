@@ -1,12 +1,6 @@
-﻿using System.Collections.Generic;
-using Messages;
-using Messages.ReplyMessages;
-using Messages.RequestMessages;
-using SharedObjects;
-using log4net;
+﻿using log4net;
 using Utils;
 using System.Threading.Tasks;
-using System;
 using System.Threading;
 
 namespace CommunicationLayer

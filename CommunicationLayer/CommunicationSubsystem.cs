@@ -1,4 +1,4 @@
-﻿using SharedObjects;
+﻿
 
 namespace CommunicationLayer
 {
@@ -13,7 +13,7 @@ namespace CommunicationLayer
         public EndpointLookup          EndpointLookup    { get; protected set; }
         public ProcessState            State             { get; protected set; }
 
-        public CommunicationSubsystem( ConversationFactory factory, EndpointLookup endpointLookup, ProcessState state ) {
+        public CommunicationSubsystem( ConversationFactory factory, ProcessState state ) {
             PostMan         = new PostMan();
             QueueLookup     = ConversationQueueLookup.Instance;
             Dispatcher      = new Dispatcher {
@@ -21,7 +21,7 @@ namespace CommunicationLayer
             };
             Factory = factory;
             Factory.SubSystem = this;
-            EndpointLookup = endpointLookup;
+            EndpointLookup = new EndpointLookup();
             State = state;
         }
     }

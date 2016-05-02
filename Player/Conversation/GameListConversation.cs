@@ -3,11 +3,10 @@ using System.Collections.Concurrent;
 using SharedObjects;
 using Messages.RequestMessages;
 using Messages.ReplyMessages;
-using System;
 
 namespace Player.Conversation
 {
-     public class GameListConversation : InitiatedConversation {
+    public class GameListConversation : InitiatedConversation {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(GameListConversation));
         private PlayerState PlayerState {
             get { return ((PlayerState)SubSystem.State); }

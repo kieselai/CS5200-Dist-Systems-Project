@@ -1,6 +1,9 @@
 ﻿using Prism.Commands;
-using PlayerApp.Generic;
+using AppCommon.Generic;
+using AppCommon.Views;
+using AppCommon;
 using PlayerApp.Views;
+
 
 namespace PlayerApp.ViewModels
 {
@@ -12,11 +15,15 @@ namespace PlayerApp.ViewModels
             set { SetProperty(ref isLocal, value); }
         }
         public DelegateCommand InitiateLogin { get { return _initiateLogin; } }
-        public LoginViewModel() : base("Log In") {
-            _initiateLogin = TrueDelegateCommand( ()=> {
+        public LoginViewModel() {
+            _initiateLogin = UnconditionalDelegateCommand( ()=> {
                 if( AppState.Connection.IsRunning == false ) {
                     AppState.Connection.Start( isLocal );
-                    Navigate<StatusView>("MainRegion");
+                    AppDispatcher.DispatchUI(()=> {
+                        AppDispatcher.GetView<CommonInfoView>("CommonInfoRegion").Visibility = System.Windows.Visibility.Visible;
+                        AppDispatcher.GetView<OwnInfoView>   ("OwnInfoRegion"   ).Visibility = System.Windows.Visibility.Visible;
+                        AppDispatcher.GetView<LoginView>     ("MainRegion"      ).Visibility = System.Windows.Visibility.Hidden;
+                    });
                 }
             });
         }

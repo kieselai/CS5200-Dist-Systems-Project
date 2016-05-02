@@ -1,35 +1,18 @@
-﻿using Prism.Commands;
-using PlayerApp.Generic;
+﻿using AppCommon;
 using PlayerApp.Views;
-using System.ComponentModel;
-using System.Threading.Tasks;
+using AppCommon.Views;
+using AppCommon.ViewModels;
+
 
 namespace PlayerApp.ViewModels
 {
-    public class LogoutViewModel : BaseViewModel {
-        private readonly DelegateCommand _initiateLogout;
-        public DelegateCommand InitiateLogout { get { return _initiateLogout; } }
-        public LogoutViewModel() : base("Log In") {
-            _initiateLogout = TrueDelegateCommand( ()=> {
-                AppState.Connection.Player.Logout((success)=> {
-                    if(success) {
-                        AppState.Connection.Player.PlayerState.CurrentMessage = "Successfully Logged out";
-                        Navigate<LoginView>("MainRegion");
-                        AppState.Connection.Player.SubSystem.Dispatcher.Stop();
-                        AppState.Connection.Stop();
-                        AppState.Connection.Player.Reset();
-                    }
-                });
+    public class LogoutViewModel : AbstractLogoutViewModel {
+        public override void CompleteLogout() {
+            base.CompleteLogout();
+            AppDispatcher.DispatchUI(()=> {
+                AppDispatcher.GetView<CommonInfoView>("CommonInfoRegion").Visibility = System.Windows.Visibility.Hidden;
+                AppDispatcher.GetView<OwnInfoView>   ("OwnInfoRegion"   ).Visibility = System.Windows.Visibility.Hidden;
             });
-        }
-
-        public void ChangeState(object sender, PropertyChangedEventArgs e) {
-            if(e.PropertyName == "IsShutDown") {
-                if(AppState.Connection.Player.PlayerState.IsShutDown) {
-                    AppState.Connection.Player.SubSystem.Dispatcher.Stop();
-                    AppState.Connection.Player.Stop();
-                }
-            }
         }
     }
 }

@@ -3,8 +3,6 @@ using SharedObjects;
 using CommunicationLayer;
 using MyUtilities;
 using System.ComponentModel;
-using System;
-using System.Collections.ObjectModel;
 
 namespace Player
 {
@@ -12,7 +10,6 @@ namespace Player
 
         public PlayerState() : base() {
             _identityInfo = new BindableIdentityInfo();
-            _currGame     = new GameInfo();
             _myPlayer     = new BindableGameProcessData();
             IdentityInfo.PropertyChanged += new PropertyChangedEventHandler(OnIdentityInfoChanged);
             Pennies = new ResourceSet<Penny>();
@@ -22,10 +19,6 @@ namespace Player
                 Status = SharedObjects.ProcessInfo.StatusCode.NotInitialized,
                 Type   = SharedObjects.ProcessInfo.ProcessType.Player
             };
-        }
-
-        public ProcessInfo.StatusCode Status {
-            get { return ProcessInfo.Status;  }
         }
 
         protected void OnIdentityInfoChanged(object sender, PropertyChangedEventArgs e) {
@@ -40,12 +33,6 @@ namespace Player
             set { SetProperty( _identityInfo, value, (i) => _identityInfo.Info = value ); }
         }
 
-        private BindableGameInfo _currGame;
-        public  BindableGameInfo CurrentGame {
-            get { return _currGame; }
-            set { SetProperty( _currGame, value, (c)=> _currGame.Info = value); }
-        }
-
         private BindableGameProcessData _myPlayer;
         public BindableGameProcessData MyPlayer {
             get { return _myPlayer; }
@@ -56,7 +43,6 @@ namespace Player
         public ResourceSet<Penny>    Pennies        { get; set; }
         public ResourceSet<Balloon>  Balloons       { get; set; }
         public ResourceSet<Balloon>  FilledBalloons { get; set; }
-        public bool? LoggedOut                      { get; set; }
 
         private int _initialLifePoints;
         public  int InitialLifePoints {
@@ -69,5 +55,17 @@ namespace Player
             set { SetProperty( ref _hitPoints, value);         OnPropertyChanged("CurrentLifePoints"); }
         }
         public int  CurrentLifePoints { get { return InitialLifePoints - HitPoints; } }
+
+        public override void Reset() {
+            base.Reset();
+            Pennies = new ResourceSet<Penny>();
+            Balloons = new ResourceSet<Balloon>();
+            FilledBalloons = new ResourceSet<Balloon>();
+            HitPoints = 0;
+            InitialLifePoints = 0;
+            MyPlayer = new BindableGameProcessData();
+            OpenGames = null;
+        }
+        
     }
 }

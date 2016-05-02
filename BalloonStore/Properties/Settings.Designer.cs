@@ -8,54 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BalloonStore.Properties {
-    
-    
+namespace BalloonStoreProcess.Properties
+{
+
+
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+    {
+
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-        
+
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("AKiesel\'s Balloon Store")]
-        public string Alias {
-            get {
-                return ((string)(this["Alias"]));
-            }
-            set {
-                this["Alias"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("127.0.0.1:12000")]
-        public string Dev_Registry_addr {
-            get {
-                return ((string)(this["Dev_Registry_addr"]));
-            }
-            set {
-                this["Dev_Registry_addr"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("52.3.213.61:12000")]
-        public string Registry_addr {
-            get {
-                return ((string)(this["Registry_addr"]));
-            }
-            set {
-                this["Registry_addr"] = value;
             }
         }
     }
