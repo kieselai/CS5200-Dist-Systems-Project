@@ -11,5 +11,29 @@
     <Setting Name="Registry_addr" Type="System.String" Scope="User">
       <Value Profile="(Default)">52.3.213.61:12000</Value>
     </Setting>
+    <Setting Name="FirstName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Anthony</Value>
+    </Setting>
+    <Setting Name="LastName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Kiesel</Value>
+    </Setting>
+    <Setting Name="ANumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">A01111521</Value>
+    </Setting>
+    <Setting Name="MinPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="MaxPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20000</Value>
+    </Setting>
+    <Setting Name="Timeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="AutoStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Retries" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

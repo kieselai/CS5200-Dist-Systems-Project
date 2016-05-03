@@ -88,9 +88,9 @@
       <Project>{0B14442E-84FA-4342-A9EF-C333160DC6C2}</Project>
       <Name>MyUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Player\Player.csproj">
-      <Project>{36b95ca1-d0c1-4970-b0b0-e50613edd8a8}</Project>
-      <Name>Player</Name>
+    <ProjectReference Include="..\PlayerProcess\PlayerProcess.csproj">
+      <Project>{c3525cdc-1eb8-4d4c-ac2e-443602ddd5ad}</Project>
+      <Name>PlayerProcess</Name>
     </ProjectReference>
     <ProjectReference Include="..\ProcessCommon\ProcessCommon.csproj">
       <Project>{eb8823c3-ed29-4173-a630-09bc076b321d}</Project>

@@ -11,7 +11,9 @@ namespace CommunicationLayer
 
         public CommunicationSubsystem SubSystem { get; set; }
 
-        public Dispatcher () {}
+        public Dispatcher( CommunicationSubsystem subsystem) {
+            SubSystem = subsystem;
+        }
 
         override protected void Process(object state) {
             while ( KeepGoing ) {

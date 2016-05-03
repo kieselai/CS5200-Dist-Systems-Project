@@ -27,19 +27,18 @@ namespace BalloonStoreProcess
         }
         private int _gameId;
         public int GameId {
-            get {  return _gameManagerId; }
-            set { SetProperty(ref _gameManagerId, value); }
+            get {  return _gameId; }
+            set { SetProperty(ref _gameId, value); }
         }
         private int _startingBalloons;
         public int StartingBalloons {
-            get {  return _gameManagerId; }
-            set { SetProperty(ref _gameManagerId, value); }
+            get {  return _startingBalloons; }
+            set { SetProperty(ref _startingBalloons, value); }
         }
-
-        private BindableGameProcessData _myBalloonStore;
-        public BindableGameProcessData MyBalloonStore {
-            get { return _myBalloonStore; }
-            set { SetProperty( _myBalloonStore, value, (m) => _myBalloonStore.GameProcessData = value ); }
+        private int _storeIndex;
+        public int StoreIndex {
+            get {  return _storeIndex; }
+            set { SetProperty(ref _storeIndex, value); }
         }
         
         public ResourceSet<Penny>    Pennies        { get; set; }
@@ -52,7 +51,6 @@ namespace BalloonStoreProcess
             Balloons = new ResourceSet<Balloon>();
             CurrentGame = new GameInfo();
             FilledBalloons = new ResourceSet<Balloon>();
-            MyBalloonStore = new MyUtilities.BindableGameProcessData();
         }
     }
 }

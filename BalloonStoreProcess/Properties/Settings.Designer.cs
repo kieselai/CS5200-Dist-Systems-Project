@@ -22,41 +22,5 @@ namespace BalloonStoreProcess.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("AKiesel\'s Balloon Store")]
-        public string Alias {
-            get {
-                return ((string)(this["Alias"]));
-            }
-            set {
-                this["Alias"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("127.0.0.1:12000")]
-        public string Dev_Registry_addr {
-            get {
-                return ((string)(this["Dev_Registry_addr"]));
-            }
-            set {
-                this["Dev_Registry_addr"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("52.3.213.61:12000")]
-        public string Registry_addr {
-            get {
-                return ((string)(this["Registry_addr"]));
-            }
-            set {
-                this["Registry_addr"] = value;
-            }
-        }
     }
 }

@@ -33,8 +33,18 @@ namespace CommunicationLayer {
 
         public NetworkConnectionType ConnectionType { get; set; }
 
-        public LocalEndPoint() {}
-        public LocalEndPoint(NetworkConnectionType connectionType) {
+        protected int? _minPort; 
+        public int MinPort { get { return _minPort?? 10000; } set { _minPort = value; } }
+
+        protected int? _maxPort;
+        public int MaxPort { get { return _maxPort?? 12000; } set { _maxPort = value; } }
+
+        public LocalEndPoint() : this(10000, 12000) {}
+        public LocalEndPoint(int minPort, int maxPort) : this(NetworkConnectionType.Any, minPort, maxPort) {}
+        public LocalEndPoint(NetworkConnectionType connectionType) :  this(connectionType, 10000, 12000) {}
+        public LocalEndPoint(NetworkConnectionType connectionType, int minPort, int maxPort) {
+            MinPort = minPort;
+            MaxPort = maxPort;
             ConnectionType = connectionType;
         }
 
@@ -69,20 +79,20 @@ namespace CommunicationLayer {
 
 
         public int GetPort() {
-            var p = GetAvailablePort(ConnectionType);
+            var p = GetAvailablePort(ConnectionType, MinPort, MaxPort);
             LockedAction_PortsAssigned( (portsAssigned) => {
                 portsAssigned.Add(p);
             });
             return p;
         }
 
-        static public int GetAvailablePort( NetworkConnectionType type, int Start = 10000, int End = 11000 ) {
+        static public int GetAvailablePort( NetworkConnectionType type, int Start = 10000, int End = 12000 ) {
                  if(type == NetworkConnectionType.TCP) return GetAvailableTCPPort();
             else if(type == NetworkConnectionType.UDP) return GetAvailableUDPPort();
             else return GetAvailablePort();
         }
 
-        static public int GetAvailablePort(int Start = 10000, int End = 11000) {
+        static public int GetAvailablePort(int Start = 10000, int End = 12000) {
             var range = Enumerable.Range( Start, End );
             var query = from port in Enumerable.Range( Start, End )
                    join tcpPort in GetAvailableTCPPorts(range) on port equals tcpPort
@@ -91,11 +101,11 @@ namespace CommunicationLayer {
             return query.FirstOrDefault();
         }
 
-        static public int GetAvailableUDPPort( int Start = 10000, int End = 11000 ) {
+        static public int GetAvailableUDPPort( int Start = 10000, int End = 12000 ) {
             return GetAvailableUDPPorts(Enumerable.Range( Start, End )).FirstOrDefault();
         }
 
-        static public int GetAvailableTCPPort( int Start = 10000, int End = 11000 ) {
+        static public int GetAvailableTCPPort( int Start = 10000, int End = 12000 ) {
             return GetAvailableTCPPorts( Enumerable.Range( Start, End ) ).FirstOrDefault();
         }
 

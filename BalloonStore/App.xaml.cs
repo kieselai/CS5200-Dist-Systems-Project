@@ -3,14 +3,14 @@ using System.Windows;
 using AppCommon;
 using BalloonStore.ViewModels;
 using BalloonStoreProcess;
+using System;
 
 namespace BalloonStore
 {
-    public partial class App : Application
-    {
+    public partial class App : Application {
         protected override void OnStartup(StartupEventArgs e) {
             base.OnStartup(e);
-            AppState.Connection = new BalloonStoreConnection();
+            AppState.Launcher = new BalloonStoreLauncher();
             Bootstrapper.BootStrapAndConfig<Bootstrapper, MainWindow, MainWindowViewModel>();
         }
     }

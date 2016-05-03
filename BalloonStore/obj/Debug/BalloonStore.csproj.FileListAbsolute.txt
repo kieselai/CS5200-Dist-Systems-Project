@@ -3,6 +3,7 @@ D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\BalloonStore.exe
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\BalloonStore.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\AppCommon.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\BalloonStoreProcess.dll
+D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\CommandLine.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\CommunicationLayer.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\log4net.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Messages.dll
@@ -11,7 +12,6 @@ D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Microsoft.Practices.Unit
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Microsoft.Practices.Unity.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\MyUtilities.dll
-D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Player.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Prism.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Prism.Unity.Wpf.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Prism.Wpf.dll
@@ -19,8 +19,6 @@ D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\ProcessCommon.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\SharedObjects.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\System.Windows.Interactivity.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Utils.dll
-D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\CommandLine.dll
-D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\CommSub.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Messages.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\SharedObjects.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Utils.pdb
@@ -28,8 +26,8 @@ D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\AppCommon.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\BalloonStoreProcess.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\CommunicationLayer.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\MyUtilities.pdb
-D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Player.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\ProcessCommon.pdb
+D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\CommandLine.xml
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\log4net.xml
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Microsoft.Practices.ServiceLocation.xml
@@ -39,8 +37,6 @@ D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Microsoft.Practices.Unit
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Prism.xml
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Prism.Unity.Wpf.xml
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\Prism.Wpf.xml
-D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\CommandLine.xml
-D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\CommSub.pdb
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\de\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\en\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\es\System.Windows.Interactivity.resources.dll
@@ -53,13 +49,10 @@ D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\zh-Hans\System.Windows.I
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\BalloonStore.csprojResolveAssemblyReference.cache
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\BalloonStore.csproj.BalloonStore.exe.config
-D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\LoginView.baml
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\MainWindow.baml
-D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\LoginView.g.cs
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\MainWindow.g.cs
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\OwnInfoView.g.cs
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\App.g.cs
-D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\BalloonStore_Content.g.cs
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\BalloonStore_MarkupCompile.cache
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\BalloonStore_MarkupCompile.lref
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\OwnInfoView.baml

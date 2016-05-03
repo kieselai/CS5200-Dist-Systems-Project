@@ -1,32 +1,17 @@
 ﻿using SharedObjects;
 using System;
-using System.Collections.Generic;
 using Utils;
-
 
 namespace CommunicationLayer
 {
-    public interface ICommunicationProcess {
-        CommunicationSubsystem  SubSystem { get; set; }
-        ProcessState            State     { get; set; }
-        void Start(object state);
-        void Stop();
-        void Logout(Action<bool> callback);
-    }
-
-    public abstract class CommunicationProcess<Conversation_Factory, Process_State> : BackgroundThread, ICommunicationProcess 
-            where Conversation_Factory : ConversationFactory, new() where Process_State : ProcessState, new() {
+    public abstract class CommunicationProcess : BackgroundThread {
         public CommunicationSubsystem  SubSystem  { get; set; }
         public ProcessState            State      { get; set; }
-        public Process_State           TypedState { get { return State as Process_State; } }
 
-        public CommunicationProcess() : base() {
-            State = new Process_State();
+        public CommunicationProcess(ProcessState _state, ConversationFactory factory, int minPort, int maxPort) : base() {
+            State = _state;
             SetStatus(ProcessInfo.StatusCode.NotInitialized);
-        }
-
-        public void initializeSubsystem() {
-            SubSystem = new CommunicationSubsystem(new Conversation_Factory(), State);
+            SubSystem = new CommunicationSubsystem(State, factory, minPort, maxPort);
         }
 
         virtual protected void SetStatus(ProcessInfo.StatusCode status) {

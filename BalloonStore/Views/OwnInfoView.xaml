@@ -6,10 +6,10 @@
              xmlns:local="clr-namespace:BalloonStore"
              Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="300" MinWidth="600" Width="auto">
-        <DataGrid Name="InGameInfoGrid"
-                  ItemsSource="{Binding InGameInfoSource.View}"
+        <DataGrid Name="IdentityGrid"
+                  ItemsSource="{Binding IdentitySource.View}"
                   HorizontalAlignment="Right" 
-                  Margin="0,0,0,180" 
+                  Margin="0,0,0,120" 
                   VerticalAlignment="Bottom" 
                   AutoGenerateColumns="False" 
                   CanUserAddRows="False" 
@@ -17,7 +17,10 @@
                   HorizontalScrollBarVisibility="Disabled"
                   ScrollViewer.CanContentScroll="False" Height="50">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Alias"   Binding="{Binding Path=Alias}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="First Name"  Binding="{Binding Path=FirstName}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Last Name"   Binding="{Binding Path=LastName}"  MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Alias"       Binding="{Binding Path=Alias}"     MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="ANumber"     Binding="{Binding Path=ANumber}"   MinWidth="100"  IsReadOnly="True"  />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

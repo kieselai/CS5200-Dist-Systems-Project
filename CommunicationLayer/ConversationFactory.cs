@@ -5,7 +5,6 @@ using SharedObjects;
 using Messages;
 using log4net;
 
-
 namespace CommunicationLayer
 {
     public abstract class ConversationFactory {
@@ -82,7 +81,6 @@ namespace CommunicationLayer
             instance.SubSystem      = SubSystem;
             return instance;
         }
-
 
         protected void Add ( IDictionary<Type, Type> dict ) {
             foreach ( var pair in dict ) {

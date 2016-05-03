@@ -11,24 +11,24 @@ namespace AppCommon.ViewModels
         public DelegateCommand InitiateLogout { get { return _initiateLogout; } }
         public AbstractLogoutViewModel() {
             _initiateLogout = UnconditionalDelegateCommand( ()=> {
-                AppState.Connection.Process.Logout((success)=> {
+                AppState.Launcher.Process.Logout((success)=> {
                     if(success) CompleteLogout();
                 });
             });
         }
 
         public virtual void CompleteLogout() {
-            AppState.Connection.Process.State.CurrentMessage = "Successfully Logged out";
-            AppState.Connection.Process.SubSystem.Dispatcher.Stop();
-            AppState.Connection.Stop();
-            AppState.Connection.Process.State.Reset();
+            AppState.Launcher.Process.State.CurrentMessage = "Successfully Logged out";
+            AppState.Launcher.Process.SubSystem.Dispatcher.Stop();
+            AppState.Launcher.Stop();
+            AppState.Launcher.Process.State.Reset();
         }
 
         public void ChangeState(object sender, PropertyChangedEventArgs e) {
             if(e.PropertyName == "IsShutDown") {
-                if(AppState.Connection.Process.State.IsShutDown) {
-                    AppState.Connection.Process.SubSystem.Dispatcher.Stop();
-                    AppState.Connection.Process.Stop();
+                if(AppState.Launcher.Process.State.IsShutDown) {
+                    AppState.Launcher.Process.SubSystem.Dispatcher.Stop();
+                    AppState.Launcher.Process.Stop();
                 }
             }
         }

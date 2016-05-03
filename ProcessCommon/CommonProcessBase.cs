@@ -10,17 +10,9 @@ using ProcessCommon.Conversation;
 
 namespace ProcessCommon
 {
-    public abstract class CommonProcessBase<Conversation_Factory, Process_State> : CommunicationProcess<Conversation_Factory, Process_State> 
-            where Conversation_Factory : ConversationFactory, new() where Process_State : ProcessState, new() {
-        private static readonly ILog log = LogManager.GetLogger(typeof(CommonProcessBase<Conversation_Factory, Process_State>));
-
-        public CommonProcessBase() : base() {}
-
-        public void initializeSubsystem(string registryEp){
-            log.Debug("Initializing Subsystem.");
-            initializeSubsystem();
-            SubSystem.EndpointLookup.Add("Registry", new PublicEndPoint(registryEp));
-        }
+    public abstract class CommonProcessBase : CommunicationProcess {
+        private static readonly ILog log = LogManager.GetLogger(typeof(CommonProcessBase));
+        public CommonProcessBase(ProcessState _state, ConversationFactory factory, int minPort, int maxPort) : base(_state, factory, minPort, maxPort) {}
 
         async public override void Logout(Action<bool> callback) {
             log.Debug("In Process Logout function.");

@@ -3,7 +3,6 @@ using SharedObjects;
 using Messages.ReplyMessages;
 using Messages.RequestMessages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Player;
 using System;
 using System.Threading;
 using System.Diagnostics;
@@ -20,13 +19,13 @@ namespace TestCommunicationLayer
         public List<PostMan> registry;
         public List<PostMan> pennyB;
         public List<PostMan> proxy;
-        public List<PlayerProcess> player;
+        public List<PlayerProcess.PlayerProcess> player;
         public List<MessageNumber> CurrentConvId;
         public DummyGame () {
             registry      = new List<PostMan>();
             pennyB        = new List<PostMan>();
             proxy         = new List<PostMan>();
-            player        = new List<PlayerProcess>();
+            player        = new List<PlayerProcess.PlayerProcess>();
             CurrentConvId = new List<MessageNumber>();
         }
 
@@ -51,13 +50,13 @@ namespace TestCommunicationLayer
 
         public int initPlayer() {
             var i = player.Count;
-            player  .Add( new PlayerProcess() );
-            registry.Add( new PostMan()       );
-            pennyB  .Add( new PostMan()       );
-            proxy   .Add( new PostMan()       );
+            player  .Add( new PlayerProcess.PlayerProcess(12000, 20000) );
+            registry.Add( new PostMan(12000, 20000));
+            pennyB  .Add( new PostMan(12000, 20000));
+            proxy   .Add( new PostMan(12000, 20000));
             CurrentConvId.Add(new MessageNumber());
-            player[i].initializeSubsystem(registry[i].LocalEndPoint.ToString());
-            player[i].initializePlayer("first", "last", "alias", "anumber");
+            //player[i].initializeSubsystem(registry[i].LocalEndPoint.ToString());
+            player[i].State.initialize("first", "last", "alias", "anumber");
             return i;
         }
 

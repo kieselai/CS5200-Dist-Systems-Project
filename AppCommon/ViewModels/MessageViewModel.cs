@@ -11,11 +11,11 @@ namespace AppCommon.ViewModels
             set { SetProperty(ref _message, value); }
         }
         public MessageViewModel(){
-            AppState.Connection.Process.State.PropertyChanged += new PropertyChangedEventHandler(UpdateMessage);
+            AppState.Launcher.Process.State.PropertyChanged += new PropertyChangedEventHandler(UpdateMessage);
         }
         public void UpdateMessage(object sender, PropertyChangedEventArgs e) {
             if(e.PropertyName == "CurrentMessage") {
-                Message = AppState.Connection.Process.State.CurrentMessage;
+                Message = AppState.Launcher.Process.State.CurrentMessage;
             }
         }
     }

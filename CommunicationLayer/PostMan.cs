@@ -14,8 +14,8 @@ namespace CommunicationLayer
 
         public LocalEndPoint LocalEndPoint { get; set; }
 
-        public PostMan(){
-            LocalEndPoint = new LocalEndPoint(LocalEndPoint.NetworkConnectionType.UDP);
+        public PostMan(int minPort, int maxPort){
+            LocalEndPoint = new LocalEndPoint(LocalEndPoint.NetworkConnectionType.UDP, minPort, maxPort);
         }
 
         public bool Send ( Envelope env, int timeout) {

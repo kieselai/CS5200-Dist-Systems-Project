@@ -8,8 +8,8 @@ namespace BalloonStore.ViewModels
         public override void initialize() {
             base.initialize();
             AppDispatcher.Navigate<OwnInfoView>("OwnInfoRegion");
-            if( AppState.Connection.IsRunning == false ) {
-                AppState.Connection.Start( true );
+            if( AppState.Launcher.IsRunning == false ) {
+                AppState.Launcher.Start();
             }
         }
     }

@@ -81,7 +81,7 @@ namespace AppCommon.ViewModels
                 if(LogMessages.Count > 50) {
                     var numToRemove = LogMessages.Count - 50;
                     var oldest = (from el in LogMessages orderby el.Id ascending select el).Take(numToRemove);
-                    oldest.Update( (el) => LogMessages.Remove(el) );
+                    oldest.Tap( (el) => LogMessages.Remove(el) );
                 }
                 if(AutoScrollBottom) LogGrid.ScrollIntoView(LogMessages[LogMessages.Count - 1]);
             });

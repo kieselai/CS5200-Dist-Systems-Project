@@ -1,20 +1,48 @@
-﻿using MyUtilities;
+﻿using log4net;
+using MyUtilities;
 using SharedObjects;
-using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace CommunicationLayer {
+
     public class ProcessState : BindableEventObject {
+        private static readonly ILog log = LogManager.GetLogger(typeof(ProcessState));
 
         public ProcessState() {
             _procInfo = new ProcessInfo();
+            _identityInfo = new IdentityInfo();
             _currGame = new GameInfo();
             CurrentMessage = "";
+            IdentityInfo.PropertyChanged += new PropertyChangedEventHandler(OnIdentityInfoChanged);
+        }
+
+        public virtual void initialize(string firstName, string lastName, string alias, string aNumber) {
+            log.Debug("Initializing Player Details.");
+            IdentityInfo  = new IdentityInfo {
+                FirstName = firstName,
+                LastName  = lastName,
+                Alias     = alias,
+                ANumber   = aNumber
+            };
+            ProcessInfo.Label = alias;
+        }
+
+        protected void OnIdentityInfoChanged(object sender, PropertyChangedEventArgs e) {
+            if(e.PropertyName == "Alias") {
+                ProcessInfo.Label = IdentityInfo.Alias;
+            }
         }
 
         private string _currentMessage;
         public  string CurrentMessage {
             get { return _currentMessage; }
             set { SetProperty( ref _currentMessage, value );  }
+        }
+
+        private BindableIdentityInfo _identityInfo;
+        public  BindableIdentityInfo IdentityInfo {
+            get { return _identityInfo; }
+            set { SetProperty( _identityInfo, value, (i) => _identityInfo.Info = value ); }
         }
 
         private BindableProcessInfo _procInfo;

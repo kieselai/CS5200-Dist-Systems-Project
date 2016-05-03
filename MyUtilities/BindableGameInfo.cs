@@ -78,12 +78,12 @@ namespace MyUtilities
         public   ObservableCollection<BindableGameProcessData> CurrentProcesses {
             get { return _currentProcesses; }
             set {
-                _currentProcesses.Update((orig)=> {
+                _currentProcesses.Tap((orig)=> {
                     var matching = value.Where(p1 => p1.ProcessId == orig.ProcessId);
                     if( matching.Count() == 0 ) {
                         _currentProcesses.Remove(orig);
                     }
-                    else matching.Update((p1)=> orig = p1);
+                    else matching.Tap((p1)=> orig = p1);
                 });
             }
         }

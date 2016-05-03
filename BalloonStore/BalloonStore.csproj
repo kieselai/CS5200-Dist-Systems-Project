@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommandLine, Version=1.9.71.2, Culture=neutral, PublicKeyToken=de6f01bd326f8c32, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
@@ -97,9 +101,6 @@
     <Compile Include="ViewModels\LogoutViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\OwnInfoViewModel.cs" />
-    <Compile Include="Views\LoginView.xaml.cs">
-      <DependentUpon>LoginView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -136,9 +137,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="BalloonStoreApp.csproj" />
-  </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\cs5200s16-shared\DSoak\Messages\Messages.csproj">
@@ -169,20 +167,12 @@
       <Project>{0b14442e-84fa-4342-a9ef-c333160dc6c2}</Project>
       <Name>MyUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Player\Player.csproj">
-      <Project>{36b95ca1-d0c1-4970-b0b0-e50613edd8a8}</Project>
-      <Name>Player</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ProcessCommon\ProcessCommon.csproj">
       <Project>{eb8823c3-ed29-4173-a630-09bc076b321d}</Project>
       <Name>ProcessCommon</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Views\LoginView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

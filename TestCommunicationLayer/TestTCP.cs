@@ -6,7 +6,7 @@ using Messages.ReplyMessages;
 using Messages.RequestMessages;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Player;
+using PlayerProcess;
 using System.Net;
 using System.Threading;
 using System.Diagnostics;

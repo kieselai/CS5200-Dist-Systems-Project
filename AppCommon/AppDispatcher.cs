@@ -1,9 +1,6 @@
-﻿using Microsoft.Practices.ServiceLocation;
-using AppCommon.Views;
-using Prism.Regions;
+﻿using Prism.Regions;
 using System;
 using System.Windows.Controls;
-using Microsoft.Practices.Unity;
 using System.Windows;
 using System.Windows.Threading;
 using AppCommon.Generic;

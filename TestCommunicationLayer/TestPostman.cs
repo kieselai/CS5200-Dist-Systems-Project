@@ -3,7 +3,7 @@ using SharedObjects;
 using Messages.ReplyMessages;
 using Messages.RequestMessages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Player;
+using PlayerProcess;
 using System;
 using System.Threading;
 using System.Diagnostics;
@@ -20,8 +20,8 @@ namespace TestCommunicationLayer
                
         [TestMethod]
         public void TestSimpleReceive() {
-            var postman1 = new PostMan();
-            var postman2 = new PostMan();
+            var postman1 = new PostMan(12000, 20000);
+            var postman2 = new PostMan(12000, 20000);
             var id = MessageNumber.Create();
             var msg = new Reply { Note = "Test1: postman1 to postman2", ConvId = id, MsgId = id };
             var env = new Envelope( msg, postman2.LocalEndPoint );
@@ -149,11 +149,11 @@ namespace TestCommunicationLayer
                 },  
             };
             var env = new Envelope(msg, PlayerEP(index));
-            SendWithRetries<GameListReply>(env, index, "Registry", registry, ()=>  player[index].TypedState.OpenGames != null);
-            Assert.IsNotNull( player[index].TypedState.OpenGames);
-            Assert.AreEqual( player[index].TypedState.OpenGames.Count, 1);
+            SendWithRetries<GameListReply>(env, index, "Registry", registry, ()=>  (player[index].State as PlayerState).OpenGames != null);
+            Assert.IsNotNull( (player[index].State as PlayerState).OpenGames);
+            Assert.AreEqual(  (player[index].State as PlayerState).OpenGames.Count, 1);
             GameInfo openGame=null;
-            SyncUtils.WaitForCondition(()=> player[index].TypedState.OpenGames.TryDequeue(out openGame));
+            SyncUtils.WaitForCondition(()=> (player[index].State as PlayerState).OpenGames.TryDequeue(out openGame));
             Assert.IsNotNull(openGame);
             Assert.AreEqual( openGame.GameId, 77);
         }
@@ -161,7 +161,7 @@ namespace TestCommunicationLayer
         [TestMethod]
         public void TestGameStart() {
             var index = initPlayer();
-            player[index].TypedState.CurrentGame = new GameInfo {
+            (player[index].State as PlayerState).CurrentGame = new GameInfo {
                 GameManagerId = 10
             };
             StartProcess(index, ProcessInfo.StatusCode.JoinedGame);
@@ -173,7 +173,7 @@ namespace TestCommunicationLayer
                 GameId = 8
             }, PlayerEP(index));
             var result = SendReceiveWithRetries<ReadyToStart, Routing>(env, index, "Proxy",  proxy);
-            SyncUtils.WaitForCondition( ()=>  player[index].TypedState.OpenGames != null, 5000, 100 );
+            SyncUtils.WaitForCondition( ()=>  (player[index].State as PlayerState).OpenGames != null, 5000, 100 );
             Assert.IsTrue( ValidateMessage<StartGame>( result ) );
             var gameStartReply = (result.Message as Routing).InnerMessage as StartGame;
             Assert.AreEqual(gameStartReply.Success, true);

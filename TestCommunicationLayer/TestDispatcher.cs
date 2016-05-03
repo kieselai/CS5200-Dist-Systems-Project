@@ -5,7 +5,7 @@ using Messages;
 using Messages.ReplyMessages;
 using Messages.RequestMessages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Player;
+using PlayerProcess;
 
 namespace TestCommunicationLayer
 {

@@ -31,15 +31,15 @@ namespace AppCommon.ViewModels
 
                 ProccessInfoSource.Source = ProccessInfo;
                 GameSource.Source         = CurrentGame;
-                ProccessInfo.Add( AppState.Connection.Process.State.ProcessInfo  );
+                ProccessInfo.Add( AppState.Launcher.Process.State.ProcessInfo  );
             });
-            AppState.Connection.Process.State.ProcessInfo.PropertyChanged += new PropertyChangedEventHandler(ChangeState);
+            AppState.Launcher.Process.State.ProcessInfo.PropertyChanged += new PropertyChangedEventHandler(ChangeState);
         }
 
         public void ChangeState(object sender, PropertyChangedEventArgs e) {
             AppDispatcher.DispatchUI( () => {
                 if(e.PropertyName == "Status") {
-                    switch ( AppState.Connection.Process.State.Status ) {
+                    switch ( AppState.Launcher.Process.State.Status ) {
                         case ProcessInfo.StatusCode.JoinedGame: case ProcessInfo.StatusCode.PlayingGame: case ProcessInfo.StatusCode.Won:
                         case ProcessInfo.StatusCode.Lost:       case ProcessInfo.StatusCode.Terminating: case ProcessInfo.StatusCode.Tied: 
                             CurrentGameGrid.Visibility = System.Windows.Visibility.Visible; break; // For all of the above cases
@@ -49,7 +49,7 @@ namespace AppCommon.ViewModels
                 }
                 else if( e.PropertyName == "CurrentGame") { 
                     CurrentGame.Clear();
-                    CurrentGame.Add( AppState.Connection.Process.State.CurrentGame );
+                    CurrentGame.Add( AppState.Launcher.Process.State.CurrentGame );
                 }
             });
         }

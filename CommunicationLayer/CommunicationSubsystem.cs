@@ -13,16 +13,14 @@ namespace CommunicationLayer
         public EndpointLookup          EndpointLookup    { get; protected set; }
         public ProcessState            State             { get; protected set; }
 
-        public CommunicationSubsystem( ConversationFactory factory, ProcessState state ) {
-            PostMan         = new PostMan();
-            QueueLookup     = ConversationQueueLookup.Instance;
-            Dispatcher      = new Dispatcher {
-                SubSystem = this
-            };
+        public CommunicationSubsystem(ProcessState state, ConversationFactory factory, int minPort, int maxPort) {
+            State = state;
+            QueueLookup = ConversationQueueLookup.Instance;
+            EndpointLookup = new EndpointLookup();
             Factory = factory;
             Factory.SubSystem = this;
-            EndpointLookup = new EndpointLookup();
-            State = state;
+            PostMan = new PostMan(minPort, maxPort);
+            Dispatcher = new Dispatcher(this);
         }
     }
 }

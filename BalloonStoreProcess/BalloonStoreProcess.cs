@@ -1,26 +1,18 @@
 ﻿using System.Threading;
-using CommunicationLayer;
 using BalloonStoreProcess.Conversation;
 using SharedObjects;
 using log4net;
-using System;
-using ProcessCommon.Conversation;
 using ProcessCommon;
 
 namespace BalloonStoreProcess
 {
-    public class BalloonStoreProcess : CommonProcessBase<BalloonStoreConversationFactory, BalloonStoreState>   {
+    public class BalloonStoreProcess : CommonProcessBase {
         private static readonly ILog log = LogManager.GetLogger(typeof(BalloonStoreProcess));
         private Properties.Settings Settings { get { return Properties.Settings.Default; } }
 
-        public BalloonStoreProcess(): base() {}
-
-        public void initializeBalloonStore( string alias, int index ) {
-            log.Debug("Initializing BalloonStore Details.");
-            State.ProcessInfo.Label = alias + " #" + index;
+        public BalloonStoreProcess(int minPort, int maxPort): base(new BalloonStoreState(), new BalloonStoreConversationFactory(), minPort, maxPort) {
+            State.ProcessInfo.Type = ProcessInfo.ProcessType.BalloonStore;
         }
-
-        
         
         override protected void Process(object state) {
             SubSystem.Dispatcher.Start();

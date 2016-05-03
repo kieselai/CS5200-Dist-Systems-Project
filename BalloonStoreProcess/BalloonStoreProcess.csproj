@@ -58,11 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BalloonStoreConnection.cs" />
+    <Compile Include="BalloonStoreLauncher.cs" />
     <Compile Include="BalloonStoreConversationFactory.cs" />
     <Compile Include="BalloonStoreProcess.cs" />
     <Compile Include="BalloonStoreState.cs" />
-    <Compile Include="CommandLineOptions.cs" />
+    <Compile Include="BalloonCommandLineArgs.cs" />
     <Compile Include="Conversation\BuyBalloonConversation.cs" />
     <Compile Include="Conversation\GameStartConversation.cs" />
     <Compile Include="Conversation\JoinGameConversation.cs" />
@@ -79,7 +79,6 @@
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

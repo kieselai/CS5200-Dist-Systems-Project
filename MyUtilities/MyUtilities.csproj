@@ -59,7 +59,7 @@
     <Compile Include="BindableProcessInfo.cs" />
     <Compile Include="EventAppender.cs" />
     <Compile Include="EventLogData.cs" />
-    <Compile Include="LinqUpdateCollection.cs" />
+    <Compile Include="LinqTapExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
