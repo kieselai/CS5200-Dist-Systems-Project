@@ -61,6 +61,8 @@
     <Compile Include="CommandLineArgs.cs" />
     <Compile Include="CommonProcessBase.cs" />
     <Compile Include="Conversation\AbstractGameStartConversation.cs" />
+    <Compile Include="Conversation\AliveConversation.cs" />
+    <Compile Include="Conversation\ValidatePennyConversation.cs" />
     <Compile Include="Conversation\ShutdownConversation.cs" />
     <Compile Include="Conversation\ExitGameConversation.cs" />
     <Compile Include="Conversation\GameStatusConversation.cs" />

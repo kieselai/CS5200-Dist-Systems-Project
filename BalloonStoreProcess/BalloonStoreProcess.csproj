@@ -63,6 +63,7 @@
     <Compile Include="BalloonStoreProcess.cs" />
     <Compile Include="BalloonStoreState.cs" />
     <Compile Include="BalloonCommandLineArgs.cs" />
+    <Compile Include="Conversation\NextIdConversation.cs" />
     <Compile Include="Conversation\BuyBalloonConversation.cs" />
     <Compile Include="Conversation\GameStartConversation.cs" />
     <Compile Include="Conversation\JoinGameConversation.cs" />

@@ -2,6 +2,7 @@
 using Utils;
 using System.Threading.Tasks;
 using System.Threading;
+using System;
 
 namespace CommunicationLayer
 {
@@ -30,8 +31,14 @@ namespace CommunicationLayer
             });
         }
 
-        public bool DispatchConversation<T>() where T : IConversation {
-            IConversation conv = SubSystem.Factory.Create<T>();
+        public bool DispatchConversation<T>(Action<T> PropertyInjector=null) where T : class, IConversation {
+            IConversation conv = null;
+            return DispatchConversation(out conv, PropertyInjector);
+        }
+
+        public bool DispatchConversation<T>(out IConversation conv, Action<T> PropertyInjector=null) where T : class, IConversation {
+            conv = SubSystem.Factory.Create<T>();
+            if(conv != null && PropertyInjector != null) PropertyInjector(conv as T);
             if( NewConversation(conv, true)) {
                 while(conv.HasCompleted == false) {
                     Thread.Sleep(100);
@@ -41,9 +48,10 @@ namespace CommunicationLayer
             else return false;
         }
 
-        async public Task<bool> DispatchConversationAsync<T>() where T : IConversation {
+
+        async public Task<bool> DispatchConversationAsync<T>(Action<T> PropertyInjector=null) where T : class, IConversation {
             return await Task.Run(()=> {
-                return DispatchConversation<T>();
+                return DispatchConversation(PropertyInjector);
             });
         }
 

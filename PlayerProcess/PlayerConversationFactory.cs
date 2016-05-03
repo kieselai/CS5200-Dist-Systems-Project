@@ -19,11 +19,10 @@ namespace PlayerProcess
                  // Common initiated: LogoutConversation, LeaveGameConversation
 
                  // Received
-                 { typeof( AliveRequest             ), typeof( AliveConversation             ) },
                  { typeof( AllowanceDeliveryRequest ), typeof( AllowanceDeliveryConversation ) },
                  { typeof( ReadyToStart             ), typeof( GameStartConversation         ) },
                  { typeof( HitNotification          ), typeof( HitByBalloonConversation      ) }
-                 // Common Received: GameStatusNotification, ExitGameRequest, ShutdownRequest
+                 // Common Received: AliveRequest, GameStatusNotification, ExitGameRequest, ShutdownRequest
             });
         }
     }

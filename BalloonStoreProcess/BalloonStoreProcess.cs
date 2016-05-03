@@ -3,6 +3,9 @@ using BalloonStoreProcess.Conversation;
 using SharedObjects;
 using log4net;
 using ProcessCommon;
+using CommunicationLayer;
+using System.Linq;
+using MyUtilities;
 
 namespace BalloonStoreProcess
 {
@@ -13,6 +16,7 @@ namespace BalloonStoreProcess
         public BalloonStoreProcess(int minPort, int maxPort): base(new BalloonStoreState(), new BalloonStoreConversationFactory(), minPort, maxPort) {
             State.ProcessInfo.Type = ProcessInfo.ProcessType.BalloonStore;
         }
+        public BalloonStoreState BalloonStoreState { get { return State as BalloonStoreState; } }
         
         override protected void Process(object state) {
             SubSystem.Dispatcher.Start();
@@ -21,8 +25,8 @@ namespace BalloonStoreProcess
                 switch ( State.Status ) {
                     case ProcessInfo.StatusCode.NotInitialized:  Login();       break;
                     case ProcessInfo.StatusCode.Initializing:    break;
-                    case ProcessInfo.StatusCode.Registered:      JoinGame();    break;
-                    case ProcessInfo.StatusCode.JoiningGame:     break;
+                    case ProcessInfo.StatusCode.Registered:      RequestIds();  break;
+                    case ProcessInfo.StatusCode.JoiningGame:     JoinGame();    break;
                     case ProcessInfo.StatusCode.JoinedGame:      break;
                     case ProcessInfo.StatusCode.PlayingGame:     PlayGame();    break;
                     case ProcessInfo.StatusCode.LeavingGame:     LeavingGame(); break;
@@ -37,6 +41,27 @@ namespace BalloonStoreProcess
             SetStatus(ProcessInfo.StatusCode.PlayingGame);
             while(State.Status == ProcessInfo.StatusCode.PlayingGame) {
                 Thread.Sleep(100);
+            }
+        }
+
+        protected void RequestIds() {
+            IConversation conv;
+            var success = SubSystem.Dispatcher.DispatchConversation<NextIdConversation>(
+              out conv,
+              (c)=> c.NumOfIds = BalloonStoreState.StartingBalloons
+            );
+            if(success) {
+                var c = conv as NextIdConversation;
+                Enumerable.Range(c.NextId, c.NumOfIds).Tap( (i)=> {
+                    var b = new Balloon {
+                        Id = i,
+                        SignedBy = State.ProcessInfo.ProcessId,
+                        IsFilled = false
+                    };
+                    b.DigitalSignature = CryptoService.HashAndSign(b.DataBytes());
+                    BalloonStoreState.Balloons.AddOrUpdate(b);
+                });
+                SetStatus(ProcessInfo.StatusCode.JoiningGame);
             }
         }
 

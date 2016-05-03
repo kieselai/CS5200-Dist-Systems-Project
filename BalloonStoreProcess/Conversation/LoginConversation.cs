@@ -16,8 +16,10 @@ namespace BalloonStoreProcess.Conversation
         override protected bool CreateRequest(){
             log.Debug("Creating login request. ");
             OutgoingMessage = AddressTo( new LoginRequest {
+                Identity     = BalloonStoreState.IdentityInfo,
                 ProcessLabel = BalloonStoreState.ProcessInfo.Label,
-                ProcessType  = ProcessInfo.ProcessType.BalloonStore
+                ProcessType  = ProcessInfo.ProcessType.BalloonStore,
+                PublicKey    = CryptoService.PublicKey
             }, "Registry");
             return true;
         }

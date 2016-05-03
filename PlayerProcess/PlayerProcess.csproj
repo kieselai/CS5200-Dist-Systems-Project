@@ -54,7 +54,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conversation\AliveConversation.cs" />
     <Compile Include="Conversation\AllowanceDeliveryConversation.cs" />
     <Compile Include="Conversation\BuyBalloonConversation.cs" />
     <Compile Include="Conversation\FillBalloonConversation.cs" />

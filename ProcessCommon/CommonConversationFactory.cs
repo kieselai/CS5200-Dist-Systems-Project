@@ -13,6 +13,7 @@ namespace ProcessCommon
                  { typeof( LogoutConversation             ), typeof( LogoutConversation            ) },
                  { typeof( LeaveGameConverastion          ), typeof( LeaveGameConverastion         ) },
                  // Received
+                 { typeof( AliveRequest             ), typeof( AliveConversation             ) },
                  { typeof( GameStatusNotification         ), typeof( GameStatusConversation        ) },
                  { typeof( ExitGameRequest                ), typeof( ExitGameConversation          ) },
                  { typeof( ShutdownRequest                ), typeof( ShutdownConversation          ) }

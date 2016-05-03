@@ -13,12 +13,13 @@ namespace BalloonStoreProcess
                  // Initiated
                  { typeof( JoinGameConversation     ), typeof( JoinGameConversation          ) },
                  { typeof( LoginConversation        ), typeof( LoginConversation             ) },
+                 { typeof( NextIdConversation       ), typeof( NextIdConversation            ) },
                  // Common initiated: LogoutConversation, LeaveGameConversation
 
                  // Received
                  { typeof( BuyBalloonRequest        ), typeof( BuyBalloonConversation        ) },
                  { typeof( ReadyToStart             ), typeof( GameStartConversation         ) }
-                 // Common Received: GameStatusConversation, ExitGameConversation, ShutdownConversation
+                 // Common Received: AliveRequest, GameStatusConversation, ExitGameConversation, ShutdownConversation
             });
         }
     }

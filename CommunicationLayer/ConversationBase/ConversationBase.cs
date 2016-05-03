@@ -122,6 +122,15 @@ namespace CommunicationLayer
             return null;
         }
 
+        protected Envelope RouteTo(Message innerMessage, Envelope ReceivedMessage) {
+            var originalReceived = Cast<Routing>(ReceivedMessage);
+            if(originalReceived == null) {
+                log.Error("Error retrieving routing Ids");
+                return null;
+            }
+            else return RouteTo(innerMessage, originalReceived.FromProcessId);
+        }
+
         protected T Cast<T>( Envelope envelope ) where T : Message {
             if ( envelope == null ) {
                 return null;

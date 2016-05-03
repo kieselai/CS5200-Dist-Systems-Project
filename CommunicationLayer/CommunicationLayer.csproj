@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CryptoExtensions.cs" />
+    <Compile Include="CryptoService.cs" />
     <Compile Include="MessageValidator.cs" />
     <Compile Include="CommunicationProcess.cs" />
     <Compile Include="LocalEndPoint.cs" />
