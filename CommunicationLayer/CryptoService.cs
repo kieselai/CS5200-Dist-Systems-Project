@@ -4,13 +4,13 @@ using SharedObjects;
 namespace CommunicationLayer
 {
     public class CryptoService {
-        protected static RSACryptoServiceProvider RSA { get; set; }
+        protected static RSACryptoServiceProvider OwnRSAProvider { get; set; }
         protected static RSAParameters PublicKeyInfo  { get; set; }
         public static PublicKey PublicKey { get { return PublicKeyInfo.ToPublicKey(); } }
 
         static CryptoService() {
-            RSA = new RSACryptoServiceProvider();
-            PublicKeyInfo = RSA.ExportParameters(true);
+            OwnRSAProvider = new RSACryptoServiceProvider();
+            PublicKeyInfo = OwnRSAProvider.ExportParameters(true);
         }
 
         static public byte[] HashAndSign(byte[] data) {
@@ -22,15 +22,16 @@ namespace CommunicationLayer
         }
 
         static byte[] SignBytes(byte[] bytes) {
-            return new RSAPKCS1SignatureFormatter(RSA).UseSHA1().CreateSignature(bytes);
+            return new RSAPKCS1SignatureFormatter(OwnRSAProvider).UseSHA1().CreateSignature(bytes);
         }
 
-        static public bool VerifySignature(byte[] data, byte[] givenSignature) {
-            return CompareEquals( HashBytes(data), givenSignature);
+        static public bool VerifySignature(PublicKey senderPublicKey, byte[] data, byte[] givenSignature) {
+            var rsaSender = new RSACryptoServiceProvider().ImportKey(senderPublicKey);
+            return CompareEquals(rsaSender, HashBytes(data), givenSignature);
         }
 
-        static bool CompareEquals(byte[] hash, byte[] givenSignature) {
-            return new RSAPKCS1SignatureDeformatter(RSA).UseSHA1().VerifySignature(hash, givenSignature);
+        static bool CompareEquals(RSACryptoServiceProvider rsa, byte[] hash, byte[] givenSignature) {
+            return new RSAPKCS1SignatureDeformatter(rsa).UseSHA1().VerifySignature(hash, givenSignature);
         }
     }
 }

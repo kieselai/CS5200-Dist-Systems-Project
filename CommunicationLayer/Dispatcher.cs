@@ -1,12 +1,12 @@
 ﻿using log4net;
-using Utils;
+using MyUtilities;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
 
 namespace CommunicationLayer
 {
-    public class Dispatcher : BackgroundThread {
+    public class Dispatcher : ExtendedBackgroundThread {
 
         private static readonly ILog log = LogManager.GetLogger(typeof(Dispatcher));
 
@@ -53,6 +53,10 @@ namespace CommunicationLayer
             return await Task.Run(()=> {
                 return DispatchConversation(PropertyInjector);
             });
+        }
+        async public Task DispatchConversationAsync<T>(Action<bool> callback, Action<T> PropertyInjector=null) where T : class, IConversation {
+            var success = await DispatchConversationAsync(PropertyInjector);
+            callback(success);
         }
 
         public void NewMessage( Envelope env ) {

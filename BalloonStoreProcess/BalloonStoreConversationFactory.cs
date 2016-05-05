@@ -12,9 +12,8 @@ namespace BalloonStoreProcess
             Add( new Dictionary<Type, Type>{
                  // Initiated
                  { typeof( JoinGameConversation     ), typeof( JoinGameConversation          ) },
-                 { typeof( LoginConversation        ), typeof( LoginConversation             ) },
                  { typeof( NextIdConversation       ), typeof( NextIdConversation            ) },
-                 // Common initiated: LogoutConversation, LeaveGameConversation
+                 // Common initiated: LoginConversation, LogoutConversation, LeaveGameConversation
 
                  // Received
                  { typeof( BuyBalloonRequest        ), typeof( BuyBalloonConversation        ) },

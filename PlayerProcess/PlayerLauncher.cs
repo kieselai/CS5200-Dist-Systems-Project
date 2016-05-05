@@ -3,9 +3,7 @@
     Player Launcher Class
 */
 
-using System.Collections.Generic;
 using ProcessCommon;
-using System.Linq;
 
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]
 

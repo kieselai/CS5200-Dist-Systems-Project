@@ -17,9 +17,9 @@ namespace PlayerProcess.Conversation
         protected int PlayerIndex         { get; set; }
         protected Balloon ReservedBalloon { get; set; }
 
-        protected override void MessageFailure(string msg="") {
+        protected override bool MessageFailure(string msg="") {
             if(ReservedBalloon != null) PlayerState.FilledBalloons.Unreserve(ReservedBalloon.Id);
-            base.MessageFailure(msg);
+            return base.MessageFailure(msg);
         }
 
         protected List<int> PlayerIDs {
@@ -42,7 +42,7 @@ namespace PlayerProcess.Conversation
             if(PlayerIDs.Count > 0) {
                 ReservedBalloon = PlayerState.FilledBalloons.ReserveOne();
                 var PlayerId = PlayerIDs.First();
-                OutgoingMessage = RouteTo( new ThrowBalloonRequest {
+                OutgoingMessage = SubSystem.AddressManager.RouteTo( new ThrowBalloonRequest {
                     Balloon = ReservedBalloon,
                     TargetPlayerId = PlayerId
                 }, PlayerState.CurrentGame.GameManagerId);
@@ -51,19 +51,15 @@ namespace PlayerProcess.Conversation
             return false;
         }
         override protected bool ProcessReply() {
-            var throwBalloonReply = Cast<BalloonReply>( IncomingMessage );
+            var throwBalloonReply = IncomingMessage.Unwrap<BalloonReply>();
             if(IncomingMessage == null) {
-                MessageFailure("Throw Balloon Reply was null");
-                return false;
+                return MessageFailure("Throw Balloon Reply was null");
             }
             else if (throwBalloonReply == null) {
-                MessageFailure("Failed to cast throwBalloonReply");
-                return false;
+                return MessageFailure("Failed to cast throwBalloonReply");
             }
             else if( throwBalloonReply.Success == false ) {
-                log.Error("Unable to throw balloon");
-                MessageFailure(throwBalloonReply.Note);
-                return false;
+                return MessageFailure("Unable to throw balloon, Note: " + throwBalloonReply.Note);
             }
             else {
                 PlayerState.FilledBalloons.MarkAsUsed(ReservedBalloon.Id);

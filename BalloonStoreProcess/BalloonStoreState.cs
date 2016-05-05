@@ -52,5 +52,13 @@ namespace BalloonStoreProcess
             CurrentGame = new GameInfo();
             FilledBalloons = new ResourceSet<Balloon>();
         }
+
+        public override string GetMessageFromStatus(ProcessInfo.StatusCode status) {
+            switch ( status ) {
+                case SharedObjects.ProcessInfo.StatusCode.Registered:     return "Registered, Preparing Balloons";
+                case SharedObjects.ProcessInfo.StatusCode.PlayingGame:    return "In game";
+                default: return GetDefaultMessageFromStatus(status);
+            }
+        }
     }
 }

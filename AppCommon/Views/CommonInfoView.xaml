@@ -21,7 +21,6 @@
                 <DataGridTextColumn Header="EndPoint"         Binding="{Binding Path=EndPoint}"       MinWidth="100"  IsReadOnly="True"   />
                 <DataGridTextColumn Header="Process Label"    Binding="{Binding Path=Label}"          MinWidth="100" IsReadOnly="True"  />
                 <DataGridTextColumn Header="Alive Timestamp"  Binding="{Binding Path=AliveTimestamp}" MinWidth="100"  IsReadOnly="True"   />
-                <DataGridTextColumn Header="Alive Reties"     Binding="{Binding Path=AliveReties}"    MinWidth="100"  IsReadOnly="True"   />
                 <DataGridTextColumn Header="Status"           Binding="{Binding Path=Status}"         MinWidth="100" IsReadOnly="True" />
             </DataGrid.Columns>
         </DataGrid>
@@ -36,14 +35,12 @@
                   HorizontalScrollBarVisibility="Disabled"
                   ScrollViewer.CanContentScroll="False" Height="50" Width="702">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="GameId"  Binding="{Binding Path=GameId}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="GameId"          Binding="{Binding Path=GameId}"         MinWidth="100"  IsReadOnly="True"  />
                 <DataGridTextColumn Header="GameManagerId"   Binding="{Binding Path=GameManagerId}"  MinWidth="100"  IsReadOnly="True"  />
-                <DataGridTextColumn Header="Label"       Binding="{Binding Path=Label}"     MinWidth="100"  IsReadOnly="True"  />
-                <DataGridTextColumn Header="MaxPlayers"     Binding="{Binding Path=MaxPlayers}"   MinWidth="100"  IsReadOnly="True"  />
-                <DataGridTextColumn Header="MinPlayers"  Binding="{Binding Path=MinPlayers}" MinWidth="100"  IsReadOnly="True"  />
-                <!--<DataGridTextColumn Header="StartingPlayers"   Binding="{Binding Path=StartingPlayers}"  MinWidth="100"  IsReadOnly="True"  />-->
-                <DataGridTextColumn Header="Status"       Binding="{Binding Path=Status}"     MinWidth="100"  IsReadOnly="True"  />
-                <!--<DataGridTextColumn Header="Winners"     Binding="{Binding Path=Winners, Converter={StaticResource  IntArrayConverter}}"   MinWidth="100"  IsReadOnly="True"  />-->
+                <DataGridTextColumn Header="Label"           Binding="{Binding Path=Label}"          MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="MaxPlayers"      Binding="{Binding Path=MaxPlayers}"     MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="MinPlayers"      Binding="{Binding Path=MinPlayers}"     MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Status"          Binding="{Binding Path=Status}"         MinWidth="100"  IsReadOnly="True"  />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

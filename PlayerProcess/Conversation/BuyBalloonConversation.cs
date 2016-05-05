@@ -18,9 +18,9 @@ namespace PlayerProcess.Conversation
         protected static int BalloonStoreIndex { get; set; }
         protected Penny ReservedPenny { get; set; }
 
-        protected override void MessageFailure(string msg="") {
+        protected override bool MessageFailure(string msg="") {
             if(ReservedPenny != null) PlayerState.Pennies.Unreserve(ReservedPenny.Id);
-            base.MessageFailure(msg);
+            return base.MessageFailure(msg);
         }
 
         protected List<int> BalloonStoreIDs {
@@ -33,47 +33,29 @@ namespace PlayerProcess.Conversation
         }    
 
         override protected bool CreateRequest() {
-            if(PlayerState.Pennies.AvailableCount < 1) {
-                log.Error("No pennies available to spend");
-                Failure = true;
-                return false;
-            }
+            if(PlayerState.Pennies.AvailableCount < 1)
+                return MessageFailure("No pennies available to spend");
             
             if(BalloonStoreIDs.Count > 0) {
                 ReservedPenny = PlayerState.Pennies.ReserveOne();
 
-                if(BalloonStoreIndex >= BalloonStoreIDs.Count) {
-                    BalloonStoreIndex = 0;
-                }
+                if(BalloonStoreIndex >= BalloonStoreIDs.Count) BalloonStoreIndex = 0;
                 var balloonStore = BalloonStoreIDs[BalloonStoreIndex];
                 BalloonStoreIndex++;
-                OutgoingMessage = RouteTo( new BuyBalloonRequest {
-                    Penny = ReservedPenny
-                }, balloonStore );
+                OutgoingMessage = SubSystem.AddressManager.RouteTo(new BuyBalloonRequest { Penny = ReservedPenny }, balloonStore);
                 return true;
             }
             return false;
         }
         override protected bool ProcessReply() {
-            var buyBalloonReply = Cast<BalloonReply>( IncomingMessage );
-            if(IncomingMessage == null) {
-                MessageFailure("Buy Balloon Reply was null");
-                return false;
-            }
-            else if (buyBalloonReply == null) {
-                MessageFailure("Failed to cast buyBalloonReply");
-                return false;
-            }
-            else if( buyBalloonReply.Success == false ) {
-                log.Error("Balloon purchase unsuccessful");
-                MessageFailure(buyBalloonReply.Note);
-                return false;
-            }
+            var reply = IncomingMessage.Unwrap<BalloonReply>();
+            if      ( IncomingMessage == null ) return MessageFailure("Buy Balloon Reply was null");
+            else if ( reply           == null ) return MessageFailure("Failed to cast buyBalloonReply");
+            else if ( reply.Success  == false ) return MessageFailure("BuyBalloonRequest unsuccessful, Note: " + reply.Note);
             else {
                 if(ReservedPenny != null) PlayerState.Pennies.MarkAsUsed(ReservedPenny.Id);
-                PlayerState.Balloons.AddOrUpdate( buyBalloonReply.Balloon );
-                Success = true;
-                return true;
+                PlayerState.Balloons.AddOrUpdate( reply.Balloon );
+                return MessageSuccess();
             }
         }
     }

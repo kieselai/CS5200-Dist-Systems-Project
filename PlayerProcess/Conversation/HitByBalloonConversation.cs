@@ -12,15 +12,11 @@ namespace PlayerProcess.Conversation
         }
         
         override protected bool ProcessRequest() {
-            var hitNotification = Cast<HitNotification>( IncomingMessage );
-            if(IncomingMessage == null) {
-                MessageFailure("Hit Notification was null");
-                return false;
-            }
-            else if (hitNotification == null) {
-                MessageFailure("Failed to cast Hit Notification");
-                return false;
-            }
+            var hitNotification = IncomingMessage.Unwrap<HitNotification>();
+            if(IncomingMessage == null)
+                return MessageFailure("Hit Notification was null");
+            else if (hitNotification == null)
+                return MessageFailure("Failed to cast Hit Notification");
             else {
                 PlayerState.HitPoints += 1;
                 Success = true;
@@ -29,7 +25,7 @@ namespace PlayerProcess.Conversation
         }
 
         protected override bool CreateResponse() {
-            OutgoingMessage = RouteTo(new Reply {
+            OutgoingMessage = SubSystem.AddressManager.RouteTo(new Reply {
                 Note = "Received",
                 Success = true
             }, PlayerState.CurrentGame.GameManagerId );

@@ -13,7 +13,6 @@ namespace BalloonStore
         protected override void ConfigureModuleCatalog() {
             base.ConfigureModuleCatalog();
             RegisterModule<OwnInfoModule>();
-            RegisterModule<LogoutModule>();
         }
     }
 }

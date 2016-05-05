@@ -9,7 +9,7 @@
         <DataGrid Name="IdentityGrid"
                   ItemsSource="{Binding IdentitySource.View}"
                   HorizontalAlignment="Right" 
-                  Margin="0,0,0,120" 
+                  Margin="0,0,198,250" 
                   VerticalAlignment="Bottom" 
                   AutoGenerateColumns="False" 
                   CanUserAddRows="False" 
@@ -17,26 +17,30 @@
                   HorizontalScrollBarVisibility="Disabled"
                   ScrollViewer.CanContentScroll="False" Height="50">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="First Name"  Binding="{Binding Path=FirstName}" MinWidth="100"  IsReadOnly="True"  />
-                <DataGridTextColumn Header="Last Name"   Binding="{Binding Path=LastName}"  MinWidth="100"  IsReadOnly="True"  />
-                <DataGridTextColumn Header="Alias"       Binding="{Binding Path=Alias}"     MinWidth="100"  IsReadOnly="True"  />
-                <DataGridTextColumn Header="ANumber"     Binding="{Binding Path=ANumber}"   MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="First Name" Binding="{Binding Path=FirstName}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Last Name"  Binding="{Binding Path=LastName}"  MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Alias"      Binding="{Binding Path=Alias}"     MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="ANumber"    Binding="{Binding Path=ANumber}"   MinWidth="100"  IsReadOnly="True"  />
             </DataGrid.Columns>
         </DataGrid>
         <DataGrid Name="InGameInfoGrid"
                   ItemsSource="{Binding InGameInfoSource.View}"
                   HorizontalAlignment="Right" 
-                  Margin="0,0,0,180" 
+                  Margin="0,0,0,190" 
                   VerticalAlignment="Bottom" 
                   AutoGenerateColumns="False" 
                   CanUserAddRows="False" 
                   VerticalScrollBarVisibility="Disabled"
                   HorizontalScrollBarVisibility="Disabled"
-                  ScrollViewer.CanContentScroll="False" Height="50">
+                  ScrollViewer.CanContentScroll="False" Height="60" Width="600">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="InitialLifePoints"   Binding="{Binding Path=InitialLifePoints}" MinWidth="100"  IsReadOnly="True"  />
-                <DataGridTextColumn Header="HitPoints"           Binding="{Binding Path=HitPoints}" MinWidth="100"  IsReadOnly="True"  />
-                <DataGridTextColumn Header="CurrentLifePoints"   Binding="{Binding Path=CurrentLifePoints}"  MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Initial Life Points" Binding="{Binding Path=InitialLifePoints}"        MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Hit Points"          Binding="{Binding Path=HitPoints}"                MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Life Points"         Binding="{Binding Path=CurrentLifePoints}"        MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Pennies"             Binding="{Binding Path=NumberOfPennies}"          MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Unfilled Balloons"   Binding="{Binding Path=NumberOfUnfilledBalloons}" MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Filled Balloons"     Binding="{Binding Path=NumberOfFilledBalloons}"   MinWidth="100"  IsReadOnly="True"  />
+                <DataGridTextColumn Header="Umbrellas"           Binding="{Binding Path=NumberOfUmbrellas}"        MinWidth="100"  IsReadOnly="True"  />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

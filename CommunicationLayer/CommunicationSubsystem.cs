@@ -7,16 +7,16 @@ namespace CommunicationLayer
         public PostMan                   PostMan           { get; private set; }
         public ConversationQueueLookup   QueueLookup       { get; private set; }
         public Dispatcher                Dispatcher        { get; private set; }
+        public AddressManager            AddressManager    { get; private set; }
 
         // Abstract classes that are overriden to Specialized types in subClasses
         public ConversationFactory     Factory           { get; protected set; }
-        public EndpointLookup          EndpointLookup    { get; protected set; }
         public ProcessState            State             { get; protected set; }
 
         public CommunicationSubsystem(ProcessState state, ConversationFactory factory, int minPort, int maxPort) {
             State = state;
             QueueLookup = ConversationQueueLookup.Instance;
-            EndpointLookup = new EndpointLookup();
+            AddressManager = new AddressManager();
             Factory = factory;
             Factory.SubSystem = this;
             PostMan = new PostMan(minPort, maxPort);

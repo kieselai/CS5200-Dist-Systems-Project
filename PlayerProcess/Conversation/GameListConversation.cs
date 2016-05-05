@@ -13,23 +13,16 @@ namespace PlayerProcess.Conversation
         }
         override protected bool CreateRequest() {
             log.Debug("Queuing game list request. ");
-            OutgoingMessage = AddressTo( new GameListRequest { StatusFilter = 4 }, "Registry");
+            OutgoingMessage = SubSystem.AddressManager.AddressTo( new GameListRequest { StatusFilter = 4 }, "Registry");
             return true;
         }
         override protected bool ProcessReply() {
-            var gameListReply = Cast<GameListReply>( IncomingMessage );
-            if(IncomingMessage == null) {
-                MessageFailure("GameListReply was null");
-                return false;
-            }
-            else if (gameListReply == null) {
-                MessageFailure("Failed to cast GameListReply");
-                return false;
-            }
-            else if( gameListReply.GameInfo.Length == 0 ) {
-                MessageFailure("No games are available. ");
-                return false;
-            }
+            var gameListReply = IncomingMessage.Unwrap<GameListReply>();
+            if(IncomingMessage == null) return MessageFailure("GameListReply was null");
+            else if (gameListReply == null)
+                return MessageFailure("Failed to cast GameListReply");
+            else if( gameListReply.GameInfo.Length == 0 )
+                return MessageFailure("No games are available. ");
             else {
                 PlayerState.OpenGames = new ConcurrentQueue<GameInfo>(gameListReply.GameInfo); 
                 Success = true;

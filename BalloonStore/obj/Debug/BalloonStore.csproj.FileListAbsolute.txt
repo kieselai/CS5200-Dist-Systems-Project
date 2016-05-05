@@ -48,7 +48,6 @@ D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\ru\System.Windows.Intera
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\BalloonStore.csprojResolveAssemblyReference.cache
-D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\BalloonStore.csproj.BalloonStore.exe.config
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\MainWindow.baml
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\MainWindow.g.cs
 D:\Drive\School\CS5200\LocalGame\BalloonStore\obj\Debug\Views\OwnInfoView.g.cs

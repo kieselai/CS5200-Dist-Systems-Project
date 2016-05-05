@@ -1,8 +1,8 @@
 ﻿using Prism.Regions;
-using BalloonStore.ViewModels;
+using AppCommon.ViewModels;
 using AppCommon.Generic;
 using AppCommon.Views;
-namespace BalloonStore.Modules
+namespace AppCommon.Modules
 {
     class LogoutModule : BaseModule {
         public LogoutModule(IRegionManager regionManager) : base(regionManager) {

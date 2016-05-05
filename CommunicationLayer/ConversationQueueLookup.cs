@@ -75,5 +75,6 @@ namespace CommunicationLayer
             if ( result )  return removed;
             else return null;
         }
+        public int Count { get { return _QueueLookup.Count; } }
     }
 }

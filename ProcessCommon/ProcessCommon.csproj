@@ -68,7 +68,7 @@
     <Compile Include="Conversation\GameStatusConversation.cs" />
     <Compile Include="Conversation\AbstractJoinGameConversation.cs" />
     <Compile Include="Conversation\LeaveGameConversation.cs" />
-    <Compile Include="Conversation\AbstractLoginConversation.cs" />
+    <Compile Include="Conversation\LoginConversation.cs" />
     <Compile Include="Conversation\LogoutConversation.cs" />
     <Compile Include="BaseLauncher.cs" />
     <Compile Include="CommonConversationFactory.cs" />

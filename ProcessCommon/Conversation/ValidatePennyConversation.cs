@@ -11,13 +11,13 @@ namespace ProcessCommon.Conversation
         public Penny[] PenniesToValidate { get; set; }
         override protected bool CreateRequest(){
             log.Debug("Queuing Validate Penny request. ");
-            OutgoingMessage = AddressTo( new PennyValidation {
+            OutgoingMessage = SubSystem.AddressManager.AddressTo( new PennyValidation {
                 Pennies = PenniesToValidate
-            },"Registry");
+            },"PennyBank");
             return true;
         }
         override protected bool ProcessReply(){
-            var reply = Cast<Reply>(IncomingMessage);
+            var reply = IncomingMessage.Unwrap<Reply>();
             if ( reply.Success ) {
                 Success = true;
                 return true;

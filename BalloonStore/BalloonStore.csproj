@@ -96,9 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Modules\LogoutModule.cs" />
     <Compile Include="Modules\OwnInfoModule.cs" />
-    <Compile Include="ViewModels\LogoutViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\OwnInfoViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">

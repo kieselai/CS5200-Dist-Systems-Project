@@ -8,14 +8,14 @@ namespace ProcessCommon.Conversation
     public class AliveConversation : ResponseConversation {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(AliveConversation));
         protected override bool ProcessRequest() {
-            var aliveRequest = Cast<AliveRequest>(IncomingMessage);
+            var aliveRequest = IncomingMessage.Unwrap<AliveRequest>();
             log.Debug( aliveRequest.ToString() );
             return true;
         }
 
         protected override bool CreateResponse() {
             log.Debug("Creating Alive Response");
-            OutgoingMessage = AddressTo(new Reply {Success = true, Note = "I'm Alive"}, "Registry");
+            OutgoingMessage = SubSystem.AddressManager.AddressTo(new Reply {Success = true, Note = "I'm Alive"}, "Registry");
             SubSystem.State.ProcessInfo.AliveTimestamp = DateTime.Now;
             return true;
         }

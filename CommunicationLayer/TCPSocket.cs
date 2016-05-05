@@ -5,11 +5,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using Utils;
+using MyUtilities;
 
 namespace CommunicationLayer
 {
-    public class TCPSocket : BackgroundThread {
+    public class TCPSocket : ExtendedBackgroundThread {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(TCPSocket));
         public LocalEndPoint LocalEndPoint { get; set; }
 

@@ -16,6 +16,13 @@ namespace CommunicationLayer
             };
         }
 
+        public static RSAParameters ToRSAParameters(this PublicKey publicKey) {
+            return new RSAParameters {
+                Exponent = publicKey.Exponent,
+                Modulus  = publicKey.Modulus
+            };
+        }
+
         public static RSAPKCS1SignatureFormatter UseSHA1(this RSAPKCS1SignatureFormatter rsaSig) {
             rsaSig.SetHashAlgorithm("SHA1");
             return rsaSig;
@@ -24,6 +31,10 @@ namespace CommunicationLayer
         public static RSAPKCS1SignatureDeformatter UseSHA1(this RSAPKCS1SignatureDeformatter rsaDeformatter) {
             rsaDeformatter.SetHashAlgorithm("SHA1");
             return rsaDeformatter;
+        }
+        public static RSACryptoServiceProvider ImportKey(this RSACryptoServiceProvider rsa,  PublicKey publicKey) {
+            rsa.ImportParameters(publicKey.ToRSAParameters());
+            return rsa;
         }
     }
 }

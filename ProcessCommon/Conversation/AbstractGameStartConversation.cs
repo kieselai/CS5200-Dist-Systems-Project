@@ -15,8 +15,8 @@ namespace ProcessCommon.Conversation
 
         protected override bool CreateResponse() {
             log.Debug("Responding to Game Start Request");
-            OutgoingMessage = RouteTo(new StartGame { Success = true, Note = "Ready!" }, GameManagerId );
-            SubSystem.State.ProcessInfo.Status = ProcessInfo.StatusCode.PlayingGame;
+            OutgoingMessage = SubSystem.AddressManager.RouteTo(new StartGame { Success = true, Note = "Ready!" }, GameManagerId );
+            SubSystem.State.SetStatus( ProcessInfo.StatusCode.PlayingGame );
             return true;
         }
     }

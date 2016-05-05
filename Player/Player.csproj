@@ -101,9 +101,7 @@
     </ApplicationDefinition>
     <Compile Include="IntArrayValueConverter.cs" />
     <Compile Include="Modules\OwnInfoModule.cs" />
-    <Compile Include="Modules\LogoutModule.cs" />
     <Compile Include="Modules\MainModule.cs" />
-    <Compile Include="ViewModels\LogoutViewModel.cs" />
     <Compile Include="ViewModels\OwnInfoViewModel.cs" />
     <Compile Include="Views\OwnInfoView.xaml.cs">
       <DependentUpon>OwnInfoView.xaml</DependentUpon>
@@ -166,6 +164,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\cs5200s16-shared\DSoak\SharedObjects\SharedObjects.csproj">
+      <Project>{67fea8d0-4871-49d4-aa38-217f63934d26}</Project>
+      <Name>SharedObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AppCommon\AppCommon.csproj">
       <Project>{955fb5ab-c60f-4e8c-b13c-4ebd7817a2fc}</Project>
       <Name>AppCommon</Name>

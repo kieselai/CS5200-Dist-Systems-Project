@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -33,6 +34,11 @@ namespace MyUtilities
                 action( iteratingCollection.Take(1).Single() );
                 iteratingCollection = iteratingCollection.Skip(1);
             }
+        }
+    }
+    public static class Chain {
+        public static T[] Create<T>(params T[] arr ){
+            return arr;
         }
     }
 }

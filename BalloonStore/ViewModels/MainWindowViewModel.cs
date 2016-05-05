@@ -1,6 +1,8 @@
 ﻿using AppCommon.ViewModels;
 using BalloonStore.Views;
 using AppCommon;
+using System.Windows.Media;
+using System.Windows;
 
 namespace BalloonStore.ViewModels
 {
@@ -11,6 +13,9 @@ namespace BalloonStore.ViewModels
             if( AppState.Launcher.IsRunning == false ) {
                 AppState.Launcher.Start();
             }
+            AppDispatcher.DispatchUI( ()=> {
+                Application.Current.MainWindow.Background = new SolidColorBrush(Colors.CadetBlue);
+            });
         }
     }
 }

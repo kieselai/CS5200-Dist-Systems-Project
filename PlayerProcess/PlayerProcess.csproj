@@ -55,13 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conversation\AllowanceDeliveryConversation.cs" />
+    <Compile Include="Conversation\AuctionConversation.cs" />
     <Compile Include="Conversation\BuyBalloonConversation.cs" />
     <Compile Include="Conversation\FillBalloonConversation.cs" />
     <Compile Include="Conversation\GameListConversation.cs" />
     <Compile Include="Conversation\GameStartConversation.cs" />
     <Compile Include="Conversation\HitByBalloonConversation.cs" />
     <Compile Include="Conversation\JoinGameConversation.cs" />
-    <Compile Include="Conversation\LoginConversation.cs" />
     <Compile Include="Conversation\ThrowBalloonConveration.cs" />
     <Compile Include="PlayerLauncher.cs" />
     <Compile Include="PlayerConversationFactory.cs" />

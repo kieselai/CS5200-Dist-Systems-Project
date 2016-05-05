@@ -11,33 +11,22 @@ namespace BalloonStoreProcess.Conversation
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(NextIdConversation));
 
         public int NumOfIds { get; set; }
-        public int NextId { get; set; }
+        public int NextId   { get; set; }
 
         override protected bool CreateRequest() {
             log.Debug("Creating NextId request. ");
-            OutgoingMessage = AddressTo( new NextIdRequest {
-                NumberOfIds = NumOfIds
-            }, "Registry");
+            OutgoingMessage = SubSystem.AddressManager.AddressTo( new NextIdRequest { NumberOfIds = NumOfIds }, "Registry");
             return true;
         }
         override protected bool ProcessReply() {
-            var reply = Cast<NextIdReply>( IncomingMessage );
-            if (IncomingMessage == null ) {
-                 MessageFailure("NextId Reply was null.");
-                return false;
-            }
-            else if(reply == null) {
-                MessageFailure("Cast to NextIdReply failed");
-                return false;
-            }
-            else if (reply.Success == false) {
-                 MessageFailure("NextIdReply.Success was false, Note: "+reply.Note);
-                return false;
-            }
+            var reply = IncomingMessage.Unwrap<NextIdReply>();
+                 if ( IncomingMessage == null  ) return MessageFailure("NextId Reply was null.");
+            else if ( reply           == null  ) return MessageFailure("Cast to NextIdReply failed");
+            else if ( reply.Success   == false ) return MessageFailure("NextIdReply.Success was false, Note: "+reply.Note);
             else {
-                NextId = reply.NextId;
+                NextId   = reply.NextId;
                 NumOfIds = reply.NumberOfIds;
-                Success = true;
+                Success  = true;
                 return true;
             }
         }

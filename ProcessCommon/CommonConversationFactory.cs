@@ -10,13 +10,14 @@ namespace ProcessCommon
         public CommonConversationFactory() : base() {
             Add( new Dictionary<Type, Type>{
                    // Initiated
-                 { typeof( LogoutConversation             ), typeof( LogoutConversation            ) },
-                 { typeof( LeaveGameConverastion          ), typeof( LeaveGameConverastion         ) },
+                 { typeof( LoginConversation              ), typeof( LoginConversation      ) },
+                 { typeof( LogoutConversation             ), typeof( LogoutConversation     ) },
+                 { typeof( LeaveGameConverastion          ), typeof( LeaveGameConverastion  ) },
                  // Received
-                 { typeof( AliveRequest             ), typeof( AliveConversation             ) },
-                 { typeof( GameStatusNotification         ), typeof( GameStatusConversation        ) },
-                 { typeof( ExitGameRequest                ), typeof( ExitGameConversation          ) },
-                 { typeof( ShutdownRequest                ), typeof( ShutdownConversation          ) }
+                 { typeof( AliveRequest                   ), typeof( AliveConversation      ) },
+                 { typeof( GameStatusNotification         ), typeof( GameStatusConversation ) },
+                 { typeof( ExitGameRequest                ), typeof( ExitGameConversation   ) },
+                 { typeof( ShutdownRequest                ), typeof( ShutdownConversation   ) }
             });
         }
     }

@@ -60,11 +60,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BalloonAndPlayerTest.cs" />
     <Compile Include="DummyGame.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="TestExtensions.cs" />
+    <Compile Include="TestBalloon.cs" />
+    <Compile Include="TestPlayer.cs" />
     <Compile Include="TestTCP.cs" />
-    <Compile Include="TestPostman.cs" />
-    <Compile Include="TestDispatcher.cs" />
+    <Compile Include="TestCommon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +82,10 @@
     <ProjectReference Include="..\..\cs5200s16-shared\DSoak\Utils\Utils.csproj">
       <Project>{3239fcca-21eb-4b04-b8ad-c442491e463e}</Project>
       <Name>Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BalloonStoreProcess\BalloonStoreProcess.csproj">
+      <Project>{b60c80c8-2d5b-4134-8a2d-36ec6c19f19a}</Project>
+      <Name>BalloonStoreProcess</Name>
     </ProjectReference>
     <ProjectReference Include="..\CommunicationLayer\CommunicationLayer.csproj">
       <Project>{828ff253-42f6-44ec-b339-4992dfaeda59}</Project>

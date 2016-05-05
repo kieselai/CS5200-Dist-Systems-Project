@@ -11,6 +11,7 @@ namespace AppCommon
             RegisterModule<LogModule>();
             RegisterModule<MessageModule>();
             RegisterModule<CommonInfoModule>();
+            RegisterModule<LogoutModule>();
         }
 
         protected void RegisterModule<T>() where T : IModule {

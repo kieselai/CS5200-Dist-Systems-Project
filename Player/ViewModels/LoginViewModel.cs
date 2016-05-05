@@ -12,13 +12,20 @@ namespace Player.ViewModels
         private bool isLocal;
         public bool IsLocal {
             get { return isLocal; }
-            set { SetProperty(ref isLocal, value); }
+            set {
+                AppState.Launcher.Options.UseLocalSettings = value;
+                SetProperty(ref isLocal, value);
+            }
         }
         public DelegateCommand InitiateLogin { get { return _initiateLogin; } }
         public LoginViewModel() {
             _initiateLogin = UnconditionalDelegateCommand( ()=> {
-                if( AppState.Launcher.IsRunning == false ) {
-                    AppState.Launcher.Options.UseLocalSettings = isLocal;
+                ExecuteLogin();
+            });
+        }
+
+        public static void ExecuteLogin() {
+            if( AppState.Launcher != null && AppState.Launcher.IsRunning == false ) {
                     AppState.Launcher.Start();
                     AppDispatcher.DispatchUI(()=> {
                         AppDispatcher.GetView<CommonInfoView>("CommonInfoRegion").Visibility = System.Windows.Visibility.Visible;
@@ -26,7 +33,6 @@ namespace Player.ViewModels
                         AppDispatcher.GetView<LoginView>     ("MainRegion"      ).Visibility = System.Windows.Visibility.Hidden;
                     });
                 }
-            });
         }
     }
 }

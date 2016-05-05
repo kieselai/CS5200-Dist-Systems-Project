@@ -12,11 +12,10 @@ namespace PlayerProcess
                  // Initiated
                  { typeof( GameListConversation     ), typeof( GameListConversation          ) },
                  { typeof( JoinGameConversation     ), typeof( JoinGameConversation          ) },
-                 { typeof( LoginConversation        ), typeof( LoginConversation             ) },
                  { typeof( BuyBalloonConversation   ), typeof( BuyBalloonConversation        ) },
                  { typeof( FillBalloonConversation  ), typeof( FillBalloonConversation       ) },
                  { typeof( ThrowBalloonConversation ), typeof( ThrowBalloonConversation      ) },
-                 // Common initiated: LogoutConversation, LeaveGameConversation
+                 // Common initiated: LoginConversation, LogoutConversation, LeaveGameConversation
 
                  // Received
                  { typeof( AllowanceDeliveryRequest ), typeof( AllowanceDeliveryConversation ) },

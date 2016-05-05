@@ -27,14 +27,14 @@ namespace PlayerProcess.Conversation
         protected Penny[] ReservedPennies { get; set; }
         protected Balloon ReservedBalloon { get; set; }
 
-        protected override void MessageFailure(string msg="") {
+        protected override bool MessageFailure(string msg="") {
             if(ReservedPennies != null && ReservedPennies.Length == 2) {
                  foreach(var penny in ReservedPennies) {
                     if(penny != null ) PlayerState.Pennies.Unreserve(penny.Id);
                 }
             }
             if(ReservedBalloon != null) PlayerState.Balloons.Unreserve(ReservedBalloon.Id);
-            base.MessageFailure(msg);
+            return base.MessageFailure(msg);
         }
 
         protected List<int> BalloonStoreIDs {
@@ -67,7 +67,7 @@ namespace PlayerProcess.Conversation
                 var balloonStore = BalloonStoreIDs[BalloonStoreIndex];
                 BalloonStoreIndex++;
 
-                OutgoingMessage = RouteTo( new FillBalloonRequest {
+                OutgoingMessage = SubSystem.AddressManager.RouteTo( new FillBalloonRequest {
                     Balloon = ReservedBalloon, 
                     Pennies = ReservedPennies
                 }, balloonStore );
@@ -76,20 +76,13 @@ namespace PlayerProcess.Conversation
             return false;
         }
         override protected bool ProcessReply() {
-            var fillBalloonReply = Cast<BalloonReply>( IncomingMessage );
-            if(IncomingMessage == null) {
-                MessageFailure("Fill Balloon Reply was null");
-                return false;
-            }
-            else if (fillBalloonReply == null) {
-                MessageFailure("Failed to cast fillBalloonReply");
-                return false;
-            }
-            else if( fillBalloonReply.Success == false ) {
-                log.Error("Unable to fill balloon");
-                MessageFailure(fillBalloonReply.Note);
-                return false;
-            }
+            var fillBalloonReply = IncomingMessage.Unwrap<BalloonReply>();
+            if(IncomingMessage == null)
+                return MessageFailure("Fill Balloon Reply was null");
+            else if (fillBalloonReply == null)
+                return MessageFailure("Failed to cast fillBalloonReply");
+            else if( fillBalloonReply.Success == false )
+                return MessageFailure("Unable to fill balloon, Note: " + fillBalloonReply.Note);
             else {
                 PlayerState.Pennies.MarkAsUsed(ReservedPennies.Select(p=>p.Id).ToArray());
                 PlayerState.Balloons.MarkAsUsed(ReservedBalloon.Id);

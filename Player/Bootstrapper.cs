@@ -4,7 +4,6 @@ using System.Windows;
 using Player.Modules;
 using AppCommon;
 
-
 namespace Player
 {
     public class Bootstrapper : BaseBootstrapper {
@@ -15,7 +14,6 @@ namespace Player
             RegisterModule<MainModule>();
             base.ConfigureModuleCatalog();
             RegisterModule<OwnInfoModule>();
-            RegisterModule<LogoutModule>();
         }
     }
 }

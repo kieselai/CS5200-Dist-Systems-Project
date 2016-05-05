@@ -31,7 +31,7 @@ namespace ProcessCommon
         }
 
         public virtual void InitSubSystem() {
-            Process.SubSystem.EndpointLookup.Add("Registry", new PublicEndPoint(_options.Registry));
+            Process.SubSystem.AddressManager.Lookup.Add("Registry", new PublicEndPoint(_options.Registry));
         }
 
         public virtual void Start() {

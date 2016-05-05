@@ -1,7 +1,5 @@
-﻿using System;
-using SharedObjects;
+﻿using SharedObjects;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
 
 namespace MyUtilities
@@ -23,7 +21,8 @@ namespace MyUtilities
                 };
             }
             set {
-                CurrentProcesses = new ObservableCollection<BindableGameProcessData>( value.CurrentProcesses.Select( (d) => (BindableGameProcessData)d).ToList() );
+                CurrentProcesses = new ObservableCollection<BindableGameProcessData>(
+                    value.CurrentProcesses.Select( (d) => (BindableGameProcessData)d).ToList() );
                 GameId           = value.GameId;
                 GameManagerId    = value.GameManagerId;
                 Label            = value.Label;
@@ -50,7 +49,12 @@ namespace MyUtilities
                 CurrentProcesses = new GameProcessData[]{},
                 StartingPlayers = new int[]{},
                 Status = GameInfo.StatusCode.NotInitialized,
-                Winners = new int[]{}
+                Winners = new int[]{}, 
+                GameId = 0,
+                GameManagerId=0,
+                Label="",
+                MaxPlayers=0,
+                MinPlayers=0
             };
         }
 

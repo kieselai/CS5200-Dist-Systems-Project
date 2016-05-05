@@ -2,18 +2,18 @@
 using SharedObjects;
 using CommunicationLayer;
 using MyUtilities;
-using System.ComponentModel;
 
 namespace PlayerProcess
 {
     public class PlayerState : ProcessState {
 
         public PlayerState() : base() {
-            _myPlayer     = new BindableGameProcessData();
-            Pennies = new ResourceSet<Penny>();
-            Balloons = new ResourceSet<Balloon>();
+            _myPlayer      = new BindableGameProcessData();
+            Pennies        = new ResourceSet<Penny>();
+            Balloons       = new ResourceSet<Balloon>();
             FilledBalloons = new ResourceSet<Balloon>();
-            ProcessInfo.Info = new ProcessInfo {
+            Umbrellas      = new ResourceSet<Umbrella>();
+            ProcessInfo    = new ProcessInfo {
                 Status = SharedObjects.ProcessInfo.StatusCode.NotInitialized,
                 Type   = SharedObjects.ProcessInfo.ProcessType.Player
             };
@@ -25,10 +25,48 @@ namespace PlayerProcess
             set { SetProperty( _myPlayer, value, (m) => _myPlayer.GameProcessData = value ); }
         }
         
-        public ConcurrentQueue<GameInfo> OpenGames  { get; set; }
-        public ResourceSet<Penny>    Pennies        { get; set; }
-        public ResourceSet<Balloon>  Balloons       { get; set; }
-        public ResourceSet<Balloon>  FilledBalloons { get; set; }
+        public ConcurrentQueue<GameInfo> OpenGames      { get; set; }
+
+        public  int NumberOfPennies {  get { return _pennies.AvailableCount; } }
+        private ResourceSet<Penny> _pennies;
+        public ResourceSet<Penny> Pennies {
+            get {
+                ThreadUtil.RunAfterDelay(()=> OnPropertyChanged("NumberOfPennies"));
+                return _pennies;
+            }
+            set { SetProperty(ref _pennies, value);  OnPropertyChanged("NumberOfPennies"); }
+        }
+
+        public  int NumberOfUnfilledBalloons {  get { return _balloons.AvailableCount; } }
+        private ResourceSet<Balloon> _balloons;
+        public ResourceSet<Balloon> Balloons {
+            get {
+                ThreadUtil.RunAfterDelay(()=> OnPropertyChanged("NumberOfUnfilledBalloons"));
+                return _balloons;
+            }
+            set { SetProperty(ref _balloons, value); OnPropertyChanged("NumberOfUnfilledBalloons"); }
+        }
+
+
+        public  int NumberOfFilledBalloons {  get { return _filledBalloons.AvailableCount; } }
+        private ResourceSet<Balloon> _filledBalloons;
+        public  ResourceSet<Balloon> FilledBalloons {
+            get {
+                ThreadUtil.RunAfterDelay(()=> OnPropertyChanged("NumberOfFilledBalloons"));
+                return _filledBalloons;
+            }
+            set { SetProperty(ref _filledBalloons, value); OnPropertyChanged("NumberOfFilledBalloons"); }
+        }
+
+        public  int NumberOfUmbrellas {  get { return _umbrellas.AvailableCount; } }
+        private ResourceSet<Umbrella> _umbrellas;
+        public  ResourceSet<Umbrella> Umbrellas {
+            get {
+                ThreadUtil.RunAfterDelay(()=> OnPropertyChanged("NumberOfUmbrellas"));
+                return _umbrellas;
+            }
+            set { SetProperty(ref _umbrellas, value); OnPropertyChanged("NumberOfUmbrellas"); }
+        }
 
         private int _initialLifePoints;
         public  int InitialLifePoints {
@@ -44,14 +82,21 @@ namespace PlayerProcess
 
         public override void Reset() {
             base.Reset();
-            Pennies = new ResourceSet<Penny>();
-            Balloons = new ResourceSet<Balloon>();
+            Pennies        = new ResourceSet<Penny>();
+            Balloons       = new ResourceSet<Balloon>();
             FilledBalloons = new ResourceSet<Balloon>();
             HitPoints = 0;
             InitialLifePoints = 0;
-            MyPlayer = new BindableGameProcessData();
+            MyPlayer = new GameProcessData();
             OpenGames = null;
         }
-        
+
+        public override string GetMessageFromStatus(ProcessInfo.StatusCode status) {
+            switch ( status ) {
+                case SharedObjects.ProcessInfo.StatusCode.Registered:     return "Registered, Retrieving game list";
+                case SharedObjects.ProcessInfo.StatusCode.PlayingGame:    return "Playing ( In game )";
+                default: return GetDefaultMessageFromStatus(status);
+            }
+        }
     }
 }

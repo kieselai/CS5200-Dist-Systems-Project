@@ -1,46 +1,38 @@
 ﻿using CommunicationLayer;
 using SharedObjects;
-using Messages.ReplyMessages;
-using Messages.RequestMessages;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Threading;
-using System.Diagnostics;
-using Messages;
-using Utils;
 using log4net;
 using System.Collections.Generic;
+using ProcessCommon;
+using MyUtilities;
+
+using Player_Proc  = PlayerProcess.PlayerProcess;
+using Balloon_Proc = BalloonStoreProcess.BalloonStoreProcess;
+using Common_Proc  = ProcessCommon.CommonProcessBase;
 
 namespace TestCommunicationLayer
 {
     public class DummyGame {
         private static readonly ILog log = LogManager.GetLogger(typeof(DummyGame));
+        
+        private static int _count=0;
+        public static int Count { get{ return _count++; } }
 
-        public List<PostMan> registry;
-        public List<PostMan> pennyB;
-        public List<PostMan> proxy;
-        public List<PlayerProcess.PlayerProcess> player;
-        public List<MessageNumber> CurrentConvId;
+        public Dictionary<int, PostMan> registry;
+        public Dictionary<int, PostMan> pennyB;
+        public Dictionary<int, PostMan> proxy;
+        public Dictionary<int, Player_Proc> player;
+        public Dictionary<int, Balloon_Proc> balloon;
+        public Dictionary<int, Common_Proc> common;
+        private Dictionary<int, MessageNumber> _currentConvId;
         public DummyGame () {
-            registry      = new List<PostMan>();
-            pennyB        = new List<PostMan>();
-            proxy         = new List<PostMan>();
-            player        = new List<PlayerProcess.PlayerProcess>();
-            CurrentConvId = new List<MessageNumber>();
-        }
-
-        public LocalEndPoint PlayerEP(int i) {
-            return player[i].SubSystem.PostMan.LocalEndPoint;
-        }
-        public ProcessInfo DummyProcessInfo(int i) {
-           return new ProcessInfo {
-                AliveReties = 0,
-                EndPoint    = PlayerEP(i),
-                Label       = player[i].Label,
-                ProcessId   = 1,
-                Status      = ProcessInfo.StatusCode.Registered,
-                Type        = ProcessInfo.ProcessType.Player
-            };
+            registry      = new Dictionary<int, PostMan>();
+            pennyB        = new Dictionary<int, PostMan>();
+            proxy         = new Dictionary<int, PostMan>();
+            player        = new Dictionary<int, Player_Proc>();
+            balloon       = new Dictionary<int, Balloon_Proc>();
+            common        = new Dictionary<int, Common_Proc>();
+            _currentConvId = new Dictionary<int, MessageNumber>();
         }
 
         public bool ValidateMessage<T>(Envelope env) {
@@ -48,71 +40,33 @@ namespace TestCommunicationLayer
             return env.IsValid<T>();
         }
 
-        public int initPlayer() {
-            var i = player.Count;
-            player  .Add( new PlayerProcess.PlayerProcess(12000, 20000) );
-            registry.Add( new PostMan(12000, 20000));
-            pennyB  .Add( new PostMan(12000, 20000));
-            proxy   .Add( new PostMan(12000, 20000));
-            CurrentConvId.Add(new MessageNumber());
-            //player[i].initializeSubsystem(registry[i].LocalEndPoint.ToString());
-            player[i].State.initialize("first", "last", "alias", "anumber");
+        public int init() {
+            var i = Count;
+            Chain.Create(registry, pennyB, proxy).Tap((p)=>p.Add(i, new PostMan(12000, 20000)));
+            player.addNew(i, this);
+            balloon.addNew(i, this);
+            common.addNew<Common_Proc, Player_Proc>(i, this);
+            ConversationId(i, new MessageNumber());
             return i;
         }
 
-        public void StartProcess(int i, ProcessInfo.StatusCode currentState = ProcessInfo.StatusCode.Registered) {
-            if (    currentState != ProcessInfo.StatusCode.Initializing 
-                && currentState != ProcessInfo.StatusCode.NotInitialized) {
-                SetDummyPlayerLoggedIn(i);
-            }
-            player[i].Start();
+        public MessageNumber ConversationId(int index) {
+            if( !_currentConvId.ContainsKey(index))
+                _currentConvId[index] = MessageNumber.Create();
+            return _currentConvId[index];
         }
 
-        public void SetDummyPlayerLoggedIn(int i) {
-            player[i].State.ProcessInfo = DummyProcessInfo(i);
-            MessageNumber.LocalProcessId = 1;
-            player[i].SubSystem.EndpointLookup.Add("Proxy",     proxy [i].LocalEndPoint);
-            player[i].SubSystem.EndpointLookup.Add("PennyBank", pennyB[i].LocalEndPoint);
+        public void ConversationId(int index, MessageNumber m) {
+            _currentConvId[index] = m;
         }
 
-        public void PrintPlayerInfo(int i, string message=null) {
-            log.Debug(string.Format("Player[{0}], EP: {1}, Time: {2}", i, PlayerEP(i), DateTime.Now));
-            if(!String.IsNullOrEmpty(message)) log.Debug(message);
+        public void initBalloon(int i, ProcessInfo.StatusCode status=ProcessInfo.StatusCode.Registered) {
+            balloon.StartDispatcherOnly(i, this, status);
+            balloon[i].BalloonStoreState.GameManagerId      = 1;
+            balloon[i].BalloonStoreState.GameId             = 1;
+            balloon[i].BalloonStoreState.StartingBalloons   = 10;
+            balloon[i].BalloonStoreState.StoreIndex         = 1;
+            balloon[i].BalloonStoreState.IdentityInfo.Alias = "balloon Alias #1";
         }
-        public void PrintProcessInfo(int i, string procName, List<PostMan> procArray, string message=null) {
-            log.Debug(string.Format("{3}[{0}], EP: {1}, Time: {2}", i, procArray[i].LocalEndPoint, DateTime.Now, procName));
-            if(!String.IsNullOrEmpty(message)) log.Debug(message);
-        }
-
-        public void PrintSendReceiveToPlayer<T, T2>(int i, string procName, List<PostMan> procArr) {
-            PrintSending<T>(i, procName, procArr);
-            PrintReceiving<T2>(i);
-        }
-
-        public void PrintSendReceiveFromPlayer<T, T2>(int i, string procName, List<PostMan> procArr) {
-            PrintSending<T>(i);
-            PrintReceiving<T2>(i, procName, procArr);
-        }
-
-        public void PrintReceiving<T>(int i) {
-            PrintPlayerInfo(i, FormatReceive<T>());
-        }
-        public void PrintSending<T>(int i) {
-            PrintPlayerInfo(i, FormatSend<T>());
-        }
-
-        public void PrintReceiving<T>(int i, string procName, List<PostMan> procArray) {
-            PrintProcessInfo(i, procName, procArray, FormatReceive<T>());
-        }
-        public void PrintSending<T>(int i, string procName,  List<PostMan> procArray) {
-            PrintProcessInfo(i, procName, procArray, FormatSend<T>());
-        }
-
-        public string FormatSend<T>() {
-            return string.Format("Attempting to send message of type {0}",  typeof(T).Name);
-        }
-        public string FormatReceive<T>() {
-            return string.Format("Expecting to receive message of type {0}", typeof(T).Name);
-        }       
     }
 }

@@ -1,9 +1,5 @@
-﻿using CommunicationLayer;
-using SharedObjects;
-using Messages.RequestMessages;
-using Messages.ReplyMessages;
+﻿using SharedObjects;
 using ProcessCommon.Conversation;
-using Utils;
 
 namespace BalloonStoreProcess.Conversation {
     public class JoinGameConversation : AbstractJoinGameConversation {
@@ -18,11 +14,17 @@ namespace BalloonStoreProcess.Conversation {
                 return true;
             }
             if( BalloonStoreState.GameManagerId == 0 && BalloonStoreState.GameId == 0 ) 
-                MessageFailure("Unexpected GameId of zero, and unexpected GameManagerId of zero");
+                return MessageFailure("Unexpected GameId of zero, and unexpected GameManagerId of zero");
             else if( BalloonStoreState.GameManagerId == 0)
-                 MessageFailure("Unexpected GameManagerId of zero");
-            else MessageFailure("Unexpected GameId of zero");
-            return false;
+                 return MessageFailure("Unexpected GameManagerId of zero");
+            else return MessageFailure("Unexpected GameId of zero");
+        }
+        protected override bool ProcessReply() {
+            if ( base.ProcessReply() == true ) {
+                SubSystem.State.SetStatus(ProcessInfo.StatusCode.JoinedGame);
+                return MessageSuccess();
+            }
+            else return false;
         }
     }
 }

@@ -16,13 +16,14 @@ namespace BalloonStoreProcess.Conversation
         }
 
         private bool ValidationResult   { get; set; }
-        private bool BalloonsAvailable  { get; set; }
+        private bool BalloonsAvailable  { get { return BalloonStoreState.Balloons.AvailableCount > 0; } }
+
+        private bool SaleValid { get { return (BalloonsAvailable == false || ValidationResult == false)? false : true; } }
+
         private Balloon ReservedBalloon { get; set; }
 
         protected override bool ProcessRequest() {
-            var request = Cast<BuyBalloonRequest>(IncomingMessage);
-            BalloonsAvailable = BalloonStoreState.Balloons.AvailableCount > 0;
-            ReservedBalloon = null;
+            var request = IncomingMessage.Unwrap<BuyBalloonRequest>();
             if( BalloonsAvailable ) {
                 ReservedBalloon = BalloonStoreState.Balloons.ReserveOne();
                 ValidationResult = SubSystem.Dispatcher.DispatchConversation<ValidatePennyConversation>(
@@ -37,10 +38,12 @@ namespace BalloonStoreProcess.Conversation
         }
 
         protected override bool CreateResponse() {
-            OutgoingMessage = RouteTo(new BalloonReply {
-                Success = BalloonsAvailable && ValidationResult,
-                Balloon = ReservedBalloon
+            OutgoingMessage = SubSystem.AddressManager.RouteTo(new BalloonReply {
+                Success = SaleValid,
+                Balloon = SaleValid? ReservedBalloon : null
             }, IncomingMessage);
+            if(BalloonsAvailable == false) OutgoingMessage.Unwrap<BalloonReply>().Note = "No balloons left in inventory";
+            if(ValidationResult  == false) OutgoingMessage.Unwrap<BalloonReply>().Note = "Invalid Penny";
             return true;
         }
     }

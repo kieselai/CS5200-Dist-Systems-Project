@@ -16,11 +16,12 @@ D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Prism.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Prism.Unity.Wpf.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Prism.Wpf.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\ProcessCommon.dll
-D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\System.Windows.Interactivity.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\SharedObjects.dll
+D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\System.Windows.Interactivity.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Utils.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Messages.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\CommSub.dll
+D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\SharedObjects.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\AppCommon.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\CommunicationLayer.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\MyUtilities.pdb
@@ -37,7 +38,6 @@ D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Microsoft.Practices.Unity.Regi
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Prism.xml
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Prism.Unity.Wpf.xml
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Prism.Wpf.xml
-D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\SharedObjects.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Utils.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Messages.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\CommSub.pdb
@@ -52,7 +52,6 @@ D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\ru\System.Windows.Interactivit
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Player.csprojResolveAssemblyReference.cache
-D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Player.csproj.Player.exe.config
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\MainWindow.baml
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\LoginView.baml
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\OwnInfoView.g.cs

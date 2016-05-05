@@ -10,6 +10,13 @@ namespace ProcessCommon
     public class CommandLineArgs {
         private static Properties.Settings Settings { get { return Properties.Settings.Default; } }
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(CommandLineArgs));
+        public bool RegistryIsLocal {
+            get {
+                return UseLocalSettings || Registry.Split(':')[0].Trim() == "127.0.0.1" || Registry.Split(':')[0].Trim() == "0.0.0.0";
+            }
+        }
+
+
         public bool UseLocalSettings { get; set; }
 
         [Option("registry", MetaValue = "STRING", HelpText = "Registry EndPoint", Required = false)]
@@ -31,7 +38,7 @@ namespace ProcessCommon
         public string ANumber {
             get {
                 return string.IsNullOrWhiteSpace(_aNumber)
-                    ? ( UseLocalSettings? "A00000001" : Settings.ANumber )
+                    ? ( RegistryIsLocal? "A00000001" : Settings.ANumber )
                     : _aNumber;
             }
         }
@@ -41,7 +48,7 @@ namespace ProcessCommon
         public string FirstName {
             get {
                 return string.IsNullOrWhiteSpace(_firstName)
-                    ? ( UseLocalSettings? "The" : Settings.FirstName )
+                    ? ( RegistryIsLocal? "The" : Settings.FirstName )
                     : _firstName;
             }
         }
@@ -51,7 +58,7 @@ namespace ProcessCommon
         public string LastName {
             get {
                 return string.IsNullOrWhiteSpace(_lastName)
-                    ? ( UseLocalSettings? "Instructor" : Settings.LastName )
+                    ? ( RegistryIsLocal? "Instructor" : Settings.LastName )
                     : _lastName;
             }
         }
@@ -61,7 +68,7 @@ namespace ProcessCommon
         public string Alias {
             get {
                 return string.IsNullOrWhiteSpace(_alias)
-                    ? ( UseLocalSettings? "The Instructor" : Settings.Alias )
+                    ? ( RegistryIsLocal? "The Instructor" : Settings.Alias )
                     : _alias;
             }
         }
@@ -100,13 +107,10 @@ namespace ProcessCommon
 
             if (!CommandLine.Parser.Default.ParseArguments(args, Options)) {
                 log.Error("Error in command line arguments");
-                //Environment.Exit(CommandLine.Parser.DefaultExitCodeFail);
+                Environment.Exit(CommandLine.Parser.DefaultExitCodeFail);
             }
-            if( Options.Registry.Split(':')[0].Trim() == "127.0.0.1" || Options.Registry.Split(':')[0].Trim() == "0.0.0.0") {
+            if( Options.RegistryIsLocal) {
                 log.Debug("Registry is local!");
-                Options = new C_Args();
-                Options.UseLocalSettings = true;
-                CommandLine.Parser.Default.ParseArguments(args, Options);
             }
             else { log.Debug("Registry is remote!"); }
             typeof(C_Args).GetProperties().Tap((prop) => log.Debug("Setting: " + prop.Name + " = " + prop.GetValue(Options)));
