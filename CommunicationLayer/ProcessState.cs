@@ -13,6 +13,7 @@ namespace CommunicationLayer {
             _procInfo      = new ProcessInfo();
             _identityInfo  = new IdentityInfo();
             _currGame      = new GameInfo();
+            _thisGameProc  = new GameProcessData();
             CurrentMessage = "";
             IdentityInfo.PropertyChanged += new PropertyChangedEventHandler(OnIdentityInfoChanged);
         }
@@ -57,10 +58,17 @@ namespace CommunicationLayer {
             set { SetProperty( _currGame, value, (c)=> _currGame.Info = value); }
         }
 
+        private BindableGameProcessData _thisGameProc;
+        public BindableGameProcessData ThisGameProc {
+            get { return _thisGameProc; }
+            set { SetProperty( _thisGameProc, value, (c)=> _thisGameProc.GameProcessData = value); }
+        }
+
         public virtual void Reset() {
             CurrentMessage = "";
             ProcessInfo.Reset();
             CurrentGame.Reset();
+            ThisGameProc = new GameProcessData();
         }
 
         public void SetStatus(ProcessInfo.StatusCode status) {

@@ -2,13 +2,13 @@
 using SharedObjects;
 using CommunicationLayer;
 using MyUtilities;
+using System.ComponentModel;
 
 namespace PlayerProcess
 {
     public class PlayerState : ProcessState {
 
         public PlayerState() : base() {
-            _myPlayer      = new BindableGameProcessData();
             Pennies        = new ResourceSet<Penny>();
             Balloons       = new ResourceSet<Balloon>();
             FilledBalloons = new ResourceSet<Balloon>();
@@ -17,14 +17,13 @@ namespace PlayerProcess
                 Status = SharedObjects.ProcessInfo.StatusCode.NotInitialized,
                 Type   = SharedObjects.ProcessInfo.ProcessType.Player
             };
-        }
-
-        private BindableGameProcessData _myPlayer;
-        public BindableGameProcessData MyPlayer {
-            get { return _myPlayer; }
-            set { SetProperty( _myPlayer, value, (m) => _myPlayer.GameProcessData = value ); }
+            ThisGameProc.PropertyChanged += new PropertyChangedEventHandler(OnGameInfoChanged);
         }
         
+        protected void OnGameInfoChanged(object sender, PropertyChangedEventArgs e) {
+            HitPoints = ThisGameProc.HitPoints;
+        }
+
         public ConcurrentQueue<GameInfo> OpenGames      { get; set; }
 
         public  int NumberOfPennies {  get { return _pennies.AvailableCount; } }
@@ -87,7 +86,6 @@ namespace PlayerProcess
             FilledBalloons = new ResourceSet<Balloon>();
             HitPoints = 0;
             InitialLifePoints = 0;
-            MyPlayer = new GameProcessData();
             OpenGames = null;
         }
 

@@ -1,6 +1,7 @@
 ﻿using CommunicationLayer;
 using SharedObjects;
 using Messages.ReplyMessages;
+using MyUtilities;
 
 namespace ProcessCommon.Conversation
 {
@@ -16,7 +17,7 @@ namespace ProcessCommon.Conversation
         protected override bool CreateResponse() {
             log.Debug("Responding to Game Start Request");
             OutgoingMessage = SubSystem.AddressManager.RouteTo(new StartGame { Success = true, Note = "Ready!" }, GameManagerId );
-            SubSystem.State.SetStatus( ProcessInfo.StatusCode.PlayingGame );
+            ThreadUtil.RunAfterDelay( ()=>SubSystem.State.SetStatus( ProcessInfo.StatusCode.PlayingGame ));
             return true;
         }
     }

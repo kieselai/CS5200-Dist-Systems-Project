@@ -33,6 +33,12 @@ namespace Player.ViewModels
                 Identity.Add( AppState.Launcher.Process.State.IdentityInfo );
                  AppState.Launcher.Process.State.PropertyChanged += new PropertyChangedEventHandler(OnUpdate);
             });
+            UpdateData();
+        }
+
+        public void UpdateData() {
+            OnUpdate(null, new PropertyChangedEventArgs("CurrentLifePoints"));
+            ThreadUtil.RunAfterDelay(()=>UpdateData());
         }
 
         public void OnUpdate(object sender, PropertyChangedEventArgs e) {

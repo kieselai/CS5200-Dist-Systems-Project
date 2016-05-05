@@ -23,8 +23,8 @@ namespace CommunicationLayer
             }
         }
 
-        async public void DispatchMessage( Envelope env ) {
-            await Task.Run(()=> {
+        public void DispatchMessage( Envelope env ) {
+            ThreadUtil.Run(()=> {
                 log.Info( "New Message Received: ("+env.Message.ToString()+")");
                 log.Info( "MessageId: " + env.Message.MsgId + "ConversationId: " + env.Message.ConvId);
                 NewMessage(env);

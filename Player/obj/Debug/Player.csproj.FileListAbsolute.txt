@@ -20,7 +20,6 @@ D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\SharedObjects.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\System.Windows.Interactivity.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Utils.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Messages.dll
-D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\CommSub.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\SharedObjects.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\AppCommon.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\CommunicationLayer.pdb
@@ -40,7 +39,6 @@ D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Prism.Unity.Wpf.xml
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Prism.Wpf.xml
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Utils.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\Messages.pdb
-D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\CommSub.pdb
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\de\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\en\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\es\System.Windows.Interactivity.resources.dll
@@ -52,6 +50,7 @@ D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\ru\System.Windows.Interactivit
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\Player\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Player.csprojResolveAssemblyReference.cache
+D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\OwnInfoView.baml
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\MainWindow.baml
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\LoginView.baml
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\OwnInfoView.g.cs
@@ -60,7 +59,6 @@ D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\LoginView.g.cs
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\App.g.cs
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Player_MarkupCompile.cache
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Player_MarkupCompile.lref
-D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Views\OwnInfoView.baml
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Player.g.resources
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Player.Properties.Resources.resources
 D:\Drive\School\CS5200\LocalGame\Player\obj\Debug\Player.csproj.GenerateResource.Cache

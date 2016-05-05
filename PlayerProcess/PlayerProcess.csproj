@@ -54,7 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conversation\AllowanceDeliveryConversation.cs" />
+    <Compile Include="Conversation\AllowanceDeliveryConversation - Copy.cs" />
+    <Compile Include="Conversation\UmbrellaLoweredConversation.cs" />
+    <Compile Include="Conversation\RaiseUmbrellaConversation.cs" />
     <Compile Include="Conversation\AuctionConversation.cs" />
     <Compile Include="Conversation\BuyBalloonConversation.cs" />
     <Compile Include="Conversation\FillBalloonConversation.cs" />
@@ -85,10 +87,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\cs5200s16-shared\DSoak\CommSub\CommSub.csproj">
-      <Project>{cb0cc6e8-9228-429f-ad9e-04aaa4a1f5e6}</Project>
-      <Name>CommSub</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\cs5200s16-shared\DSoak\Messages\Messages.csproj">
       <Project>{9659277f-710a-4e0b-ac2b-12882aac247d}</Project>
       <Name>Messages</Name>

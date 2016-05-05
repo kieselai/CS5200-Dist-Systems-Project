@@ -1,6 +1,8 @@
 ﻿using CommunicationLayer;
 using SharedObjects;
 using Messages.RequestMessages;
+using System.Linq;
+
 namespace ProcessCommon.Conversation
 {
     public class GameStatusConversation : ReceivedMulticast {
@@ -9,6 +11,10 @@ namespace ProcessCommon.Conversation
             var gameMsg = IncomingMessage.Unwrap<GameStatusNotification>();
             if(gameMsg != null) {
                 SubSystem.State.CurrentGame = gameMsg.Game;
+                var thisProcess = from proc in gameMsg.Game.CurrentProcesses
+                                  where proc.ProcessId == SubSystem.State.ProcessInfo.ProcessId
+                                  select proc;
+                SubSystem.State.ThisGameProc = thisProcess.FirstOrDefault();
                 return MessageSuccess();
             }
             else return MessageFailure("Unable to cast Game status message.");

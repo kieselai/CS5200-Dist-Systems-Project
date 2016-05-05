@@ -3,12 +3,8 @@ using SharedObjects;
 using Messages;
 using Messages.ReplyMessages;
 using Messages.RequestMessages;
-using CommSub;
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
-using Utils;
-using System;
 using MyUtilities;
 
 namespace PlayerProcess.Conversation
@@ -36,23 +32,27 @@ namespace PlayerProcess.Conversation
             var pennies = new List<Penny>();
             TCPSocket.OpenConnection( TCPEndPoint, (handler) => {
                 log.Info("IN TCP Receive");
+                handler.ReceiveTimeout = 10000;
                 var doContinue     = true;
-                var stream         = new NetworkStream(handler);
-                stream.ReadTimeout = 10000;
-
                 while (pennies.Count < ExpectedNumberPennies && doContinue) {
-                    var penny = stream.ReadStreamMessage();
-                    if (penny != null) pennies.Add(penny);
+                    var bytes = TCPSocket.ReadMessageFromSize(handler);
+                    var pennySize = new Penny().DataBytes().Length;
+                    if(bytes.Length == 0) doContinue = false;
+                    else {
+                        var penny = Penny.Decode(bytes);
+                        pennies.Add(penny);
+                        PlayerState.Pennies.AddOrUpdate(penny);
+                    }
                 }
                 log.Info("Finished reading TCP Stream, Received " + pennies.Count + " pennies.");
-                if ( pennies.Count != ExpectedNumberPennies )  {
+                if ( pennies.Count != ExpectedNumberPennies ) {
+                    pennies.Tap((p)=>PlayerState.Pennies.MarkAsUsed(p.Id));
                     log.Error("Expected " + ExpectedNumberPennies + " pennies. Received " + pennies.Count);
                     MessageFailure("Something went wrong while reading TCP Message");
                 }
             }, false);
             if ( pennies.Count == ExpectedNumberPennies ) {
                 TCPReceiveSuccessful = true;
-                pennies.Tap( (p)=> PlayerState.Pennies.AddOrUpdate(p) );
                 return true;
             }
             else {

@@ -15,12 +15,15 @@ namespace PlayerProcess
                  { typeof( BuyBalloonConversation   ), typeof( BuyBalloonConversation        ) },
                  { typeof( FillBalloonConversation  ), typeof( FillBalloonConversation       ) },
                  { typeof( ThrowBalloonConversation ), typeof( ThrowBalloonConversation      ) },
-                 // Common initiated: LoginConversation, LogoutConversation, LeaveGameConversation
+                 { typeof( RaiseUmbrellaConversation), typeof( RaiseUmbrellaRequest          ) },
+                // Common initiated: LoginConversation, LogoutConversation, LeaveGameConversation
 
-                 // Received
+                // Received
+                 { typeof( AuctionConversation      ), typeof( AuctionConversation           ) },
                  { typeof( AllowanceDeliveryRequest ), typeof( AllowanceDeliveryConversation ) },
                  { typeof( ReadyToStart             ), typeof( GameStartConversation         ) },
-                 { typeof( HitNotification          ), typeof( HitByBalloonConversation      ) }
+                 { typeof( HitNotification          ), typeof( HitByBalloonConversation      ) }, 
+
                  // Common Received: AliveRequest, GameStatusNotification, ExitGameRequest, ShutdownRequest
             });
         }

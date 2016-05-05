@@ -159,13 +159,16 @@ namespace CommunicationLayer
         }
 
         public static byte[] ReadMessageFromSize(Socket handler) {
-            log.Debug("Reading a message, assuming the size of the message is contained in the first 4 bits");
-            byte[] rawSize = Read(handler, 4);
-            if(rawSize.Length != 0) {
-                var msgSize = DecodeInt(rawSize);
-                log.Debug("Message Size is: " + msgSize);
-                return Read(handler, msgSize);
+            try {
+                log.Debug("Reading a message, assuming the size of the message is contained in the first 4 bits");
+                byte[] rawSize = Read(handler, 4);
+                if(rawSize.Length != 0) {
+                    var msgSize = DecodeInt(rawSize);
+                    log.Debug("Message Size is: " + msgSize);
+                    return Read(handler, msgSize);
+                }
             }
+            catch(Exception e) { log.Fatal(e.ToString()); }
             return new byte[0];
         }
 

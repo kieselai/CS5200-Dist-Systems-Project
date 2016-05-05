@@ -19,6 +19,7 @@ namespace CommunicationLayer
         }
 
         public bool Send ( Envelope env, int timeout) {
+            log.Debug("Sending: " + LocalEndPoint.ToString() + "  --->  " + env.Destination.ToString());
             log.Debug("Sending UDP ("+env.Message.ToString()+", MessageID: " + env.Message.MsgId + ", ConversationID: "+env.Message.ConvId + ")"
                 +"\nEndpoint: " +env.Destination.ToString() 
                 +"\nJSON: "+System.Text.Encoding.Default.GetString(env.Message.Encode()));
@@ -40,6 +41,7 @@ namespace CommunicationLayer
             var msg = Message.Decode( result.Buffer );
             log.Debug("Received UDP (" + msg.ToString() + ", MessageID: " + msg.MsgId + ", ConversationID: "+msg.ConvId + ")\nJSON: "+System.Text.Encoding.Default.GetString(result.Buffer));
             var endPoint = new PublicEndPoint { IPEndPoint = result.RemoteEndPoint };
+            log.Debug("Received: " + endPoint.ToString() + "  --->  " + LocalEndPoint.ToString());
             return new Envelope( msg, endPoint );
         }
 

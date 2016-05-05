@@ -100,7 +100,7 @@ namespace CommunicationLayer
         }
 
          protected bool MessageIsAvailable() {
-            if ( ConversationQueue.Count > 0) {
+            if ( ConversationQueue != null && ConversationQueue.Count > 0) {
                 log.Debug(GetLabel + "Message available!");
                 return true;
             }
@@ -202,7 +202,8 @@ namespace CommunicationLayer
         abstract protected bool CreateResponse();
 
         protected override void Process(object state) {
-            Success = ConversationLoop(()=> SetIncomingMessage() && ProcessRequest() && CreateResponse() && Respond(OutgoingMessage));
+            Success = ConversationLoop(
+                ()=> SetIncomingMessage() && ProcessRequest() && CreateResponse() && Respond(OutgoingMessage));
             if (Success) MessageSuccess();
             else MessageFailure();
         }

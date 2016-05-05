@@ -1,17 +1,8 @@
 ﻿using CommunicationLayer;
-using SharedObjects;
 using Messages.ReplyMessages;
 using Messages.RequestMessages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PlayerProcess;
-using System;
-using System.Threading;
-using System.Diagnostics;
-using Messages;
 using Utils;
-using System.Collections.Generic;
-using BalloonStoreProcess;
-using MyUtilities;
 
 namespace TestCommunicationLayer
 {
